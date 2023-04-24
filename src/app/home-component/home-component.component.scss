@@ -1,0 +1,106 @@
+section {
+    padding-left: 160px;
+}
+section h1 {
+    // position: absolute;
+    width: 403px;
+    height: 54px;
+    left: 160px;
+    // top: 2408px;
+    font-family: 'Avenir Next Georgian';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #141414;
+}
+.paragraph {
+    margin-top: 20px;
+    // justify-content: space-between;
+}
+.paragraph p {
+    font-family: 'Avenir Next Georgian';
+    width: 790px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(20, 20, 20, 0.6);
+}
+.paragraph button {
+    background-color: #245AA3;
+    position: absolute;
+    // width: 142px;
+    // height: 48px;
+    // left: 1318px;
+    // top: 2479px;
+    background: #245AA3;
+    border-radius: 100px;
+    color: White;
+    font-family: 'Avenir Next Georgian';
+    font-style: normal;
+    // font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13.5px 28px;
+    gap: 10px;
+}
+.partners {
+    margin-top: 37px;
+}
+.image1 {
+    box-sizing: border-box;
+    position: absolute;
+    width: 250px;
+    height: 140px;
+    left: 160px;
+    // top: 2564px;
+    background: #FFFFFF;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+}
+.photo1 {
+    position: absolute;
+    width: 169px;
+    height: 69px;
+    left: 40px;
+    top: 36px;
+    background: url('/assets/img/Picture3.jpg');
+}
+// .photo2 {
+//     position: absolute;
+//     width: 169px;
+//     height: 69px;
+//     left: 40px;
+//     top: 36px;
+//     background: url('/assets/img/Picture5.jpg');
+// }
+// .photo3 {
+//     position: absolute;
+//     width: 169px;
+//     height: 69px;
+//     left: 40px;
+//     top: 36px;
+//     background: url('/assets/img/Picture4.jpg');
+// }
+// .photo4 {
+//     position: absolute;
+//     width: 169px;
+//     height: 69px;
+//     left: 40px;
+//     top: 36px;
+//     background: url('/assets/img/Picture2.jpg');
+// }
+// .photo5 {
+//     position: absolute;
+//     width: 169px;
+//     height: 69px;
+//     left: 40px;
+//     top: 36px;
+//     background: url('/assets/img/Picture1.jpg');
+// }
