@@ -1,10 +1,11 @@
-<button class="btnPrimary" [class]="getButtonClass()" (click)="onClick()">
-  {{label}}
+<button 
+  [ngClass]="{ 'button--primary': isPrimary, 'button--secondary': isSecondary }"
+   class="button" (click)="onClick()">
+  <ng-content></ng-content>
 </button>
 
-<button class="btnSecondary" [class]="getButtonClass()" (click)="onClick()">
-  {{label}}
-</button> 
+
+
 
 
 
