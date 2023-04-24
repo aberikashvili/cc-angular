@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { AwardsDeedsSectionComponent } from './awards-deeds-section/awards-deeds-section.component';
 import { ButtonsComponent } from './buttons/buttons/buttons.component';
 
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +19,6 @@ import { ButtonsComponent } from './buttons/buttons/buttons.component';
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

@@ -3,11 +3,20 @@ import { RouterModule, Routes } from '@angular/router';
 import { AwardsDeedsSectionComponent } from './awards-deeds-section/awards-deeds-section.component';
 
 const routes: Routes = [
-  { path: '', component: AwardsDeedsSectionComponent },
+  {
+    path: 'home',
+    loadChildren: () =>
+      import('./modules/home/home.module').then((m) => m.HomeModule),
+  },
+  {
+    path: '**',
+    pathMatch: 'full',
+    redirectTo: '/home',
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
