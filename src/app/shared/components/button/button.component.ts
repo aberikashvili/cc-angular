@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, Input, Output,EventEmitter } from '@angular/core';
-import { buttonType } from './button-type.enum';
+export type ButtonType = 'primary' | 'secondary'
 
 @Component({
   selector: 'app-button',
@@ -8,19 +8,16 @@ import { buttonType } from './button-type.enum';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonsComponent  {
-  @Input()label!: string;
-  @Input() type: buttonType = buttonType.Primary;
+  
+  @Input() type: ButtonType = 'primary';
   @Output() clicked = new EventEmitter();
 
-  getButtonClass(): string {
-    switch (this.type) {
-      case buttonType.Primary:
-        return 'btn-primary';
-      case buttonType.Secondary:
-        return 'btn-secondary';
-      default:
-        return '';
-    }
+  get isPrimary(): boolean {
+    return this.type==="primary";
+  }
+  
+  get isSecondary(): boolean {
+    return this.type === "secondary";
   }
 
   onClick() {
