@@ -1,0 +1,71 @@
+section {
+    padding-left:160px;
+    margin-top: 400px;
+}
+.title--section h1 {
+    width: 436px;
+    height: 54px;  
+    font-family: 'Avenir Next Georgian';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #141414;
+}
+.paragraph p {
+    width: 655px;
+    height: 63px;
+    font-family: 'Avenir Next Georgian';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(20, 20, 20, 0.6);
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 13.5px 28px;
+    gap: 10px;
+    width: 163px;
+    height: 48px;
+    background: #245AA3;
+    border-radius: 100px;
+}
+.btn button {
+    width: 107px;
+    height: 21px;
+    font-family: 'Avenir Next Georgian';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+.img-container {
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 155px;
+}
+.img-container img {
+    width: 144px;
+    height: 192px;
+}
+.img-container-second {
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
