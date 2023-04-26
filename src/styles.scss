@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+  font-family:'AvenirNextGeorgian-Regular';
+  src: url('../assets/fonts/AvenirNextGeorgian-Regular.otf')format('truetype');
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
