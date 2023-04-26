@@ -1,0 +1,51 @@
+
+section {
+    padding-left: 160px;
+}
+
+section h1 {
+    width: 403px;
+    height: 54px;
+    left: 160px;
+    font-family: 'Avenir Next Georgian';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #141414;
+}
+.paragraph {
+    margin-top: 20px;
+}
+.paragraph p {
+    font-family: 'Avenir Next Georgian';
+    width: 790px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(20, 20, 20, 0.6);
+    position: absolute;
+}
+.btn-div {
+    margin-left: 1165px;
+}
+.partners {
+    margin-top: 37px;
+}
+.img-container {
+    box-sizing: border-box;
+    width: 250px;
+    height: 140px;
+    background: #FFFFFF;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+}
+.img-container img {
+    width: 192px;
+    height: 109px;
+    padding-top: 16px;
+    padding-left: 29px;
+    position: absolute;
+}
