@@ -1,0 +1,25 @@
+.button {
+    min-width: 195px;
+    height: 48px;
+    border: 1px solid;
+    border-radius: 100px;
+    color: white;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: Avenir Next georgian;
+    text-transform: uppercase;
+    
+  
+    &--primary {
+      background-color: #F58634;
+    }
+  
+    &--secondary {
+      background-color: #245AA3;  
+    }
+  }
+
+
+
+
+
