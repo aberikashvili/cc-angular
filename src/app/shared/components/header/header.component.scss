@@ -2,12 +2,16 @@ header{
     margin-top: 10px;
     .header-logo{
         position: absolute;
-        margin-left: 20px;
+        margin-left: 0px;
+        width: 180px;
+        height: 60px;
+
     }
     
 
     .nav-ul{
-        margin-left:190px;  
+        margin-left:210px; 
+         
     }
     ul{
         font-size: 14px;
@@ -15,7 +19,12 @@ header{
         font-style: normal;
         font-size: 14px;
         line-height: 150%;
+        
      } 
+
+     li{
+      font-weight: 400;
+     }
 
      .btn-container{
         margin-right: 70px;
@@ -43,6 +52,8 @@ header{
     position: relative;
     display: inline-block;
     margin: 0 5px;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    border-radius: 100px;
   }
 
   .switch > span {
@@ -66,16 +77,23 @@ header{
     color:black;
   }
   .switch > span.on {
-    left: 0px;
+    left: 1px;
     padding-left: 2px;
-    color:white;
+    color: white;
+    top: 15px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
     
   }
   .switch > span.off {
     right: 0;
     padding-right: 4px;
     color:black;
-    margin-right: 18px;
+    margin-right: 2px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
     
   }
   .check-toggle {
@@ -117,8 +135,8 @@ header{
     
   }
   input.check-toggle-round-flat + label:after {
-    top: 0px;
-    left: 3px;
+    top: 4px;
+    left: 4px;
     bottom: 4px;
     width: 62px;
     border-radius: 100px;
@@ -137,7 +155,7 @@ header{
  
 
 input.check-toggle-round-flat:checked + label:after {
-  margin-left: 46px;
+  margin-left: 60px;
   
 }
 
