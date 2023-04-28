@@ -5,7 +5,6 @@ section {
 .title--section h1 {
     width: 436px;
     height: 54px;  
-    font-family: 'AvenirNextGeorgian-Regular';
     font-family: 'AvenirNextGeorgian-Bold';
     font-style: normal;
     font-weight: 700;
@@ -39,7 +38,7 @@ section {
 .btn button {
     width: 107px;
     height: 21px;
-    font-family: 'AvenirNextGeorgian-Regular';
+    font-family: 'Avenir Next Georgian';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -69,4 +68,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.awardsbtn--div {
+ margin-top: 32px;
 }

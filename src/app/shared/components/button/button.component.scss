@@ -19,7 +19,7 @@
     }
     
     &--awardsbtn {
-      width: 163px;
+      min-width: 163px;
       height: 48px;
       border: 1px solid;
       border-radius: 100px;
@@ -29,6 +29,10 @@
       font-family: Avenir Next georgian;
       text-transform: uppercase;
       background-color: #245AA3;
+      font-family: 'Avenir Next Georgian';
+      font-style: normal;
+      font-weight: 500;
+      text-transform: uppercase;
     }
   }
 
