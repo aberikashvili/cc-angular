@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, Input, Output,EventEmitter } from '@angular/core';
-export type ButtonType = 'primary' | 'secondary'
+export type ButtonType = 'primary' | 'secondary' | 'awardsbtn'
 
 @Component({
   selector: 'app-button',
@@ -22,6 +22,10 @@ export class ButtonsComponent  {
 
   onClick() {
     this.clicked.emit();
+  }
+
+  get awardsBtn():boolean {
+    return this.type==="awardsbtn";
   }
 
   
