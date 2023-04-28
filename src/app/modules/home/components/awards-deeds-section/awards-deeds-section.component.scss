@@ -35,17 +35,6 @@ section {
     background: #245AA3;
     border-radius: 100px;
 }
-.btn button {
-    width: 107px;
-    height: 21px;
-    font-family: 'Avenir Next Georgian';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
 .img-container {
     box-sizing: border-box;
     width: 250px;
@@ -54,11 +43,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 155px;
-}
-.img-container img {
-    width: 144px;
-    height: 192px;
+    // margin-left: 155px;
 }
 .img-container-second {
     box-sizing: border-box;
@@ -71,4 +56,7 @@ section {
 }
 .awardsbtn--div {
  margin-top: 32px;
+}
+.photo--section {
+    margin-left: 155px;
 }
