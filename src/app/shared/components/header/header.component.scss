@@ -15,7 +15,7 @@ header{
     }
     ul{
         font-size: 14px;
-        font-family: 'Avenir Next Georgian';
+        font-family: 'AvenirNextGeorgian-Regular';
         font-style: normal;
         font-size: 14px;
         line-height: 150%;
@@ -78,12 +78,14 @@ header{
   }
   .switch > span.on {
     left: 1px;
-    padding-left: 2px;
+    padding-left: 18px;
     color: white;
     top: 15px;
     font-weight: 500;
     font-size: 14px;
     line-height: 21px;
+    width: 32px;
+    height: 21px;
     
   }
   .switch > span.off {
