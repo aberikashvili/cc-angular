@@ -1,6 +1,8 @@
 <button 
-  [ngClass]="{ 'button--primary': isPrimary, 'button--secondary': isSecondary, 'button--btn': isBtn }"
-   class="button" (click)="onClick()">
+  [ngClass]="{ 'button--primary': isPrimary, 'button--secondary': isSecondary }"
+  [ngStyle]="{ 'min-width': customWidth}"
+  class="button"
+  (click)="onClick()">
   <ng-content></ng-content>
 </button>
 
