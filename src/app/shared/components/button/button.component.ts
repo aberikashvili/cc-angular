@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, Input, Output,EventEmitter } from '@angular/core';
-export type ButtonType = 'primary' | 'secondary'
+export type ButtonType = 'primary' | 'secondary';
 
 @Component({
   selector: 'app-button',
@@ -8,9 +8,13 @@ export type ButtonType = 'primary' | 'secondary'
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonsComponent  {
-  
+  @Input() width?: string;
   @Input() type: ButtonType = 'primary';
   @Output() clicked = new EventEmitter();
+
+  get customWidth(): string | undefined {
+    return this.width;
+  }
 
   get isPrimary(): boolean {
     return this.type==="primary";
@@ -23,7 +27,4 @@ export class ButtonsComponent  {
   onClick() {
     this.clicked.emit();
   }
-
-  
-
 }
