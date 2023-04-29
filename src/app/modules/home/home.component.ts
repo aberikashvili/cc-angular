@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
 export class HomeComponent {
   onPrimaryClick(): void {
     alert('button clicked');
-  }
+    
+}
 }
