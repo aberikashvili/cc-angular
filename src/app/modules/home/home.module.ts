@@ -3,7 +3,7 @@ import { HomeComponent } from './home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { MyPartnersSectionComponent } from './components/my-partners-section/my-partners-section.component';
-import { ThinksAboutUsComponent } from './components/thinks-about-us/thinks-about-us.component';
+import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
 
 const routes: Routes = [
   {
@@ -13,7 +13,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, MyPartnersSectionComponent, ThinksAboutUsComponent, ],
+  declarations: [HomeComponent, MyPartnersSectionComponent, AboutUsSectionComponent  ],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
 export class HomeModule {}
