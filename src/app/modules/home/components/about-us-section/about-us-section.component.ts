@@ -20,9 +20,9 @@ export class AboutUsSectionComponent {
     this.getSliderData();
     this.slide(0);
 
-    this.interval = setInterval(() => {
-      this.slide(this.currentIndex + 1);
-    }, 5000);
+    // this.interval = setInterval(() => {
+    //   this.slide(this.currentIndex + 1);
+    // }, 5000);
   }
 
   slide(index: number) {
@@ -88,7 +88,7 @@ export class AboutUsSectionComponent {
           companyName: 'კომპანიის დასახელება'
         },
         right: {
-          text: 'შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს',
+          text: 'შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს <br> და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს',
           img: '',
           title: 'სახელი გვარი',
           companyName: 'კომპანიის დასახელება'

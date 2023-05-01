@@ -1,64 +1,67 @@
-<div class="slider">
-    <div class="slider-track" #sliderTrack>
-        <div class="slider-item" *ngFor="let item of sliderData">
-            <div class="left">
-                <div class="text">
-                    <span>
-                        {{item.left.text}}
-                    </span>
-                </div>
-                <div class="bottom">
-                    <div class="bottom-left">
-                        <img [src]="item.left.img">
+<section>
+    <h1 class="heading">რას ამბობენ ჩვენზე?</h1>
+    <div class="slider mt-16">
+        <div class="slider-track" #sliderTrack>
+            <div class="slider-item" *ngFor="let item of sliderData">
+                <div class="left">
+                    <div class="text">
+                        <span class="slider--text">
+                            {{item.left.text}}
+                        </span>
                     </div>
-                    <div class="bottom-right">
-                        <span>{{item.left.title}}</span>
-                        <span>{{item.left.companyName}}</span>
+                    <div class="bottom">
+                        <div class="bottom-left">
+                            <img [src]="item.left.img">
+                        </div>
+                        <div class="bottom-right">
+                            <span class="name--surname">{{item.left.title}}</span>
+                            <span class="company--name">{{item.left.companyName}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="middle">
+                    <div class="text">
+                        <span class="slider--text">
+                            {{item.middle.text}}
+                        </span>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-left">
+                            <img [src]="item.middle.img">
+                        </div>
+                        <div class="bottom-right">
+                            <span class="name--surname">{{item.middle.title}}</span>
+                            <span class="company--name">{{item.middle.companyName}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="text">
+                        <span class="slider--text">
+                            {{item.right.text}}
+                        </span>
+                    </div>
+                    <div class="bottom">
+                        <div class="bottom-left">
+                            <img [src]="item.right.img">
+                        </div>
+                        <div class="bottom-right">
+                            <span class="name--surname">{{item.right.title}}</span>
+                            <span  class="company--name">{{item.right.companyName}}</span>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="middle">
-                <div class="text">
-                    <span>
-                        {{item.middle.text}}
-                    </span>
-                </div>
-                <div class="bottom">
-                    <div class="bottom-left">
-                        <img [src]="item.middle.img">
-                    </div>
-                    <div class="bottom-right">
-                        <span>{{item.middle.title}}</span>
-                        <span>{{item.middle.companyName}}</span>
-                    </div>
-                </div>
+        </div>
+        <div class="slider-balls" #sliderBalls>
+            <div class="slider-ball active" data-index="0"
+                (click)="onClickBall($event)"></div>
+            <div class="slider-ball" data-index="1" (click)="onClickBall($event)">
             </div>
-            <div class="right">
-                <div class="text">
-                    <span>
-                        {{item.right.text}}
-                    </span>
-                </div>
-                <div class="bottom">
-                    <div class="bottom-left">
-                        <img [src]="item.right.img">
-                    </div>
-                    <div class="bottom-right">
-                        <span>{{item.right.title}}</span>
-                        <span>{{item.right.companyName}}</span>
-                    </div>
-                </div>
+            <div class="slider-ball" data-index="2" (click)="onClickBall($event)">
+            </div>
+            <div class="slider-ball" data-index="3" (click)="onClickBall($event)">
             </div>
         </div>
-    </div>
-    <div class="slider-balls" #sliderBalls>
-        <div class="slider-ball active" data-index="0"
-            (click)="onClickBall($event)"></div>
-        <div class="slider-ball" data-index="1" (click)="onClickBall($event)">
-        </div>
-        <div class="slider-ball" data-index="2" (click)="onClickBall($event)">
-        </div>
-        <div class="slider-ball" data-index="3" (click)="onClickBall($event)">
-        </div>
-    </div>
-  </div>
+      </div>
+</section>
