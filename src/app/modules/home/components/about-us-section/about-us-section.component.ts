@@ -40,10 +40,10 @@ export class AboutUsSectionComponent {
 
     this.currentIndex = index;
 
-    clearInterval(this.interval);
-    this.interval = setInterval(() => {
-      this.slide(this.currentIndex + 1);
-    }, 5000);
+    // clearInterval(this.interval);
+    // this.interval = setInterval(() => {
+    //   this.slide(this.currentIndex + 1);
+    // }, 5000);
   }
 
   onClickBall(event: MouseEvent) {
@@ -88,7 +88,7 @@ export class AboutUsSectionComponent {
           companyName: 'კომპანიის დასახელება'
         },
         right: {
-          text: 'შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს <br> და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს',
+          text: 'შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს',
           img: '',
           title: 'სახელი გვარი',
           companyName: 'კომპანიის დასახელება'

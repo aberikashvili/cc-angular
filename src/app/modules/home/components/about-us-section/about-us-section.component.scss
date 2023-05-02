@@ -55,7 +55,6 @@ section h1 {
                 .bottom {
                     display: flex;
                     gap: 17px;
-                    align-items: center;
 
                     .bottom-left {
                         background: #D9D9D9;
@@ -113,6 +112,16 @@ section h1 {
             }
         }
     }
+}
+.left {
+    border-right: 1px solid rgba(20, 20, 20, 0.1);
+}
+.middle {
+    padding-left: 20px;
+    border-right: 1px solid rgba(20, 20, 20, 0.1);
+}
+.right {
+    padding-left: 20px;
 }
 .name--surname {
     font-style: normal;
