@@ -54,14 +54,9 @@
             </div>
         </div>
         <div class="slider-balls" #sliderBalls>
-            <div class="slider-ball active" data-index="0"
-                (click)="onClickBall($event)"></div>
-            <div class="slider-ball" data-index="1" (click)="onClickBall($event)">
-            </div>
-            <div class="slider-ball" data-index="2" (click)="onClickBall($event)">
-            </div>
-            <div class="slider-ball" data-index="3" (click)="onClickBall($event)">
-            </div>
-        </div>
+            <div class="slider-ball" [ngClass]="{'active':i === 0}"
+                    *ngFor="let item of sliderBallsData;let i = index"
+                    (click)="onClickBall(i)">{{item}}</div>
+        </div>    
       </div>
 </section>

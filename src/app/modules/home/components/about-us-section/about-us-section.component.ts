@@ -1,4 +1,3 @@
-// import { Component } from '@angular/core';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 
@@ -12,6 +11,7 @@ export class AboutUsSectionComponent {
   @ViewChild('sliderBalls') sliderBalls!: ElementRef;
 
   sliderData: any[] = [];
+  sliderBallsData: any[] = [];
 
   private currentIndex = 0;
   private interval: any;
@@ -19,10 +19,6 @@ export class AboutUsSectionComponent {
   ngOnInit() {
     this.getSliderData();
     this.slide(0);
-
-    // this.interval = setInterval(() => {
-    //   this.slide(this.currentIndex + 1);
-    // }, 5000);
   }
 
   slide(index: number) {
@@ -39,16 +35,9 @@ export class AboutUsSectionComponent {
     sliderBalls.children[index].classList.add('active');
 
     this.currentIndex = index;
-
-    // clearInterval(this.interval);
-    // this.interval = setInterval(() => {
-    //   this.slide(this.currentIndex + 1);
-    // }, 5000);
   }
-
-  onClickBall(event: MouseEvent) {
-    const index = parseInt((event.target as HTMLElement).getAttribute('data-index')!);
-
+  
+  onClickBall(index: any) {
     this.slide(index);
   }
 
@@ -134,6 +123,12 @@ export class AboutUsSectionComponent {
           companyName: 'კომპანიის დასახელება'
         }
       },
+    ]
+    this.sliderBallsData = [
+      '',
+      '',
+      '',
+      ''
     ]
   }
 }
