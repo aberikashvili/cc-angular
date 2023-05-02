@@ -24,27 +24,7 @@ section {
     line-height: 150%;
     color: rgba(20, 20, 20, 0.6);
 }
-.btn {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 13.5px 28px;
-    gap: 10px;
-    width: 163px;
-    height: 48px;
-    background: #245AA3;
-    border-radius: 100px;
-}
 .img-container {
-    box-sizing: border-box;
-    width: 250px;
-    height: 250px;
-    border: 1px solid rgba(20, 20, 20, 0.1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.img-container-second {
     box-sizing: border-box;
     width: 250px;
     height: 250px;
