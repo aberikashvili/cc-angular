@@ -79,7 +79,9 @@ p{
       color:#F58634;
       margin: 1rem;
     }
-
+  .card:hover li::before{
+    color: white;
+  }
     .card:hover{
       background-color: #F58634;
       color:white;
