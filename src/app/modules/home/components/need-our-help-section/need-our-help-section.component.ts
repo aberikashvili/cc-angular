@@ -15,14 +15,13 @@ export class NeedOurHelpSectionComponent implements OnInit {
     this.myForm = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
+      number: ['', [Validators.required, Validators.pattern(/^\d+$/)]],
       message: ['', Validators.required]
     });
   }
-
-  onSubmit() {
-    if (this.myForm.valid) {
-      console.log(this.myForm.value);
-    }
+  
+  onClick(formGroup:FormGroup) {
+    console.log(this.myForm.value);
   }
 }
 

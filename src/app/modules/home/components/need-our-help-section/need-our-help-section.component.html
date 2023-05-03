@@ -6,26 +6,35 @@
             რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, 
             თუ როგორი იქნება ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი ამ გენერატორით შექმნილი ტექსტის გამოყენება,</div>
         </div>
-
-
         <div class="form--container">
-              <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
-                <label>
-                  Name:
-                  <input type="text" formControlName="name">
-                </label>
-              
-                <label>
-                  Email:
-                  <input type="email" formControlName="email">
-                </label>
-              
-                <label>
-                  Message:
-                  <textarea formControlName="message"></textarea>
-                </label>
-              
-                <button type="submit" [disabled]="myForm.invalid">Submit</button>
+              <form class="flex-col" [formGroup]="myForm">
+                <div>
+                  <label class="label" for="name"> სახელი
+                    <input  class="w-full name--inp" id="name"   type="text" formControlName="name">
+                  </label>
+                </div>
+
+                <div class="flex">
+                  <div class=" mt-8">
+                    <label class="label"> ელ.ფოსტა                  
+                      <input class="email--inp"  type="email" formControlName="email">
+                    </label>
+                  </div>
+                
+                  <div class="mt-8 ml-5">
+                    <label class="label"> ტელეფონის ნომერი
+                      <input class="number--inp"  type="number" formControlName="number" id="number"> 
+                    </label>
+                  </div>
+                </div>
+                
+                <div class="mt-8">
+                  <label class="label"> შეტყობინების ტექსტი
+                    <textarea class="w-full txtarea"  formControlName="message"></textarea>
+                  </label> 
+                </div> 
+
+                <app-button  type="primary" width="127px" (clicked)="onClick(myForm)" >გაგზავნა</app-button>
               </form>
         </div>  
     </div>

@@ -27,3 +27,39 @@ section {
     line-height: 150%;
     color: rgba(20, 20, 20, 0.6);
 }
+.form--container {
+    width: 655px;
+    height: 431px;
+    background: #FFFFFF;
+    margin-left: 154px;
+    margin-top: 60px;
+    padding: 40px 32px 32px 32px;
+}
+.name--inp {
+    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+}
+.label {
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: rgba(20, 20, 20, 0.6);
+}
+.email--inp {
+    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+    width: 100%;
+
+}
+.number--inp {
+    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+    width: 100%;
+
+}
+.txtarea {
+    // margin-top: 58px;
+    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 32px;
+}
