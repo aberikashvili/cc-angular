@@ -55,8 +55,8 @@
         </div>
         <div class="slider-balls" #sliderBalls>
             <div class="slider-ball" [ngClass]="{'active':i === 0}"
-                    *ngFor="let item of sliderBallsData;let i = index"
-                    (click)="onClickBall(i)">{{item}}</div>
+                    *ngFor="let item of sliderData;let i = index"
+                    (click)="onClickBall(i)"></div>
         </div>    
       </div>
 </section>

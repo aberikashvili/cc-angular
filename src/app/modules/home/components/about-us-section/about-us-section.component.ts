@@ -124,12 +124,6 @@ export class AboutUsSectionComponent {
         }
       },
     ]
-    this.sliderBallsData = [
-      '',
-      '',
-      '',
-      ''
-    ]
-  }
+  } 
 }
 
