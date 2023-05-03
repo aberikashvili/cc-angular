@@ -2,8 +2,9 @@ import { NgModule } from '@angular/core';
 import { HomeComponent } from './home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
 import { MyPartnersSectionComponent } from './components/my-partners-section/my-partners-section.component';
-import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
+import { NeedOurHelpSectionComponent } from './components/need-our-help-section/need-our-help-section.component';
 
 const routes: Routes = [
   {
@@ -13,7 +14,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, MyPartnersSectionComponent, AboutUsSectionComponent  ],
+  declarations: [HomeComponent, AwardsDeedsSectionComponent, MyPartnersSectionComponent, NeedOurHelpSectionComponent],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
 export class HomeModule {}
