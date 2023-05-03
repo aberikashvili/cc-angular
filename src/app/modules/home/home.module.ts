@@ -5,6 +5,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
 import { MyPartnersSectionComponent } from './components/my-partners-section/my-partners-section.component';
 import { NeedOurHelpSectionComponent } from './components/need-our-help-section/need-our-help-section.component';
+import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
 
 const routes: Routes = [
   {
@@ -14,7 +15,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, AwardsDeedsSectionComponent, MyPartnersSectionComponent, NeedOurHelpSectionComponent],
+  declarations: [HomeComponent, AwardsDeedsSectionComponent, MyPartnersSectionComponent, AboutUsSectionComponent,  NeedOurHelpSectionComponent],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
 export class HomeModule {}

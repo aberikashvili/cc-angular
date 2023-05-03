@@ -1,0 +1,29 @@
+section {
+    background: #F9F9F9;
+    padding-left: 160px;
+    padding-right: 160px;
+}
+.left--div {
+    height: 532px;
+}
+.heading {
+    width: 655px;
+    height: 54px;
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #141414;
+}
+.text {
+    width: 791px;
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(20, 20, 20, 0.6);
+}

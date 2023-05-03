@@ -1,1 +1,33 @@
-<p>need-our-help-section works!</p>
+<section>
+    <div class="flex">
+        <div class="left--div flex justify-center flex-col">
+            <div class="heading">გსურთ ჩვენი დახმარება?</div>
+            <div class="text mt-8">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, 
+            რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, 
+            თუ როგორი იქნება ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი ამ გენერატორით შექმნილი ტექსტის გამოყენება,</div>
+        </div>
+
+
+        <div class="">
+            <form  [FormGroup]="formGroup" (ngSubmit)="onSubmit()">
+                <div>
+                  <label for="name">Name:</label>
+                  <input type="text" formControlName="name" id="name">
+                </div>
+                <div>
+                  <label for="number">Number:</label>
+                  <input type="text" formControlName="number" id="number">
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input type="email" formControlName="email" id="email">
+                </div>
+                <div>
+                  <label for="description">Description:</label>
+                  <textarea formControlName="description" id="description"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+              </form>           
+        </div>
+    </div>
+</section>
