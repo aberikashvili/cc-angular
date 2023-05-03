@@ -1,0 +1,42 @@
+section {
+    padding-left:160px;
+    margin-top: 200px;
+}
+.title--section h1 {
+    width: 436px;
+    height: 54px;  
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #141414;
+}
+.paragraph p {
+    width: 655px;
+    height: 63px;
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(20, 20, 20, 0.6);
+}
+.img-container {
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.awardsbtn--div {
+ margin-top: 32px;
+}
+.photo--section {
+    margin-left: 155px;
+    max-width: 950px;
+}
