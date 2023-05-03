@@ -7,8 +7,9 @@ import { NeedOurHelpSectionComponent } from './components/need-our-help-section/
 import { ReactiveFormsModule } from '@angular/forms';
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
-import { ProjectsComponent } from './components/projects/projects.component';
-import { WarmHouseComponent } from './components/warm-house/warm-house.component';
+import { OurServicesComponent } from './components/our-services/our-services.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 const routes: Routes = [
   {
     path: '',
@@ -17,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, MyPartnersSectionComponent,AwardsDeedsSectionComponent, NeedOurHelpSectionComponent, AboutUsSectionComponent,ProjectsComponent, WarmHouseComponent,],
-  imports: [RouterModule.forChild(routes),ReactiveFormsModule, SharedModule,],
+  declarations: [HomeComponent, AwardsDeedsSectionComponent, MyPartnersSectionComponent, AboutUsSectionComponent,  NeedOurHelpSectionComponent,OurServicesComponent],
+  imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule,CarouselModule],
 })
 export class HomeModule {}
