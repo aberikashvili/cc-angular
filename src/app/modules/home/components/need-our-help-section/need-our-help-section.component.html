@@ -10,20 +10,20 @@
               <form class="flex-col" [formGroup]="myForm">
                 <div>
                   <label class="label" for="name"> სახელი
-                    <input  class="w-full name--inp" id="Name" (click)="changeStyle()" [ngClass]="{'clicked': isClicked}"   type="text" formControlName="name">
+                    <input  class="inputStyle w-full name--inp" id="Name"  type="text" formControlName="name">
                   </label>
                 </div>
 
                 <div class="flex justify-between">
                   <div class=" mt-8">
                     <label class="label"> ელ.ფოსტა                  
-                      <input class="email--inp"  type="email" formControlName="email">
+                      <input class="inputStyle email--inp"  type="email" formControlName="email">
                     </label>
                   </div>
                 
                   <div class="mt-8 ml-5">
                     <label class="label"> ტელეფონის ნომერი
-                      <input class="number--inp"  type="text" formControlName="number" id="number"> 
+                      <input class="inputStyle number--inp"  type="text" formControlName="number" id="number"> 
                     </label>
                   </div>
                 </div>
@@ -31,7 +31,7 @@
                 <div class="mt-8">
                   <label class="label"> შეტყობინების ტექსტი
                     <!-- <input class="w-full txtarea" type="text" formControlName="message"> -->
-                    <textarea class="w-full txtarea"  formControlName="message"></textarea>
+                    <textarea class="inputStyle w-full txtarea"  formControlName="message"></textarea>
                   </label> 
                 </div> 
                 <div class="button">

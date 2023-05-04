@@ -36,11 +36,12 @@ section {
     margin-top: 60px;
     padding: 40px 32px 32px 32px;
 }
-#Name {
-    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+
+.inputStyle:focus {
+    border-bottom: 1px solid orange;
 }
-.clicked {
-    border: 1px solid Orange;
+.inputStyle {
+    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
 }
 .label {
     font-family: 'AvenirNextGeorgian-Regular';

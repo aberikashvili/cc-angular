@@ -8,7 +8,6 @@ import { FormBuilder, FormGroup,  Validators } from '@angular/forms';
 })
 export class NeedOurHelpSectionComponent implements OnInit {
   myForm!: FormGroup;
-  isClicked: boolean = false;
 
   constructor(private formBuilder: FormBuilder) { }
 
@@ -23,10 +22,6 @@ export class NeedOurHelpSectionComponent implements OnInit {
   
   onClick(formGroup:FormGroup) {
     console.log(this.myForm.value);
-  }
-
-  changeStyle() {
-    this.isClicked = true;
   }
 
 }
