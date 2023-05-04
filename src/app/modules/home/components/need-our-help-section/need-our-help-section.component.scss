@@ -36,8 +36,11 @@ section {
     margin-top: 60px;
     padding: 40px 32px 32px 32px;
 }
-.name--inp {
+#Name {
     border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+}
+.clicked {
+    border: 1px solid Orange;
 }
 .label {
     font-family: 'AvenirNextGeorgian-Regular';

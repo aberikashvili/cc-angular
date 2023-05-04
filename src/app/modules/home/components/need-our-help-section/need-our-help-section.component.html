@@ -10,7 +10,7 @@
               <form class="flex-col" [formGroup]="myForm">
                 <div>
                   <label class="label" for="name"> სახელი
-                    <input  class="w-full name--inp" id="name"   type="text" formControlName="name">
+                    <input  class="w-full name--inp" id="Name" (click)="changeStyle()" [ngClass]="{'clicked': isClicked}"   type="text" formControlName="name">
                   </label>
                 </div>
 
