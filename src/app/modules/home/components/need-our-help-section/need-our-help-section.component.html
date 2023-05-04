@@ -14,7 +14,7 @@
                   </label>
                 </div>
 
-                <div class="flex">
+                <div class="flex justify-between">
                   <div class=" mt-8">
                     <label class="label"> ელ.ფოსტა                  
                       <input class="email--inp"  type="email" formControlName="email">
@@ -30,11 +30,13 @@
                 
                 <div class="mt-8">
                   <label class="label"> შეტყობინების ტექსტი
-                    <textarea class="w-full txtarea"  formControlName="message"></textarea>
+                    <input class="w-full txtarea" type="text" formControlName="message">
+                    <!-- <textarea class="w-full txtarea"  formControlName="message"></textarea> -->
                   </label> 
                 </div> 
-
-                <app-button  type="primary" width="127px" (clicked)="onClick(myForm)" >გაგზავნა</app-button>
+                <div class="button">
+                  <app-button  type="primary" width="127px" (clicked)="onClick(myForm)" >გაგზავნა</app-button>
+                </div>
               </form>
         </div>  
     </div>
