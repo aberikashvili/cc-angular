@@ -38,5 +38,26 @@ section {
     width: 266px;
 }
 .tbilisaxli--container {
-    width: 150px;
+    margin-top: 86px;
+    margin-left: 156px;
+}
+.tbilisaxli--title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: rgba(20, 20, 20, 0.6);
+}
+.services--container {
+    margin-top: 86px;
+    margin-left: 120px;
+}
+.links--container {
+    margin-left: 41px;
+    margin-top: 86px;
+}
+.map--container{
+    margin-left: 120px;
 }
