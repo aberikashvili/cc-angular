@@ -1,0 +1,42 @@
+section {
+    padding-left: 160px;
+}
+.img-container {
+    width: 180px;
+    height: 60px;
+}
+.paragraph {
+    width: 384px;
+    height: 126px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    font-family: 'AvenirNextGeorgian-Regular';
+    color: rgba(20, 20, 20, 0.6);
+}
+.logos {
+    width: 180px;
+    justify-content: space-between;
+}
+.logoDiv {
+    border: 1px solid rgba(20, 20, 20, 0.2);
+    border-radius: 30px;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.casacalda--title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    color: rgba(20, 20, 20, 0.6);
+    font-family: 'AvenirNextGeorgian-Regular';
+    width: 266px;
+}
+.tbilisaxli--container {
+    width: 150px;
+}
