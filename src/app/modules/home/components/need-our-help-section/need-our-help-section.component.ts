@@ -9,10 +9,10 @@ import { FormBuilder, FormGroup,  Validators } from '@angular/forms';
 export class NeedOurHelpSectionComponent implements OnInit {
   myForm!: FormGroup;
 
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private _formBuilder: FormBuilder) { }
 
   ngOnInit() {
-    this.myForm = this.formBuilder.group({
+    this.myForm = this._formBuilder.group({
       name: ['', Validators.required],
       email: ['', [Validators.required, Validators.email]],
       number: ['', [Validators.required, Validators.pattern(/^\d+$/)]],
@@ -20,7 +20,7 @@ export class NeedOurHelpSectionComponent implements OnInit {
     });
   }
   
-  onClick(formGroup:FormGroup) {
+  onClick() {
     console.log(this.myForm.value);
   }
 
