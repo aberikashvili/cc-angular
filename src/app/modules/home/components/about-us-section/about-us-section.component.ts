@@ -18,21 +18,21 @@ export class AboutUsSectionComponent {
 
   ngOnInit() {
     this.getSliderData();
-    this.slide(0);
+    this?.slide(0);
   }
 
   slide(index: number) {
-    const sliderTrack = this.sliderTrack.nativeElement;
-    const sliderBalls = this.sliderBalls.nativeElement;
+    const sliderTrack = this.sliderTrack?.nativeElement;
+    const sliderBalls = this.sliderBalls?.nativeElement;
 
-    if (index < 0 || index >= sliderTrack.children.length) {
+    if (index < 0 || index >= sliderTrack?.children.length) {
       return;
     }
 
     sliderTrack.style.transform = `translateX(-${index * 100}%)`;
 
-    sliderBalls.children[this.currentIndex].classList.remove('active');
-    sliderBalls.children[index].classList.add('active');
+    sliderBalls?.children[this.currentIndex].classList.remove('active');
+    sliderBalls?.children[index].classList.add('active');
 
     this.currentIndex = index;
   }
