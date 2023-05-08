@@ -8,7 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
 import { WarmHouseComponent } from './components/warm-house/warm-house.component';
-
+import { FooterComponent } from 'src/app/shared/components/footer/footer.component';
 
 const routes: Routes = [
   {
