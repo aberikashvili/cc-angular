@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MyPartnersComponent } from './modules/home/components/my-partners/my-partners.component';
 
 const routes: Routes = [
+
   {
     path: 'home',
     loadChildren: () =>
