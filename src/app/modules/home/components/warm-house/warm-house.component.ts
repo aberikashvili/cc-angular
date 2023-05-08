@@ -1,4 +1,6 @@
 import { Component} from '@angular/core';
+
+
 @Component({
   selector: 'app-warm-house',
   templateUrl: './warm-house.component.html',
