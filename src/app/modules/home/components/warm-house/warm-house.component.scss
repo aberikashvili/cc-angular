@@ -35,28 +35,17 @@ p{
 }
 }
 
-h1{
-    font-family: 'AvenirNextGeorgian-Bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 150%;
-    color: #141414;   
+hr{
+    width: 1060px;
+    height: 1px;
+    background: rgba(20, 20, 20, 0.1);
+    margin-top: 83px; 
+    color: #1414141A;  
 }
 
 
 
-p{
-    width: 925px;
-    height: 72px;
-    font-family: 'AvenirNextGeorgian-Regular';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #141414;
-    margin-top: 16px;
-}
+
 
 
 .box-container{
