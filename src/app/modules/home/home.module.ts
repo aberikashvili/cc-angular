@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
+import { MyPartnersComponent } from './components/my-partners/my-partners.component';
 
 const routes: Routes = [
   {
@@ -17,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, AwardsDeedsSectionComponent, MyPartnersSectionComponent, AboutUsSectionComponent,  NeedOurHelpSectionComponent, FooterComponent],
+  declarations: [HomeComponent, AwardsDeedsSectionComponent, MyPartnersSectionComponent, AboutUsSectionComponent,  NeedOurHelpSectionComponent, MyPartnersComponent, FooterComponent],
   imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule],
 
 })
