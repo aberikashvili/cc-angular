@@ -1,0 +1,27 @@
+p{
+    font-size: 48px;
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 150%;
+    color: #F58634;
+    
+    
+}
+
+h1{
+    font-size: 16px;
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-weight: 500;
+    line-height: 150%;
+    color: rgba(20, 20, 20, 0.5);
+  
+}
+
+.modal-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
