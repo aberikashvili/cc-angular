@@ -16,9 +16,12 @@ export class AboutUsSectionComponent {
   private currentIndex = 0;
   private interval: any;
 
+  ngAfterViewInit() {
+    this.slide(0);
+  }
+
   ngOnInit() {
     this.getSliderData();
-    this.slide(0);
   }
 
   slide(index: number) {
