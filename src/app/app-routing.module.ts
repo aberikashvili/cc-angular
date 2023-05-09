@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MyPartnersComponent } from './modules/home/components/my-partners/my-partners.component';
 
 const routes: Routes = [
 
@@ -13,6 +12,11 @@ const routes: Routes = [
     path: 'demo',
     loadChildren: () =>
       import('./modules/demo/demo.module').then((m) => m.DemoModule),
+  },
+  {
+    path: 'my-partners',
+    loadChildren: () =>
+      import('./modules/my-partners-page/my-partners-page.module').then((m) => m.MyPartnersPageModule),
   },
   {
     path: '**',
