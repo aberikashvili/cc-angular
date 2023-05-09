@@ -1,17 +1,22 @@
+// Tailwind
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+// OwlCarousel
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 
- @font-face {
- font-family:'AvenirNextGeorgian-Regular';
- src:url('/assets/fonts/avenir-georgian/AvenirNextGeorgian-Regular.otf')format('truetype');
- }
- @font-face {
-  font-family:'AvenirNextGeorgian-Bold';
-  src:url('/assets/fonts/avenir-georgian/AvenirNextGeorgian-Bold.otf')format('truetype');
-  }
- 
+@font-face {
+  font-family: "AvenirNextGeorgian-Regular";
+  src: url("/assets/fonts/avenir-georgian/AvenirNextGeorgian-Regular.otf")
+    format("truetype");
+}
+@font-face {
+  font-family: "AvenirNextGeorgian-Bold";
+  src: url("/assets/fonts/avenir-georgian/AvenirNextGeorgian-Bold.otf")
+    format("truetype");
+}
 
 @font-face {
   font-family: "AvenirNextGeorgian-Bold";
