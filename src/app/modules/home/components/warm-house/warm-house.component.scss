@@ -4,7 +4,10 @@ span{
     font-weight: 400;
 }
 
-
+.warm-house{
+    margin-left:160px;
+    display: flex;
+}
 
 .title{
     margin-top:193px;
@@ -17,9 +20,6 @@ h1{
     line-height: 150%;
     color: #141414;   
 }
-
-
-
 p{
     width: 925px;
     height: 72px;
@@ -32,22 +32,6 @@ p{
     margin-top: 16px;
 }
 }
-
-hr{
-    width: 1060px;
-    height: 1px;
-    background: rgba(20, 20, 20, 0.1);
-    margin-top: 83px; 
-    color: #1414141A;  
-}
-
-
-
-
-
-
-.box-container{
-    margin-top:132px;
 
     .box-h1{
         margin-left:71px;
@@ -66,21 +50,21 @@ hr{
         color: rgba(20, 20, 20, 0.5);
     }
  
-}
+
 .box-container{
     display:flex;
     position: absolute;
+    margin-top:132px;
 }
 .box1, .box2, .box3{
     margin-left:70px;
 }
 
-.warm-house{
-    display: flex;
-}
+
 .picture{
     position: relative;
     z-index: -3;
+    width: 754px;
     height: 469px;
     margin-left:30px;
     margin-top: 251px;
