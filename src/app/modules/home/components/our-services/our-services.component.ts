@@ -66,3 +66,6 @@ bullet: any;
     this.activeCard = index === this.cards.length - 0 ? this.cards[0] : this.cards[index + 1];
   }
 }
+
+
+
