@@ -6,21 +6,17 @@
                 <div class="left flex flex-col">
                     <div class="img">
                         <div class="slider--img">
-                            {{item.left.img}}
+                            <img src="{{item.left.img}}">
                         </div>
                     </div>
-                    <div class="name--surname">
+                    <div class="name--sur">
                         <div class="slider--namesurname">
                             {{item.left.NameSurname}}
                         </div>
                     </div>
                     <div class="bottom">
-                        <div class="bottom-left">
-                            <img [src]="item.left.img">
-                        </div>
                         <div class="bottom-right">
-                            <span class="name--surname">{{item.left.title}}</span>
-                            <span class="company--name">{{item.left.companyName}}</span>
+                            <div class="name--surname">{{item.left.title}}</div>
                         </div>
                     </div>
                 </div>
@@ -58,10 +54,10 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="slider-balls" #sliderBalls>
+        <div class="slider-balls" #sliderBalls>
             <div class="slider-ball" [ngClass]="{'active':i === 0}"
                     *ngFor="let item of sliderData;let i = index"
                     (click)="onClickBall(i)"></div>
-        </div>     -->
+        </div>    
       </div>
 </section>

@@ -47,18 +47,18 @@ export class OurTeamSectionComponent {
     this.sliderData = [
       {
         left: {
-          img: '',
+          img: 'assets/img/chvenigundi.jpg',
           NameSurname: 'გოჩა ვაშაკიძე',
           title: 'საწყობის უფროსი'
           
         },
         middle: {
-          img: '',
+          img: 'assets/img/chvenigundi.jpg',
           NameSurname: 'გოჩა ვაშაკიძე',
           title: 'საწყობის უფროსი'
         },
         right: {
-          img: '',
+          img: 'assets/img/chvenigundi.jpg',
           NameSurname: 'გოჩა ვაშაკიძე',
           title: 'საწყობის უფროსი'
         }
