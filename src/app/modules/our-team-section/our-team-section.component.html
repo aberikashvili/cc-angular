@@ -1,13 +1,18 @@
 <section>
-    <h1 class="heading">რას ამბობენ ჩვენზე?</h1>
+    <h1 class="heading">ჩვენი გუნდი</h1>
     <div class="slider mt-16">
         <div class="slider-track" #sliderTrack>
             <div class="slider-item" *ngFor="let item of sliderData">
-                <div class="left">
-                    <div class="text">
-                        <span class="slider--text">
-                            {{item.left.text}}
-                        </span>
+                <div class="left flex flex-col">
+                    <div class="img">
+                        <div class="slider--img">
+                            {{item.left.img}}
+                        </div>
+                    </div>
+                    <div class="name--surname">
+                        <div class="slider--namesurname">
+                            {{item.left.NameSurname}}
+                        </div>
                     </div>
                     <div class="bottom">
                         <div class="bottom-left">
@@ -53,10 +58,10 @@
                 </div>
             </div>
         </div>
-        <div class="slider-balls" #sliderBalls>
+        <!-- <div class="slider-balls" #sliderBalls>
             <div class="slider-ball" [ngClass]="{'active':i === 0}"
                     *ngFor="let item of sliderData;let i = index"
                     (click)="onClickBall(i)"></div>
-        </div>    
+        </div>     -->
       </div>
 </section>
