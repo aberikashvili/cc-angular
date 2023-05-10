@@ -4,10 +4,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { OurTeamSectionComponent } from './modules/our-team-section/our-team-section.component';
 
 @NgModule({
-  declarations: [AppComponent, OurTeamSectionComponent],
+  declarations: [AppComponent],
   imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

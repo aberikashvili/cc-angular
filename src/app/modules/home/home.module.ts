@@ -9,6 +9,7 @@ import { AboutUsSectionComponent } from './components/about-us-section/about-us-
 import { FooterComponent } from './components/footer/footer.component';
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
 import { AwardsDeedsSectionSecondComponent } from './components/awards-deeds-section-second/awards-deeds-section-second.component';
+import { OurTeamSectionComponent } from './our-team-section/our-team-section.component';
 
 const routes: Routes = [
   {
@@ -18,8 +19,16 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, AwardsDeedsSectionComponent, MyPartnersSectionComponent, AboutUsSectionComponent,  NeedOurHelpSectionComponent, FooterComponent, AwardsDeedsSectionSecondComponent],
+  declarations: [
+    HomeComponent,
+    AwardsDeedsSectionComponent,
+    MyPartnersSectionComponent,
+    AboutUsSectionComponent,
+    NeedOurHelpSectionComponent,
+    OurTeamSectionComponent,
+    FooterComponent,
+    AwardsDeedsSectionSecondComponent,
+  ],
   imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule],
-
 })
 export class HomeModule {}
