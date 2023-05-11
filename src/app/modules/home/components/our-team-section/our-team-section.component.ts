@@ -43,97 +43,101 @@ export class OurTeamSectionComponent {
     this.slide(index);
   }
 
+
+
   getSliderData() {
     this.sliderData = [
-      {
-        left: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-          
-        },
-        middle: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        },
-        right: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        },
-        last: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        }
+    {
+      left: {
+        img: 'assets/img/chvenigundi.jpg',
+        NameSurname: 'გოჩა ვაშაკიძე',
+        title: 'საწყობის უფროსი'  
       },
-      {
-        left: {
-          img: '',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        },
-        middle: {
-          img: '',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        },
-        right: {
-          img: '',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        },
-        last: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        }
+      middle: {
+        img: 'assets/img/chvenigundi.jpg',
+        NameSurname: 'გოჩა ვაშაკიძე',
+        title: 'საწყობის უფროსი'
       },
-      {
-        left: {
-          img: '',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        },
-        middle: {
-          img: '',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        },
-        right: {
-          img: '',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        },
-        last: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        }
+      right: {
+        img: 'assets/img/chvenigundi.jpg',
+        NameSurname: 'გოჩა ვაშაკიძე',
+        title: 'საწყობის უფროსი'
       },
-      {
-        left: {
-          img: '',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        },
-        middle: {
-          img: '',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        },
-        right: {
-          img: '',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        },
-        last: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი'
-        }
-      },
+      last: {
+        img: 'assets/img/chvenigundi.jpg',
+        NameSurname: 'გოჩა ვაშაკიძე',
+        title: 'საწყობის უფროსი'
+      }
+    }, 
+    // {
+    //   left: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   },
+    //   middle: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   },
+    //   right: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   },
+    //   last: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   }
+    // },
+    // {
+    //   left: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   },
+    //   middle: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   },
+    //   right: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   },
+    //   last: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   }
+    // },
+    // {
+    //   left: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   },
+    //   middle: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   },
+    //   right: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   },
+    //   last: {
+    //     img: 'assets/img/chvenigundi.jpg',
+    //     NameSurname: 'გოჩა ვაშაკიძე',
+    //     title: 'საწყობის უფროსი'
+    //   }
+    // },
     ]
-  } 
+  }
 }
+
+    
+        

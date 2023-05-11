@@ -10,7 +10,7 @@
             <div class="slider-item" *ngFor="let item of sliderData">
                 <div class="left flex flex-col">
                     <div class="image--div">
-                        <img src="{{item.left.img}}">
+                        <img [src]="item.left.img">
                     </div>
                     <div class="name mt-5">
                         {{item.left.NameSurname}}
@@ -19,7 +19,7 @@
                         {{item.left.title}}
                     </div>
                 </div>
-                <!-- <div class="middle flex flex-col">
+                <div class="middle flex flex-col">
                     <div class="image--div">
                         <img src="{{item.middle.img}}">
                     </div>
@@ -51,13 +51,8 @@
                     <div class="title mt-2">
                         {{item.last.title}}
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
-        <!-- <div class="slider-balls" #sliderBalls>
-            <div class="slider-ball" [ngClass]="{'active':i === 0}"
-                    *ngFor="let item of sliderData;let i = index"
-                    (click)="onClickBall(i)"></div>
-        </div>     -->
       </div>
 </section>
