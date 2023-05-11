@@ -1,40 +1,13 @@
 <section>
   <div class="heading--arrow flex">
     <h1 class="heading">ჩვენი გუნდი</h1>
-    <!-- <div class="slider-balls" #sliderBalls>
-      <div
-        class="slider-ball"
-        [ngClass]="{ active: i === 0 }"
-        *ngFor="let item of sliderData; let i = index"
-        (click)="onClickBall(i)"
-      ></div>
-    </div> -->
-    <!-- <div class="slider-balls" #sliderBalls>
-        <div class="slider-ball active" data-index="0"
-            (click)="onClickBall($event)"></div>
-        <div class="slider-ball" data-index="1" (click)="onClickBall($event)">
-        </div>
-        <div class="slider-ball" data-index="2" (click)="onClickBall($event)">
-        </div>
-        <div class="slider-ball" data-index="3" (click)="onClickBall($event)">
-        </div>
-    </div> -->
+
     <div class="arrow-slider">
-      <button
-        [ngClass]="{ active: i === 0 }"
-        *ngFor="let item of sliderData; let i = index"
-        (click)="onClickBall(i)"
-        class="left--arrow"
-      >
+      <button (click)="prev()" class="left--arrow">
         <img src="assets/img/leftArrow.jpg" alt="" />
       </button>
 
-      <button
-        [ngClass]="{ active: i === 0 }"
-        *ngFor="let item of sliderData; let i = index"
-        (click)="onClickBall(i)"
-        class="right-arrow"
-      >
+      <button (click)="next()" class="right-arrow">
         <img src="assets/img/rightArrow.jpg" alt="" />
       </button>
     </div>

@@ -43,7 +43,23 @@ export class OurTeamSectionComponent {
     this.slide(index);
   }
 
+  prev() {
+    if (this.currentIndex === 0) {
+      this.currentIndex = this.sliderData.length - 1;
+    } else {
+      this.currentIndex--;
+    }
+    this.slide(this.currentIndex);
+  }
 
+  next() {
+    if (this.currentIndex === this.sliderData.length - 1) {
+      this.currentIndex = 0;
+    } else {
+      this.currentIndex++;
+    }
+    this.slide(this.currentIndex);
+  }
 
   getSliderData() {
     this.sliderData = [
