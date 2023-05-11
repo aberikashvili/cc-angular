@@ -61,6 +61,11 @@ export class OurTeamSectionComponent {
           img: 'assets/img/chvenigundi.jpg',
           NameSurname: 'გოჩა ვაშაკიძე',
           title: 'საწყობის უფროსი'
+        },
+        last: {
+          img: 'assets/img/chvenigundi.jpg',
+          NameSurname: 'გოჩა ვაშაკიძე',
+          title: 'საწყობის უფროსი'
         }
       },
       {
@@ -78,6 +83,11 @@ export class OurTeamSectionComponent {
           img: '',
           NameSurname: 'გოჩა ვაშაკიძე',
           title: 'საწყობის უფროსი'
+        },
+        last: {
+          img: 'assets/img/chvenigundi.jpg',
+          NameSurname: 'გოჩა ვაშაკიძე',
+          title: 'საწყობის უფროსი'
         }
       },
       {
@@ -95,6 +105,11 @@ export class OurTeamSectionComponent {
           img: '',
           NameSurname: 'გოჩა ვაშაკიძე',
           title: 'საწყობის უფროსი'
+        },
+        last: {
+          img: 'assets/img/chvenigundi.jpg',
+          NameSurname: 'გოჩა ვაშაკიძე',
+          title: 'საწყობის უფროსი'
         }
       },
       {
@@ -110,6 +125,11 @@ export class OurTeamSectionComponent {
         },
         right: {
           img: '',
+          NameSurname: 'გოჩა ვაშაკიძე',
+          title: 'საწყობის უფროსი'
+        },
+        last: {
+          img: 'assets/img/chvenigundi.jpg',
           NameSurname: 'გოჩა ვაშაკიძე',
           title: 'საწყობის უფროსი'
         }
