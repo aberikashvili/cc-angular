@@ -35,11 +35,18 @@ section h1 {
       gap: 10px;
       width: 100%;
 
-      // .left,
-      // .middle ,
-      // .right {
-      //     width: 600px;
-
+      .left {
+        width: 600px;
+      }
+      .middle {
+        width: 600px;
+      }
+      .right {
+        width: 600px;
+      }
+      .last {
+        width: 600px;
+      }
       // .text {
       //     span {
       //         display: block;
@@ -71,51 +78,41 @@ section h1 {
   }
 }
 
-// .slider-balls {
-//     position: absolute;
-//     bottom: 10px;
-//     left: 50%;
-//     transform: translateX(-50%);
-//     display: flex;
+.slider-balls {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
 
-//     .slider-ball {
-//         width: 16px;
-//         height: 16px;
-//         margin: 0 8px;
-//         border: 2px solid #ccc;
-//         border-radius: 50%;
-//         cursor: pointer;
+  .slider-ball {
+    width: 16px;
+    height: 16px;
+    margin: 0 8px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
 
-//         &.active {
-//             border: 1px solid orange;
-//             position: relative;
+    &.active {
+      border: 1px solid orange;
+      position: relative;
 
-//             &::before {
-//                 content: '';
-//                 width: 11px;
-//                 height: 11px;
-//                 display: block;
-//                 border-radius: 50%;
-//                 background-color: orange;
-//                 position: absolute;
-//                 top: 50%;
-//                 left: 50%;
-//                 transform: translate(-50%, -50%);
-//             }
-//         }
-//     }
-// }
-// }
-// .left {
-//     border-right: 1px solid rgba(20, 20, 20, 0.1);
-// }
-// .middle {
-//     padding-left: 20px;
-//     border-right: 1px solid rgba(20, 20, 20, 0.1);
-// }
-// .right {
-//     padding-left: 20px;
-// }
+      &::before {
+        content: '';
+        width: 11px;
+        height: 11px;
+        display: block;
+        border-radius: 50%;
+        background-color: orange;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
 .name--surname {
   font-style: normal;
   font-weight: 700;
