@@ -78,40 +78,40 @@ section h1 {
   }
 }
 
-.slider-balls {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
+// .slider-balls {
+//   position: absolute;
+//   bottom: 10px;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   display: flex;
 
-  .slider-ball {
-    width: 16px;
-    height: 16px;
-    margin: 0 8px;
-    border: 2px solid #ccc;
-    border-radius: 50%;
-    cursor: pointer;
+//   .slider-ball {
+//     width: 16px;
+//     height: 16px;
+//     margin: 0 8px;
+//     border: 2px solid #ccc;
+//     border-radius: 50%;
+//     cursor: pointer;
 
-    &.active {
-      border: 1px solid orange;
-      position: relative;
+//     &.active {
+//       border: 1px solid orange;
+//       position: relative;
 
-      &::before {
-        content: '';
-        width: 11px;
-        height: 11px;
-        display: block;
-        border-radius: 50%;
-        background-color: orange;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
-  }
-}
+//       &::before {
+//         content: '';
+//         width: 11px;
+//         height: 11px;
+//         display: block;
+//         border-radius: 50%;
+//         background-color: orange;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//       }
+//     }
+//   }
+// }
 
 .name--surname {
   font-style: normal;
