@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-my-partners-section',
@@ -6,5 +7,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./my-partners-section.component.scss']
 })
 export class MyPartnersSectionComponent {
+  constructor(private router:Router) {
 
+  }
+  redirectToMyPartners() {
+    this.router.navigate(['/my-partners']);
+  }
 }

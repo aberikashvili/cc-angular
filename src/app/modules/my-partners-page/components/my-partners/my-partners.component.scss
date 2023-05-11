@@ -1,6 +1,14 @@
+section {
+    padding-left: 160px;
+    padding-right: 160px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
 section h1 {
     width: 403px;
     height: 54px;
+    left: 160px;
     font-family: 'AvenirNextGeorgian-Bold';
     font-style: normal;
     font-weight: 700;
@@ -22,10 +30,9 @@ section h1 {
     font-size: 14px;
     line-height: 150%;
     color: rgba(20, 20, 20, 0.6);
-    position: absolute;
 }
 .partners {
-    margin-top: 37px;
+    margin-top: 40px;
 }
 .img-container {
     display: flex;
@@ -41,14 +48,4 @@ section h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: #141414;
-    font-family: 'AvenirNextGeorgian-Regular';
-
 }
