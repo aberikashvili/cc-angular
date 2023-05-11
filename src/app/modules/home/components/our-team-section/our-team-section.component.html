@@ -5,6 +5,10 @@
                     *ngFor="let item of sliderData;let i = index"
                     (click)="onClickBall(i)"></div>
         </div>     -->
+     <div class="card-slider-controls">
+            <button class="left-arrow" (click)="prevCard()"><img src="assets/images/left-arrow.png" alt=""></button>
+            <button (click)="nextCard()"><img src="assets/images/right-arrow.png" alt=""></button>     
+    </div> 
     <div class="slider mt-16">
         <div class="slider-track" #sliderTrack>
             <div class="slider-item" *ngFor="let item of sliderData">
