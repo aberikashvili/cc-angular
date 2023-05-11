@@ -15,7 +15,7 @@ import { raceInit } from 'rxjs/internal/observable/race';
 export class ServicesComponent implements AfterViewInit {
   customOptions: OwlOptions = {
     
-    margin:-120,
+    margin:40,
     loop: false,
     mouseDrag: true,
     touchDrag: true,

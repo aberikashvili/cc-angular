@@ -51,6 +51,7 @@ p {
   margin-top: 11px;
   width: 385px;
   height: 315px;
+  margin-left: -20px;
 }
 
 ul {
@@ -107,24 +108,23 @@ ul:hover li::before {
   margin-right: 120px;
 }
 
-// ::ng-deep .owl-stage .owl-item .card {
-//   display: flex;
-//   width: 385px;
-// }
-
 ::ng-deep {
-  .owl-item {
+  .owl-stage {
+    width: 2200px !important;
+    margin-left:20px !important; 
+  }
+
+  .owl-item{
+    margin-right: 40px !important;
     width: auto !important;
   }
-
-  .card-box {
-    margin: 0 40px !important;
-  }
-
-  .card {
-    // width: 1000px !important;
-    color: red;
-    margin: 0 20px;
-    width: 385px !important;
-  }
 }
+
+
+
+
+
+  
+
+  
+
