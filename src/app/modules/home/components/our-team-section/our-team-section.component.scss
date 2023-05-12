@@ -30,7 +30,7 @@ section h1 {
     .slider-item {
       display: flex;
       flex-direction: row;
-      gap: 10px;
+      gap: 20px;
       width: 100%;
 
       // .left {
@@ -82,6 +82,7 @@ section h1 {
 .cont--div {
   width: 385px;
   height: 465px;
+  overflow: hidden;
 }
 .image--div img {
   width: 385px;
