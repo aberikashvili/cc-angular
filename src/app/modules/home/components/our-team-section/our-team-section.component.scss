@@ -1,6 +1,4 @@
 section {
-  padding-left: 160px;
-  padding-right: 160px;
   margin-top: 200px;
 }
 section h1 {
@@ -104,5 +102,10 @@ section h1 {
   color: #f58634;
 }
 .heading--arrow {
+  justify-content: space-between;
+}
+.arrow--slider {
+  width: 104px;
+  display: flex;
   justify-content: space-between;
 }

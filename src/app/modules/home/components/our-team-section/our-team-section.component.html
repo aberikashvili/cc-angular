@@ -2,18 +2,18 @@
   <div class="heading--arrow flex">
     <h1 class="heading">ჩვენი გუნდი</h1>
 
-    <div class="arrow-slider">
-      <button (click)="prev()" class="left--arrow">
+    <div class="arrow--slider">
+      <button (click)="prev()" class="left--arrow cursor-pointer">
         <img src="assets/img/leftArrow.jpg" alt="" />
       </button>
 
-      <button (click)="next()" class="right-arrow">
+      <button (click)="next()" class="right-arrow cursor-pointer">
         <img src="assets/img/rightArrow.jpg" alt="" />
       </button>
     </div>
   </div>
 
-  <div class="slider mt-16">
+  <div class="slider mt-16 mt-6">
     <div class="slider-track" #sliderTrack>
       <div class="slider-item" *ngFor="let item of sliderData">
         <div class="left flex flex-col">
