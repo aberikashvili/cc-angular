@@ -33,18 +33,18 @@ section h1 {
       gap: 10px;
       width: 100%;
 
-      .left {
-        width: 600px;
-      }
-      .middle {
-        width: 600px;
-      }
-      .right {
-        width: 600px;
-      }
-      .last {
-        width: 600px;
-      }
+      // .left {
+      //   width: 600px;
+      // }
+      // .middle {
+      //   width: 600px;
+      // }
+      // .right {
+      //   width: 600px;
+      // }
+      // .last {
+      //   width: 600px;
+      // }
     }
   }
 }
@@ -79,10 +79,14 @@ section h1 {
   line-height: 150%;
   color: rgba(20, 20, 20, 0.6);
 }
+.cont--div {
+  width: 385px;
+  height: 465px;
+}
 .image--div img {
   width: 385px;
   height: 385px;
-  max-width: auto !important;
+  max-width: max-content !important;
 }
 .name {
   font-family: 'AvenirNextGeorgian-Bold';

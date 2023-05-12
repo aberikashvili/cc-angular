@@ -16,7 +16,7 @@
   <div class="slider mt-6">
     <div class="slider-track" #sliderTrack>
       <div class="slider-item" *ngFor="let item of sliderData">
-        <div class="left flex flex-col">
+        <div class="cont--div left flex flex-col">
           <div class="image--div">
             <img [src]="item.left.img" />
           </div>
@@ -27,7 +27,7 @@
             {{ item.left.title }}
           </div>
         </div>
-        <div class="middle flex flex-col">
+        <div class="cont--div middle flex flex-col">
           <div class="image--div">
             <img src="{{ item.middle.img }}" />
           </div>
@@ -38,7 +38,7 @@
             {{ item.middle.title }}
           </div>
         </div>
-        <div class="right flex flex-col">
+        <div class="cont--div right flex flex-col">
           <div class="image--div">
             <img src="{{ item.right.img }}" />
           </div>
@@ -49,7 +49,7 @@
             {{ item.right.title }}
           </div>
         </div>
-        <div class="last flex flex-col">
+        <div class="cont--div last flex flex-col">
           <div class="image--div">
             <img src="{{ item.last.img }}" />
           </div>
