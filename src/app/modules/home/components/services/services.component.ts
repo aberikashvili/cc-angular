@@ -2,9 +2,12 @@ import {
   AfterViewInit,
   ChangeDetectionStrategy,
   Component,
+  
 } from '@angular/core';
-import { OwlOptions } from 'ngx-owl-carousel-o';
-import { raceInit } from 'rxjs/internal/observable/race';
+import { OwlOptions,} from 'ngx-owl-carousel-o';
+
+
+
 
 @Component({
   selector: 'app-services',
@@ -13,22 +16,27 @@ import { raceInit } from 'rxjs/internal/observable/race';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ServicesComponent implements AfterViewInit {
+
+  
+
+  
+
   customOptions: OwlOptions = {
     
-    margin:40,
+    
     loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
     dots: false,
-    nav: true,
+    nav: false,
     navSpeed: 700,
-    navText: ['', ''],
+    navText:[],
     responsive: {
       0: {
         items: 1,
       },
-      400: {
+      200: {
         items: 2,
       },
       740: {
@@ -40,8 +48,13 @@ export class ServicesComponent implements AfterViewInit {
     },
     
   };
-
+carousel: any;
+  
+  
+  
   ngAfterViewInit(): void {}
+
+  
 
 
   cards = [
@@ -92,6 +105,7 @@ export class ServicesComponent implements AfterViewInit {
     
   ];
 
+ 
 }
 
 

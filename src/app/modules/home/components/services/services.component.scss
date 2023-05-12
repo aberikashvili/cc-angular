@@ -11,7 +11,7 @@
 }
 
 .carousel-container {
-  margin-top: 40px;
+  
   margin-left: 160px;
 }
 
@@ -36,7 +36,7 @@ section {
 p {
   width: 790px;
   height: 42px;
-  margin-top: 20px;
+  margin-bottom: 15px;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
@@ -58,6 +58,7 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-left: 3px;
 }
 
 h2 {
@@ -68,7 +69,7 @@ h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  margin-top: 32px;
+  margin-top: 25px;
 }
 
 li {
@@ -105,7 +106,11 @@ ul:hover li::before {
   display: flex;
   overflow-x: auto;
   margin-top: 40px;
-  margin-right: 120px;
+  margin-right: 155px;
+}
+
+.left-arrow{
+  margin-right: 40px;
 }
 
 ::ng-deep {

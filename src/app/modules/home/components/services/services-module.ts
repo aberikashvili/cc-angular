@@ -5,6 +5,8 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { ServicesComponent } from './services.component';
 
 
+
+
 const routes: Routes = [
     {
       path: '',
@@ -16,4 +18,6 @@ const routes: Routes = [
     declarations: [],
     imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule,],
   })
-  export class ServicesModule {}
+  export class ServicesModule {
+    
+  }
