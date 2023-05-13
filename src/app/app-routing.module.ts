@@ -2,21 +2,25 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-
   {
     path: 'home',
-    loadChildren: () =>
-      import('./modules/home/home.module').then((m) => m.HomeModule),
+    loadChildren: () => import('./modules/home/home.module').then((m) => m.HomeModule),
   },
   {
     path: 'demo',
-    loadChildren: () =>
-      import('./modules/demo/demo.module').then((m) => m.DemoModule),
+    loadChildren: () => import('./modules/demo/demo.module').then((m) => m.DemoModule),
   },
   {
     path: 'my-partners',
     loadChildren: () =>
-      import('./modules/my-partners-page/my-partners-page.module').then((m) => m.MyPartnersPageModule),
+      import('./modules/my-partners-page/my-partners-page.module').then(
+        (m) => m.MyPartnersPageModule
+      ),
+  },
+  {
+    path: 'about-us',
+    loadChildren: () =>
+      import('./modules/about-us-page/about-us-page.module').then((m) => m.AboutUsPageModule),
   },
   {
     path: '**',
