@@ -13,7 +13,6 @@ export class OurTeamSectionComponent {
   sliderBallsData: any[] = [];
 
   private currentIndex = 0;
-  private interval: any;
 
   ngAfterViewInit() {
     this.slide(0);
