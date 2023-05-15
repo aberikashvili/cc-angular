@@ -1,17 +1,22 @@
-<section class="projects">
-  <h1 class="projects-h1">პროექტები</h1>
-</section>
+<div class="wrapper">
+  <owl-carousel-o [options]="customOptions">
+
+    <ng-container *ngFor="let item of cards">
+      <ng-template  carouselSlide >
+        <h1>{{item.title}}</h1>
+        <li>{{item.description}}</li>
+        <li>{{item.description}}</li>
+        
+      </ng-template>
+    </ng-container>
 
 
 
+  </owl-carousel-o>  
+</div>
 
 
-<owl-carousel-o [options]="customOptions">
-  <ng-template carouselSlide>
-   
-  </ng-template>
-  
-</owl-carousel-o> 
+
 
 
 

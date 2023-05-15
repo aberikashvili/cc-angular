@@ -5,8 +5,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ProjectsComponent } from './projects.component';
 
-
-
 const routes: Routes = [
   {
     path: '',
@@ -16,6 +14,6 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [],
-  imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule],
+  imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule,],
 })
 export class ProjectsModule {}

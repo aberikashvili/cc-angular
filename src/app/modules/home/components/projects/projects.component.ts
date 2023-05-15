@@ -1,8 +1,4 @@
-import {
-  AfterViewInit,
-  ChangeDetectionStrategy,
-  Component,
-} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 
@@ -11,45 +7,53 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectsComponent implements AfterViewInit {
+
+export class ProjectsComponent implements OnInit  {
   customOptions: OwlOptions = {
-    loop: false,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: false,
+    loop: true,
+    autoplay: false,
+    center: true,
     dots: false,
-    navSpeed: 700,
-    navText: ['', ''],
+    autoHeight: true,
+    autoWidth: true,
     responsive: {
       0: {
         items: 1,
       },
-      400: {
-        items: 2,
+      600: {
+        items: 1,
       },
-      740: {
-        items: 3,
-      },
-      940: {
-        items: 4,
-      },
+      1000: {
+        items: 1,
+      }
+    }
+  }
+cards = [
+   {
+     title: 'სუსტი დენები',
+     description: 'კომპიუტერია, ტელეფონია, ტელევიზია',
+     description2:"ხანძარსაწინააღმდეგო სიგნალიზაცია,",
+     description3:"ვიდეო მეთვალყურეობა",
+     description4:"ფონური მუსიკა",
+     description5:"სისტემების კომპიუტერული მართვა (BMS)",
+     
     },
-    nav: true,
-  };
+    {
+     title: 'სუსტი დენები',
+     description: 'კომპიუტერია, ტელეფონია, ტელევიზია',
+     description2:"ხანძარსაწინააღმდეგო სიგნალიზაცია,",
+     description3:"ვიდეო მეთვალყურეობა",
+     description4:"ფონური მუსიკა",
+     description5:"სისტემების კომპიუტერული მართვა (BMS)",
+     
+    },
+    
+]
 
-  ngAfterViewInit(): void {}
-
-  cards = [
-      {
-        image:'assets/images/parliament.png',
-        
-      },
-
-  ]
+ ngOnInit(): void {
+    throw new Error('Method not implemented.');
+  }
 }
-
-
 
 
