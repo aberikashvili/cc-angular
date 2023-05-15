@@ -5,11 +5,12 @@ import { Component} from '@angular/core';
   styleUrls: ['./warm-house.component.scss']
 })
 export class WarmHouseComponent  {
-widgetValues: any[] = [
+  widgetValues: any[] = [
   { value: 245, label: 'შესრულებული სამუშაოები' },
   { value: 47, label: 'ჩვენი პარტნიორები' },
   { value: 287, label: 'თანამშრომელი' },
   { value: 38, label: 'მიღებული ჯილდო' },
+ 
 ];
 Value: any;
 }
