@@ -15,7 +15,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class ProjectsComponent implements AfterViewInit {
   customOptions: OwlOptions = {
-    loop: true,
+    loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
@@ -40,4 +40,16 @@ export class ProjectsComponent implements AfterViewInit {
   };
 
   ngAfterViewInit(): void {}
+
+  cards = [
+      {
+        image:'assets/images/parliament.png',
+        
+      },
+
+  ]
 }
+
+
+
+
