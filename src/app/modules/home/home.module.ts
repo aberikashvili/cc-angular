@@ -7,9 +7,8 @@ import { NeedOurHelpSectionComponent } from './components/need-our-help-section/
 import { ReactiveFormsModule } from '@angular/forms';
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 import { WarmHouseComponent } from './components/warm-house/warm-house.component';
-
-
 const routes: Routes = [
   {
     path: '',
@@ -18,7 +17,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, MyPartnersSectionComponent,AwardsDeedsSectionComponent, NeedOurHelpSectionComponent, AboutUsSectionComponent, WarmHouseComponent,],
+  declarations: [HomeComponent, MyPartnersSectionComponent,AwardsDeedsSectionComponent, NeedOurHelpSectionComponent, AboutUsSectionComponent,ProjectsComponent, WarmHouseComponent,],
   imports: [RouterModule.forChild(routes),ReactiveFormsModule, SharedModule,],
 })
 export class HomeModule {}
