@@ -7,8 +7,5 @@ import { Router } from '@angular/router';
   styleUrls: ['./awards-deeds-section.component.scss'],
 })
 export class AwardsDeedsSectionComponent {
-  constructor(private router: Router) {}
-  redirectToMyPartners() {
-    this.router.navigate(['/about-us']);
-  }
+
 }
