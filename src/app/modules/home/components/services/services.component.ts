@@ -6,9 +6,6 @@ import {
 } from '@angular/core';
 import { OwlOptions,} from 'ngx-owl-carousel-o';
 
-
-
-
 @Component({
   selector: 'app-services',
   templateUrl: './services.component.html',
@@ -16,14 +13,7 @@ import { OwlOptions,} from 'ngx-owl-carousel-o';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ServicesComponent implements AfterViewInit {
-
-  
-
-  
-
   customOptions: OwlOptions = {
-    
-    
     loop: false,
     mouseDrag: true,
     touchDrag: true,
@@ -50,14 +40,24 @@ export class ServicesComponent implements AfterViewInit {
   };
 carousel: any;
   
-  
-  
   ngAfterViewInit(): void {}
-
-  
-
-
-  cards = [
+  cards = [ 
+    {
+      title: 'სუსტი დენები',
+      description: 'კომპიუტერია, ტელეფონია, ტელევიზია',
+      description2:"ხანძარსაწინააღმდეგო სიგნალიზაცია,",
+      description3:"ვიდეო მეთვალყურეობა",
+      description4:"ფონური მუსიკა",
+      description5:"სისტემების კომპიუტერული მართვა (BMS)",
+    },
+    {
+      title: 'სუსტი დენები',
+      description: 'კომპიუტერია, ტელეფონია, ტელევიზია',
+      description2:"ხანძარსაწინააღმდეგო სიგნალიზაცია,",
+      description3:"ვიდეო მეთვალყურეობა",
+      description4:"ფონური მუსიკა",
+      description5:"სისტემების კომპიუტერული მართვა (BMS)",
+    },
     {
       title: 'სუსტი დენები',
       description: 'კომპიუტერია, ტელეფონია, ტელევიზია',
@@ -82,30 +82,8 @@ carousel: any;
       description3:"ვიდეო მეთვალყურეობა",
       description4:"ფონური მუსიკა",
       description5:"სისტემების კომპიუტერული მართვა (BMS)",
-      
     },
-    {
-      title: 'სუსტი დენები',
-      description: 'კომპიუტერია, ტელეფონია, ტელევიზია',
-      description2:"ხანძარსაწინააღმდეგო სიგნალიზაცია,",
-      description3:"ვიდეო მეთვალყურეობა",
-      description4:"ფონური მუსიკა",
-      description5:"სისტემების კომპიუტერული მართვა (BMS)",
-    },
-    {
-      title: 'სუსტი დენები',
-      description: 'კომპიუტერია, ტელეფონია, ტელევიზია',
-      description2:"ხანძარსაწინააღმდეგო სიგნალიზაცია,",
-      description3:"ვიდეო მეთვალყურეობა",
-      description4:"ფონური მუსიკა",
-      description5:"სისტემების კომპიუტერული მართვა (BMS)",
-    },
-    
-    
-    
-  ];
-
- 
+  ];     
 }
 
 
