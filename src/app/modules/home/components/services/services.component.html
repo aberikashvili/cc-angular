@@ -8,19 +8,14 @@
       <div class="card-slider-controls"  >
         <button (click)="carousel.prev()"  class="left-arrow"><img src="assets/images/left-arrow.png" alt=""></button>
         <button (click)="carousel.next()"> <img src="assets/images/right-arrow.png" alt=""></button>
-        
       </div>
   </div>
 </section>
-
-
-
-
 <div class="carousel-container" >
 <owl-carousel-o #carousel [options]="customOptions" >
   <ng-template carouselSlide [option]="OwlOptions" *ngFor="let item of cards" >
-    <div class="card-box" >
-      <div class="card"   >
+    <div class="card-box">
+      <div class="card">
         <ul>
           <h2>{{item.title}}</h2>
           <li>{{item.description}}</li>
@@ -31,7 +26,6 @@
         </ul>
     </div>
     </div>
-      
    </ng-template>
 </owl-carousel-o> 
 </div>
