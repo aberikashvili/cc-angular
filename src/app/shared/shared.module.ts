@@ -7,8 +7,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { WidgetComponent } from './components/widget/widget.component';
 
 @NgModule({
-  declarations: [ButtonsComponent,HeaderComponent, WidgetComponent],
-  imports: [CommonModule],
-  exports: [CommonModule, ButtonsComponent,HeaderComponent,WidgetComponent],
+  declarations: [ButtonsComponent, HeaderComponent, WidgetComponent],
+  imports: [CommonModule, CarouselModule],
+  exports: [CommonModule, ButtonsComponent, HeaderComponent, WidgetComponent,CarouselModule],
 })
-export class SharedModule {}
+export class SharedModule {
+}
