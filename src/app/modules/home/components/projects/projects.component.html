@@ -6,18 +6,27 @@
       <ng-template  carouselSlide >
        <section class="slide" *ngFor="let item of cards">
         <aside class="aside__right">
-          <img class="img-parliament" [src]="item.image" alt="">
+            <img class="img-parliament" [src]="item.image" alt="">
         </aside>
 
         <aside class="aside__left" >
-          <p>{{item.paragraph}}</p>
-          <h1>{{item.title}}</h1>
-          <h4 *ngFor="let item of item.description">{{item}}</h4>
+            <p>{{item.paragraph}}</p>
+            <h1>{{item.title}}</h1>
+            <h4 *ngFor="let item of item.description">{{item}}</h4>
+
+          <div class="list-box">
+            <h5>{{item.paragraph1}}</h5>
+            <div class="right-box" >
+
+            </div>
+            <div class="left-box"></div>
+        </div>
         </aside>
-       </section>
+        
+        
 
 
-
+        </section>
     </ng-template>
     </ng-container>
   </owl-carousel-o>  
