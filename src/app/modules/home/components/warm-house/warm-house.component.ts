@@ -10,7 +10,6 @@ export class WarmHouseComponent  {
   { value: 47, label: 'ჩვენი პარტნიორები' },
   { value: 287, label: 'თანამშრომელი' },
   { value: 38, label: 'მიღებული ჯილდო' },
- 
 ];
 Value: any;
 }
