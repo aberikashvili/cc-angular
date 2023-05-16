@@ -1,17 +1,18 @@
-section {
+.our-team-section {
   margin-top: 200px;
-}
-section h1 {
-  width: 480px;
-  height: 54px;
-  font-family: 'AvenirNextGeorgian-Bold';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 150%;
-  display: flex;
-  align-items: center;
-  color: #141414;
+
+  &-heading {
+    width: 480px;
+    height: 54px;
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #141414;
+  }
 }
 .slider {
   position: relative;
@@ -19,52 +20,27 @@ section h1 {
   width: 100%;
   height: 464px;
 
-  .slider-track {
+  &-track {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     display: flex;
     transition: transform 0.5s ease-in-out;
-
-    .slider-item {
-      display: flex;
-      flex-direction: row;
-      gap: 20px;
-      width: 100%;
-    }
   }
-}
 
-.name--surname {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 150%;
-  width: 110px;
-  display: flex;
-  align-items: center;
-  color: #245aa3;
-  font-family: 'AvenirNextGeorgian-Bold';
-  white-space: nowrap;
-}
-.company--name {
-  font-family: 'AvenirNextGeorgian-Regular';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  width: 173px;
-  line-height: 150%;
-  color: rgba(20, 20, 20, 0.6);
-}
-.slider--text {
-  width: 480px;
-  font-family: 'AvenirNextGeorgian-Regular';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 150%;
-  color: rgba(20, 20, 20, 0.6);
+  &-item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+  }
+
+  &-arrow {
+    width: 104px;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .cont--div {
   width: 385px;
@@ -95,10 +71,5 @@ section h1 {
   color: #f58634;
 }
 .heading--arrow {
-  justify-content: space-between;
-}
-.arrow--slider {
-  width: 104px;
-  display: flex;
   justify-content: space-between;
 }
