@@ -13,19 +13,22 @@
             <p>{{item.paragraph}}</p>
             <h1>{{item.title}}</h1>
             <h4 *ngFor="let item of item.description">{{item}}</h4>
-
-          <div class="list-box">
             <h5>{{item.paragraph1}}</h5>
-            <div class="right-box" >
-
+          <div class="list-box">
+            <div class="box" >
+              <ul>
+                <li *ngFor="let item of item.leftServices">{{item}}</li>
+              </ul>
             </div>
-            <div class="left-box"></div>
+            <div class="box">
+                <ul>
+                  <li *ngFor="let item of item.rightServices">{{item}}</li>
+                </ul>
+            </div>
         </div>
+        <h6>{{item.text}}</h6>
+        <app-button class="btn-primary" id="gega" type="primary">სრული პაკეტი</app-button>
         </aside>
-        
-        
-
-
         </section>
     </ng-template>
     </ng-container>
