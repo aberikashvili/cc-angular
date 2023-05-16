@@ -8,10 +8,11 @@
         <aside class="aside__right">
           <img class="img-parliament" [src]="item.image" alt="">
         </aside>
-        <aside class="aside__left">
-          დასრულებული
-          ქუთაისის პარლამენტი
-          ტექსტი........
+
+        <aside class="aside__left" >
+          <p>{{item.paragraph}}</p>
+          <h1>{{item.title}}</h1>
+          <h4 *ngFor="let item of item.description">{{item}}</h4>
         </aside>
        </section>
 
