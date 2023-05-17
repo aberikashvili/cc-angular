@@ -40,6 +40,7 @@
         line-height: 150%;
         color: #141414;
         margin-bottom: 16px;
+        margin-left: -134px;
         }
 
       h4{
@@ -107,9 +108,11 @@
     justify-content: space-between;
     .button-container{
       margin-right: 148px;
+      display: flex;
+      align-items: flex-end;
     }
     .left-arrow{
-      margin-right: 40px;
+      margin-right: 20px;
     }
 }
 
