@@ -1,4 +1,6 @@
 <h1 class="projects">პროექტები</h1>
+<button (click)="carousel.prev()"></button>
+<button (click)="carousel.next()"></button>
 
 <div class="wrapper">
   <owl-carousel-o [options]="customOptions">
@@ -8,7 +10,6 @@
         <aside class="aside__right">
             <img class="img-parliament" [src]="item.image" alt="">
         </aside>
-
         <aside class="aside__left" >
             <p>{{item.paragraph}}</p>
             <h1>{{item.title}}</h1>
@@ -32,7 +33,9 @@
         </section>
     </ng-template>
     </ng-container>
-  </owl-carousel-o>  
+  </owl-carousel-o>
+  
+  
 </div>
 
 

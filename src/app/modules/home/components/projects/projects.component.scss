@@ -103,5 +103,12 @@
 }
 
 
+::ng-deep{
+   .owl-carousel .owl-nav.disabled{
+      display: flex;
+      
+   }
+}
+
 
 
