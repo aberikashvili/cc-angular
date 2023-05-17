@@ -1,6 +1,10 @@
-<h1 class="projects">პროექტები</h1>
-<button (click)="carousel.prev()"></button>
-<button (click)="carousel.next()"></button>
+<div class="intro">
+    <h1 class="projects">პროექტები</h1>
+  <div class="button-container">
+    <button class="left-arrow" (click)="carousel.prev()"><img  src="assets/images/left.png" alt=""></button>
+    <button (click)="carousel.next()"><img src="assets/images/right.png" alt=""></button>
+  </div>
+</div>
 
 <div class="wrapper">
   <owl-carousel-o [options]="customOptions">

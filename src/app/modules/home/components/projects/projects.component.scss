@@ -14,7 +14,7 @@
     width: 925px;
     height: 586px;
     margin-left: 160px;
-    margin-top:32px;
+    margin-top:27px;
     background: linear-gradient( rgba(20, 20, 20, 0.1));
     }
 }
@@ -102,13 +102,33 @@
    }
 }
 
+.intro{
+    display: flex;
+    justify-content: space-between;
+    .button-container{
+      margin-right: 148px;
+    }
+    .left-arrow{
+      margin-right: 40px;
+    }
+}
 
 ::ng-deep{
    .owl-carousel .owl-nav.disabled{
-      display: flex;
-      
+      display: none;
    }
 }
+
+::ng-deep{
+  .owl-carousel .owl-stage{
+      display: flex;
+    justify-content: space-around;
+   }
+}
+
+
+
+
 
 
 

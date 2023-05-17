@@ -10,13 +10,14 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class ProjectsComponent implements OnInit {
   customOptions: OwlOptions = {
-    loop: false,
+    loop: true,
     autoplay: false,
     center: true,
     dots: false,
     autoHeight: true,
     autoWidth: true,
-    navText: ['', ''],
+    navText: ['prev', 'next'],
+    nav: true,
     responsive: {
       0: {
         items: 1,
