@@ -6,10 +6,7 @@ import { MyPartnersSectionComponent } from './components/my-partners-section/my-
 import { NeedOurHelpSectionComponent } from './components/need-our-help-section/need-our-help-section.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
-import { FooterComponent } from './components/footer/footer.component';
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
-// import { AwardsDeedsSectionSecondComponent } from '../about-us-page/components/awards-deeds-section-second/awards-deeds-section-second.component';
-// import { YourReliablePartnersSectionComponent } from '../about-us-page/components/your-reliable-partners-section/your-reliable-partners-section.component';
 
 const routes: Routes = [
   {
@@ -25,9 +22,6 @@ const routes: Routes = [
     MyPartnersSectionComponent,
     AboutUsSectionComponent,
     NeedOurHelpSectionComponent,
-    FooterComponent,
-    // AwardsDeedsSectionSecondComponent,
-    // YourReliablePartnersSectionComponent,
   ],
   imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule],
 })
