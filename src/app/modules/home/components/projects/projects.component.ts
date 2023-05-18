@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
-
-
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
@@ -10,7 +8,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class ProjectsComponent implements OnInit {
   customOptions: OwlOptions = {
-    loop: true,
+    loop: false,
     autoplay: false,
     center: true,
     dots: false,
@@ -18,6 +16,7 @@ export class ProjectsComponent implements OnInit {
     autoWidth: true,
     navText: ['prev', 'next'],
     nav: false,
+    items: 1,
     responsive: {
       0: {
         items: 1,

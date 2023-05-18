@@ -7,13 +7,12 @@
 </div>
 <div class="wrapper">
   <owl-carousel-o #carousel  [options]="customOptions">
-    <ng-container *ngFor="let item of cards">
-      <ng-template  carouselSlide >
-       <section class="slide" *ngFor="let item of cards">
-        <aside class="aside__right">
+      <ng-template  carouselSlide  *ngFor="let item of cards">
+       <div class="slide" *ngFor="let item of cards">
+        <div class="box__right">
             <img class="img-parliament" [src]="item.image" alt="">
-        </aside>
-        <aside class="aside__left" >
+        </div>
+        <div class="box__left" >
             <p>{{item.paragraph}}</p>
             <h1>{{item.title}}</h1>
             <h4 *ngFor="let item of item.description">{{item}}</h4>
@@ -32,10 +31,9 @@
         </div>
         <h6>{{item.text}}</h6>
         <app-button class="btn-primary" type="primary">სრული პაკეტი</app-button>
-        </aside>
-        </section>
+        </div>
+        </div>
     </ng-template>
-    </ng-container>
   </owl-carousel-o>
   
   
