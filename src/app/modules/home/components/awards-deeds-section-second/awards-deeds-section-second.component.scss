@@ -1,0 +1,26 @@
+.awards {
+  margin-top: 200px;
+
+  &__title h1 {
+    width: 436px;
+    height: 54px;
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #141414;
+  }
+
+  &__img-container {
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    border: 1px solid rgba(20, 20, 20, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
