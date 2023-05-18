@@ -17,7 +17,7 @@ export class ProjectsComponent implements OnInit {
     autoHeight: true,
     autoWidth: true,
     navText: ['prev', 'next'],
-    nav: true,
+    nav: false,
     responsive: {
       0: {
         items: 1,
@@ -30,6 +30,9 @@ export class ProjectsComponent implements OnInit {
       },
     },
   };
+
+  example = [];
+
   cards = [
     {
       image: 'assets/images/parliament.png',
@@ -92,9 +95,7 @@ export class ProjectsComponent implements OnInit {
 
   carousel: any;
 
-  ngOnInit(): void {
-    throw new Error('Method not implemented.');
-  }
+  ngOnInit(): void {}
 }
 
 
