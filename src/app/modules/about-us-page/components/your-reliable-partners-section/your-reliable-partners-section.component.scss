@@ -1,4 +1,5 @@
 .partners {
+  margin-top: 110px;
   &__container {
     &--firstheading {
       font-family: 'AvenirNextGeorgian-Bold';
@@ -24,10 +25,14 @@
   }
   &__img--container {
     &--grey {
+      // width: 1330px;
+      height: 549px;
+      background: #d9d9d9;
     }
 
     &--blue {
       background: #245aa3;
+      height: 662px;
 
       & p {
         font-family: 'AvenirNextGeorgian-Regular';
