@@ -1,22 +1,22 @@
 <section class="our-team-section">
-  <div class="heading--arrow flex">
-    <h1 class="our-team-section-heading">ჩვენი გუნდი</h1>
+  <div class="our-team-section__heading--arrow flex">
+    <h1 class="our-team-section__heading--arrow__heading">ჩვენი გუნდი</h1>
 
-    <div class="slider-arrow">
-      <button (click)="prev()" class="left--arrow cursor-pointer">
+    <div class="slider__arrow">
+      <button (click)="prev()" class="left__arrow cursor-pointer">
         <img src="assets/img/leftArrow.jpg" alt="" />
       </button>
 
-      <button (click)="next()" class="right-arrow cursor-pointer">
+      <button (click)="next()" class="right__arrow cursor-pointer">
         <img src="assets/img/rightArrow.jpg" alt="" />
       </button>
     </div>
   </div>
 
   <div class="slider mt-6">
-    <div class="slider-track" #sliderTrack>
-      <div class="slider-item" *ngFor="let item of sliderData">
-        <div class="cont--div left flex flex-col">
+    <div class="slider__track" #sliderTrack>
+      <div class="slider__item" *ngFor="let item of sliderData">
+        <div class="cont__div left flex flex-col">
           <div class="image--div">
             <img [src]="item.left.img" />
           </div>
@@ -27,7 +27,7 @@
             {{ item.left.title }}
           </div>
         </div>
-        <div class="cont--div middle flex flex-col">
+        <div class="cont__div middle flex flex-col">
           <div class="image--div">
             <img src="{{ item.middle.img }}" />
           </div>
@@ -38,7 +38,7 @@
             {{ item.middle.title }}
           </div>
         </div>
-        <div class="cont--div right flex flex-col">
+        <div class="cont__div right flex flex-col">
           <div class="image--div">
             <img src="{{ item.right.img }}" />
           </div>
@@ -49,7 +49,7 @@
             {{ item.right.title }}
           </div>
         </div>
-        <div class="cont--div last flex flex-col">
+        <div class="cont__div last flex flex-col">
           <div class="image--div">
             <img src="{{ item.last.img }}" />
           </div>
