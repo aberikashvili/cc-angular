@@ -25,6 +25,8 @@
   }
   &__img--container {
     &--first {
+      background: url('/assets/img/blue-bg.png') bottom center repeat-x;
+      height: 889px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -47,11 +49,6 @@
         justify-content: center;
         align-items: center;
       }
-    }
-
-    &--blue {
-      background: #245aa3;
-      height: 662px;
     }
   }
 }
