@@ -22,7 +22,7 @@
 .slide{
     display: flex;
     .aside__left{
-        margin-left:20px;   
+        margin-left: 174px;  
      p{
         font-family: 'AvenirNextGeorgian-bold';
         font-style: normal;
@@ -103,9 +103,6 @@
    }
 }
 
-
-
-
 .intro{
     display: flex;
     justify-content: space-between;
@@ -119,18 +116,16 @@
     }
 }
 
-::ng-deep{
-   .owl-carousel .owl-nav.disabled{
-      display: none;
-   }
+.wrapper{
+   width: 1600px;
+   height: 586px;
 }
 
-::ng-deep{
-  .owl-carousel .owl-stage{
-      display: flex;
-    justify-content: space-around;
-   }
-}
+
+
+
+
+
 
 
 
