@@ -18,8 +18,15 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, AwardsDeedsSectionComponent, MyPartnersSectionComponent, AboutUsSectionComponent,  NeedOurHelpSectionComponent, FooterComponent, AwardsDeedsSectionSecondComponent],
+  declarations: [
+    HomeComponent,
+    AwardsDeedsSectionComponent,
+    MyPartnersSectionComponent,
+    AboutUsSectionComponent,
+    NeedOurHelpSectionComponent,
+    FooterComponent,
+    AwardsDeedsSectionSecondComponent,
+  ],
   imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule],
-
 })
 export class HomeModule {}
