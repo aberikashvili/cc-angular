@@ -9,6 +9,7 @@ import { AboutUsSectionComponent } from './components/about-us-section/about-us-
 import { FooterComponent } from './components/footer/footer.component';
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
 import { AwardsDeedsSectionSecondComponent } from './components/awards-deeds-section-second/awards-deeds-section-second.component';
+import { YourReliablePartnersSectionComponent } from './components/your-reliable-partners-section/your-reliable-partners-section.component';
 
 const routes: Routes = [
   {
@@ -26,6 +27,7 @@ const routes: Routes = [
     NeedOurHelpSectionComponent,
     FooterComponent,
     AwardsDeedsSectionSecondComponent,
+    YourReliablePartnersSectionComponent,
   ],
   imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule],
 })

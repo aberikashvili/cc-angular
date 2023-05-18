@@ -1,0 +1,42 @@
+.partners {
+  &__container {
+    &--firstheading {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #141414;
+    }
+    &--secondheading {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #245aa3;
+      margin-top: 30px;
+    }
+  }
+  &__img--container {
+    &--grey {
+    }
+
+    &--blue {
+      background: #245aa3;
+
+      & p {
+        font-family: 'AvenirNextGeorgian-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170%;
+        color: #ffffff;
+      }
+    }
+  }
+}
