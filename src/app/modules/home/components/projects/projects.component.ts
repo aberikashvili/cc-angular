@@ -12,31 +12,29 @@ export class ProjectsComponent implements OnInit {
     autoplay: false,
     center: true,
     dots: false,
-    autoHeight: true,
-    autoWidth: true,
+    // autoHeight: true,
+    // autoWidth: true,
     navText: ['prev', 'next'],
     nav: false,
     items: 1,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 1,
-      },
-      1000: {
-        items: 1,
-      },
-    },
+    // responsive: {
+    //   0: {
+    //     items: 1,
+    //   },
+    //   600: {
+    //     items: 1,
+    //   },
+    //   1000: {
+    //     items: 1,
+    //   },
+    // },
   };
-
-  example = [];
 
   cards = [
     {
       image: 'assets/images/parliament.png',
       paragraph: 'დასრულებული',
-      title: 'ქუთაისის პარლამენტი',
+      title: 'ქუთაისის პარლამენტი 1',
       description: [
         'შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული',
         'ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი',
@@ -61,11 +59,10 @@ export class ProjectsComponent implements OnInit {
       ],
       text: 'შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს',
     },
-
     {
       image: 'assets/images/parliament.png',
       paragraph: 'დასრულებული',
-      title: 'ქუთაისის პარლამენტი',
+      title: 'ქუთაისის პარლამენტი 2',
       description: [
         'შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული',
         'ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი',
@@ -92,9 +89,5 @@ export class ProjectsComponent implements OnInit {
     },
   ];
 
-  carousel: any;
-
   ngOnInit(): void {}
 }
-
-

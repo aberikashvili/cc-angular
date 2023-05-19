@@ -1,136 +1,119 @@
-.projects{
-    font-family: 'AvenirNextGeorgian-Bold';
-    font-size: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 150%;
-    margin-left:160px;
-    color: #141414;
+.projects {
+  font-family: 'AvenirNextGeorgian-Bold';
+  font-size: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  margin-left: 160px;
+  color: #141414;
 }
 
-
-   ::ng-deep{
-    .owl-carousel .owl-item .img-parliament{
+::ng-deep {
+  .owl-carousel .owl-item .img-parliament {
     width: 925px;
     height: 586px;
     margin-left: 160px;
-    margin-top:27px;
-    background: linear-gradient( rgba(20, 20, 20, 0.1));
-    }
+    margin-top: 27px;
+    background: linear-gradient(rgba(20, 20, 20, 0.1));
+  }
 }
 
-.slide{
-    display: flex;
-    .box__left{
-        margin-left: 174px;  
-     p{
-        font-family: 'AvenirNextGeorgian-bold';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 150%;  
-        color: #F58634;
-        margin-top: 30px;
-     }   
-     h1{
-        font-family: 'AvenirNextGeorgian-Bold';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: 150%;
-        color: #141414;
-        margin-bottom: 16px;
-        margin-left: -134px;
-        }
-
-      h4{
-        font-family: 'AvenirNextGeorgian-Regular';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 150%;
-        color: #141414;
-        
-     } 
-     
-     h5{
-        font-family: 'AvenirNextGeorgian-Bold';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 150%;
-        margin-top: 32px;
-        color: #245AA3;
-     }
-    }  
-    .list-box{
-          display: flex;
-          flex-direction: row;
-          gap: 83px;
+.slide {
+  display: flex;
+  .box__left {
+    margin-left: 174px;
+    p {
+      font-family: 'AvenirNextGeorgian-bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 150%;
+      color: #f58634;
+      margin-top: 30px;
+    }
+    h1 {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 150%;
+      color: #141414;
+      margin-bottom: 16px;
+      margin-left: -134px;
     }
 
-    .box{
-      ul{
-         margin-left: -7px;
-      }
-      li{
-         font-family: 'AvenirNextGeorgian-Regular';
-         font-style: normal;
-         font-weight: 500;
-         font-size: 14px;
-         line-height: 150%;
-         margin-top:16px;
-      }
-      li::before{
-         content: "\2022";
-         color: #f58634;
-         margin: 0.5rem;
-         
-      }
-    }
-
-   h6{
-      width: 655px;
-      height: 42px; 
+    h4 {
       font-family: 'AvenirNextGeorgian-Regular';
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
-      line-height: 150%; 
-      margin-top:32px;
-      color: rgba(20, 20, 20, 0.6);
-      margin-bottom:50px;
-   }
-}
+      line-height: 150%;
+      color: #141414;
+    }
 
-.intro{
+    h5 {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 150%;
+      margin-top: 32px;
+      color: #245aa3;
+    }
+  }
+  .list-box {
     display: flex;
-    justify-content: space-between;
-    .button-container{
-      margin-right: 148px;
-      display: flex;
-      align-items: flex-end;
+    flex-direction: row;
+    gap: 83px;
+  }
+
+  .box {
+    ul {
+      margin-left: -7px;
     }
-    .left-arrow{
-      margin-right: 20px;
+    li {
+      font-family: 'AvenirNextGeorgian-Regular';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      margin-top: 16px;
     }
+    li::before {
+      content: '\2022';
+      color: #f58634;
+      margin: 0.5rem;
+    }
+  }
+
+  h6 {
+    width: 655px;
+    height: 42px;
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    margin-top: 32px;
+    color: rgba(20, 20, 20, 0.6);
+    margin-bottom: 50px;
+  }
 }
 
-.wrapper{
-   width: 1600px;
-   height: 586px;
+.intro {
+  display: flex;
+  justify-content: space-between;
+  .button-container {
+    margin-right: 148px;
+    display: flex;
+    align-items: flex-end;
+  }
+  .left-arrow {
+    margin-right: 20px;
+  }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.wrapper {
+  width: 1600px;
+  height: 586px;
+}
