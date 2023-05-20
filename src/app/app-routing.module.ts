@@ -22,6 +22,12 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/about-us-page/about-us-page.module').then((m) => m.AboutUsPageModule),
   },
+
+  // {
+  //   path: 'contact-us',
+  //   loadChildren: () => import('./modules/contact-us-page/contact-us-page-module').then((m)=>m.ContactUsPageModule)
+  // },
+
   {
     path: '**',
     pathMatch: 'full',
