@@ -1,0 +1,53 @@
+.title-box{
+    width: 1920px;
+    height: 654px;
+    background: rgba(36, 90, 163, 0.2);
+}
+h1{
+   margin:auto;
+   width: 30%;
+   font-family: 'AvenirNextGeorgian-Bold';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 150%;
+}
+
+.title{
+    margin: auto;
+    width: 52%;
+    font-family: 'AvenirNextGeorgian-regular';
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top:20px;
+h6{
+    margin-left:92px;
+}       
+}
+
+.form{
+    width: 1600px;
+    height: 628px;
+    background: #FFFFFF;
+    border:1px solid red;
+    margin-left:160px;
+}
+
+.form{
+    display: flex;
+    &__left{
+        width: 523px;
+        height: 628px;
+        background-color: #009688;    
+    }
+     &__right{
+        width: 1077px;
+        height: 628px;
+        background-color: burlywood;
+    }  
+}
+
+
+
+
