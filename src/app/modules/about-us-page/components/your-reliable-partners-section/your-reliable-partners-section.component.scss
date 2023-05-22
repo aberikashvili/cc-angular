@@ -1,7 +1,9 @@
 .partners {
   margin-top: 110px;
+
   &__container {
     padding-left: 160px;
+
     &--firstheading {
       font-family: 'AvenirNextGeorgian-Bold';
       font-style: normal;
@@ -13,6 +15,7 @@
       color: #141414;
       width: 1060px;
     }
+
     &--secondheading {
       font-family: 'AvenirNextGeorgian-Bold';
       font-style: normal;
@@ -25,6 +28,7 @@
       margin-top: 30px;
     }
   }
+
   &__img--container {
     &--first {
       background: url('/assets/img/blue-bg.png') bottom center repeat-x;
@@ -33,11 +37,13 @@
       justify-content: center;
       align-items: center;
       flex-direction: column;
+
       &--grey {
         width: 1330px;
         height: 549px;
         background: #d9d9d9;
       }
+
       & p {
         font-family: 'AvenirNextGeorgian-Regular';
         font-style: normal;
