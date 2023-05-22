@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ContactUsSectionComponent } from './contact-us-section.component';
+import { ContactUsSectionComponent } from './ContactUsSectionComponent';
 
 describe('ContactUsSectionComponent', () => {
   let component: ContactUsSectionComponent;
@@ -8,9 +8,8 @@ describe('ContactUsSectionComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactUsSectionComponent ]
-    })
-    .compileComponents();
+      declarations: [ContactUsSectionComponent],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(ContactUsSectionComponent);
     component = fixture.componentInstance;

@@ -39,13 +39,35 @@ h6{
     &__left{
         width: 523px;
         height: 628px;
-        background-color: #009688;    
+        background: #F58634;  
     }
      &__right{
         width: 1077px;
         height: 628px;
         background-color: burlywood;
     }  
+}
+
+.service{
+    margin-left:70px;
+    margin-top:203px;
+    &__addres{
+        color:#FFFFFF;
+        font-family: 'AvenirNextGeorgian-Regular';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 150%;
+        margin-top: 20px;
+    }
+    &__info{
+        color: #FFFFFF;
+        font-family: 'AvenirNextGeorgian-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+    }
 }
 
 
