@@ -31,4 +31,37 @@
     justify-content: center;
     align-items: center;
   }
+  &--main {
+    &--minicontainers {
+      &--div {
+        margin-top: 40px;
+
+        &--img {
+          width: 385px;
+          height: 244px;
+        }
+        &--stage {
+          font-family: 'AvenirNextGeorgian-Bold';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 150%;
+          display: flex;
+          align-items: center;
+          color: #f58634;
+          margin-top: 12px;
+        }
+        &--name {
+          font-family: 'Avenir Next Georgian';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 150%;
+          display: flex;
+          align-items: center;
+          color: #141414;
+        }
+      }
+    }
+  }
 }
