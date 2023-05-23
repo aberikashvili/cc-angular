@@ -1,17 +1,9 @@
-<button 
+<button
   [ngClass]="{ 'button--primary': isPrimary, 'button--secondary': isSecondary }"
-  [ngStyle]="{ 'min-width': customWidth}"
+  [ngStyle]="{ 'min-width': customWidth }"
   class="button"
-  (click)="onClick()">
+  [disabled]="isDisabled"
+  (click)="onClick()"
+>
   <ng-content></ng-content>
 </button>
-
-
-
-
-
-
-
-
-
-

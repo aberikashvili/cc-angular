@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, Input, Output,EventEmitter } from '@angular/core';
+import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
 export type ButtonType = 'primary' | 'secondary';
 
 @Component({
@@ -7,21 +7,26 @@ export type ButtonType = 'primary' | 'secondary';
   styleUrls: ['./button.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ButtonsComponent  {
+export class ButtonsComponent {
+  @Input() disabled: boolean = true;
   @Input() width?: string;
   @Input() type: ButtonType = 'primary';
   @Output() clicked = new EventEmitter();
+
+  get isDisabled(): boolean {
+    return this.disabled;
+  }
 
   get customWidth(): string | undefined {
     return this.width;
   }
 
   get isPrimary(): boolean {
-    return this.type==="primary";
+    return this.type === 'primary';
   }
-  
+
   get isSecondary(): boolean {
-    return this.type === "secondary";
+    return this.type === 'secondary';
   }
 
   onClick() {
