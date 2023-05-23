@@ -6,7 +6,8 @@
 }
 h1{
    margin:auto;
-   width: 19%;
+   width: 351px;
+   height: 54px;
    font-family: 'AvenirNextGeorgian-Bold';
    font-style: normal;
    font-weight: 700;
@@ -31,7 +32,6 @@ h6{
     width: 1600px;
     height: 628px;
     background: #FFFFFF;
-    border:1px solid red;
     margin-left:160px;
     position: relative;
     margin-top: -280px;
@@ -72,6 +72,12 @@ h6{
         font-size: 14px;
         line-height: 150%;
     }
+}
+.soc-media{
+    width: 176px;
+    height: 48px;
+    margin-top: 136px;
+    margin-left: 174px;
 }
 
 .form--container{
@@ -145,7 +151,10 @@ input{
 .button{
     margin-top: 40px;
     margin-left: 370px;
+    
 }
 
-
+.label-email{
+    font-size: 12px;
+}
 
