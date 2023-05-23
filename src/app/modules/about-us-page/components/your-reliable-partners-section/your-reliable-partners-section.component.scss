@@ -1,0 +1,64 @@
+.partners {
+  margin-top: 110px;
+
+  &__container {
+    padding-left: 160px;
+
+    &--firstheading {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #141414;
+      width: 1060px;
+    }
+
+    &--secondheading {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #245aa3;
+      margin-top: 30px;
+    }
+  }
+
+  &__img--container {
+    &--first {
+      background: url('/assets/img/blue-bg.png') bottom center repeat-x;
+      height: 889px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      &--grey {
+        width: 1330px;
+        height: 549px;
+        background: #d9d9d9;
+      }
+
+      & p {
+        font-family: 'AvenirNextGeorgian-Regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 170%;
+        color: #ffffff;
+        width: 1330px;
+        height: 240px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 60px;
+        margin-top: 40px;
+      }
+    }
+  }
+}
