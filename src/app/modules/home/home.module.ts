@@ -8,6 +8,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
 import { ContactUsSectionComponent } from '../contact-us-page/components/contact-us-section/contact-us-section.component';
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -23,6 +24,7 @@ const routes: Routes = [
     AboutUsSectionComponent,
     NeedOurHelpSectionComponent,
     ContactUsSectionComponent,
+    
   ],
   imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule],
 })
