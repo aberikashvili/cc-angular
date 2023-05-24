@@ -16,14 +16,11 @@
   src: url('/assets/fonts/avenir-georgian/AvenirNextGeorgian-Bold.otf') format('truetype');
 }
 
-@font-face {
-  font-family: 'AvenirNextGeorgian-Bold';
-  src: url('/assets/fonts/avenir-georgian/AvenirNextGeorgian-Bold.otf') format('truetype');
-}
-body {
-  display: flex;
-  justify-content: center;
-}
+
+// body {
+//   display: flex;
+//   justify-content: center;
+// }
 
 *:focus {
   outline: none;
