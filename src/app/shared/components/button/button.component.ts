@@ -8,7 +8,7 @@ export type ButtonType = 'primary' | 'secondary';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonsComponent {
-  @Input() disabled: boolean = true;
+  @Input() disabled: boolean = false;
   @Input() width?: string;
   @Input() type: ButtonType = 'primary';
   @Output() clicked = new EventEmitter();
