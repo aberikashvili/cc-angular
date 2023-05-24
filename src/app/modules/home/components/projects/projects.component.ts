@@ -6,28 +6,15 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
-export class ProjectsComponent implements OnInit {
+export class ProjectsComponent  {
   customOptions: OwlOptions = {
     loop: false,
     autoplay: false,
     center: true,
     dots: false,
-    // autoHeight: true,
-    // autoWidth: true,
     navText: ['prev', 'next'],
     nav: false,
     items: 1,
-    // responsive: {
-    //   0: {
-    //     items: 1,
-    //   },
-    //   600: {
-    //     items: 1,
-    //   },
-    //   1000: {
-    //     items: 1,
-    //   },
-    // },
   };
 
   cards = [
@@ -89,5 +76,5 @@ export class ProjectsComponent implements OnInit {
     },
   ];
 
-  ngOnInit(): void {}
+  
 }
