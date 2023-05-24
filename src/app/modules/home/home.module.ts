@@ -6,10 +6,8 @@ import { MyPartnersSectionComponent } from './components/my-partners-section/my-
 import { NeedOurHelpSectionComponent } from './components/need-our-help-section/need-our-help-section.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
-import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
 import { ContactUsSectionComponent } from '../contact-us-page/components/contact-us-section/contact-us-section.component';
-import { FooterComponent } from 'src/app/shared/components/footer/footer.component';
-import { AwardsDeedsSectionSecondComponent } from '../about-us-page/components/awards-deeds-section-second/awards-deeds-section-second.component';
+import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
 const routes: Routes = [
   {
     path: '',
@@ -24,8 +22,6 @@ const routes: Routes = [
     MyPartnersSectionComponent,
     AboutUsSectionComponent,
     NeedOurHelpSectionComponent,
-    FooterComponent,
-    AwardsDeedsSectionSecondComponent,
     ContactUsSectionComponent,
   ],
   imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule],
