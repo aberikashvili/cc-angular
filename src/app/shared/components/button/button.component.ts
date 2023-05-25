@@ -8,14 +8,15 @@ export type ButtonType = 'primary' | 'secondary';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ButtonsComponent {
-  @Input() disabled: boolean = false;
+  @Input() dim: boolean = false;
   @Input() width?: string;
   @Input() type: ButtonType = 'primary';
   @Output() clicked = new EventEmitter();
 
-  get isDisabled(): boolean {
-    return this.disabled;
+  get isDim(): boolean {
+    return this.dim;
   }
+
 
   get customWidth(): string | undefined {
     return this.width;

@@ -6,6 +6,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./our-projects.component.scss'],
 })
 export class OurProjectsComponent {
+  filterButtons: { text: string; width: string; isDim: boolean }[] = [
+    { text: 'ყველა პროექტი', width: '182px', isDim: false },
+    { text: 'მიმდინარე', width: '182px', isDim: true },
+    { text: 'დასრულებული', width: '140px', isDim: true },
+  ];
+
+  filterChanged(buttonItem: string) {
+    const clicked = this.filterButtons.find((item) => item.text === buttonItem);
+    if (clicked) {
+      this.filterButtons.forEach((item) => {
+        item.isDim = true;
+      });
+      clicked.isDim = false;
+    }
+  }
+
   List: any[] = [];
 
   ngOnInit() {
