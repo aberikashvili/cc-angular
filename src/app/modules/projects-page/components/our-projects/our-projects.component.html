@@ -20,7 +20,27 @@
   </div>
   <div class="our__projects--main flex flex-row justify-between">
     <div
-      class="our__projects--main--minicontainers flex flex-row gap-5"
+      class="our__projects--main--minicontainers flex gap-5"
+      *ngFor="let item of getList()"
+    >
+      <div class="our__projects--main--minicontainers--div flex flex-col">
+        <img
+          class="our__projects--main--minicontainers--div--img"
+          [src]="item.img"
+          alt=""
+        />
+        <div class="our__projects--main--minicontainers--div--stage">
+          {{ item.stage }}
+        </div>
+        <div class="our__projects--main--minicontainers--div--name">
+          {{ item.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="our__projects--main flex flex-row justify-between">
+    <div
+      class="our__projects--main--minicontainers flex gap-5"
       *ngFor="let item of getList()"
     >
       <div class="our__projects--main--minicontainers--div flex flex-col">
