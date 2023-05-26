@@ -20,6 +20,11 @@ export class OurProjectsComponent {
       });
       clicked.isDim = false;
     }
+    const filterParameters = this.List;
+    const filteredList = this.List.filter((item) => {
+      return filterParameters.some((param) => item[param] !== undefined);
+    });
+    console.log(filteredList);
   }
 
   List: any[] = [];
@@ -52,28 +57,6 @@ export class OurProjectsComponent {
           name: 'ქუთაისის პარლამენტი',
         },
       },
-      // {
-      //   first: {
-      //     img: 'assets/img/parlament.jpg',
-      //     stage: 'დასრულებული',
-      //     name: 'ქუთაისის პარლამენტი',
-      //   },
-      //   second: {
-      //     img: 'assets/img/parlament.jpg',
-      //     stage: 'დასრულებული',
-      //     name: 'ქუთაისის პარლამენტი',
-      //   },
-      //   third: {
-      //     img: 'assets/img/parlament.jpg',
-      //     stage: 'დასრულებული',
-      //     name: 'ქუთაისის პარლამენტი',
-      //   },
-      //   fourth: {
-      //     img: 'assets/img/parlament.jpg',
-      //     stage: 'დასრულებული',
-      //     name: 'ქუთაისის პარლამენტი',
-      //   },
-      // },
     ];
   }
 }
