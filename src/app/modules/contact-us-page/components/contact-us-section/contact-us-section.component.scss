@@ -4,6 +4,9 @@
     background: rgba(36, 90, 163, 0.2);
     
 }
+.container{
+    display: flex;
+}
 h1{
    margin:auto;
    width: 351px;
@@ -13,6 +16,7 @@ h1{
    font-weight: 700;
    font-size: 36px;
    line-height: 150%;
+   margin-top: 180px;
 }
 
 .title{
