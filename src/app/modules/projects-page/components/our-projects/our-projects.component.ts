@@ -6,57 +6,60 @@ import { Component } from '@angular/core';
   styleUrls: ['./our-projects.component.scss'],
 })
 export class OurProjectsComponent {
-  filterButtons: { text: string; width: string; isDim: boolean }[] = [
-    { text: 'ყველა პროექტი', width: '182px', isDim: false },
-    { text: 'მიმდინარე', width: '182px', isDim: true },
-    { text: 'დასრულებული', width: '140px', isDim: true },
+  filterMode = 'all';
+
+  filterButtons: { text: string; categoryId: string; width: string; isDim: boolean }[] = [
+    { categoryId: 'all', text: 'ყველა პროექტი', width: '182px', isDim: false },
+    { categoryId: 'onGoing', text: 'მიმდინარე', width: '182px', isDim: true },
+    { categoryId: 'finished', text: 'დასრულებული', width: '140px', isDim: true },
   ];
 
   filterChanged(buttonItem: string) {
-    const clicked = this.filterButtons.find((item) => item.text === buttonItem);
+    const clicked = this.filterButtons.find((item) => item.categoryId === buttonItem);
     if (clicked) {
       this.filterButtons.forEach((item) => {
         item.isDim = true;
       });
       clicked.isDim = false;
     }
-    const filterParameters = this.List;
-    const filteredList = this.List.filter((item) => {
-      return filterParameters.some((param) => item[param] !== undefined);
-    });
-    console.log(filteredList);
+    this.filterMode == buttonItem;
   }
 
-  List: any[] = [];
+  List: any[] = [
+    {
+      img: 'assets/img/parlament.jpg',
+      stage: 'დასრულებული',
+      name: 'ქუთაისის პარლამენტი',
+      category: 'onGoing',
+    },
+    {
+      img: 'assets/img/parlament.jpg',
+      stage: 'დასრულებული',
+      name: 'ქუთაისის პარლამენტი',
+      category: 'onGoing',
+    },
+    {
+      img: 'assets/img/parlament.jpg',
+      stage: 'დასრულებული',
+      name: 'ქუთაისის პარლამენტი',
+      category: 'onGoing',
+    },
+    {
+      img: 'assets/img/parlament.jpg',
+      stage: 'დასრულებული',
+      name: 'ქუთაისის პარლამენტი',
+      category: 'finished',
+    },
+  ];
 
   ngOnInit() {
     this.getList();
   }
 
   getList() {
-    this.List = [
-      {
-        first: {
-          img: 'assets/img/parlament.jpg',
-          stage: 'დასრულებული',
-          name: 'ქუთაისის პარლამენტი',
-        },
-        second: {
-          img: 'assets/img/parlament.jpg',
-          stage: 'დასრულებული',
-          name: 'ქუთაისის პარლამენტი',
-        },
-        third: {
-          img: 'assets/img/parlament.jpg',
-          stage: 'დასრულებული',
-          name: 'ქუთაისის პარლამენტი',
-        },
-        fourth: {
-          img: 'assets/img/parlament.jpg',
-          stage: 'დასრულებული',
-          name: 'ქუთაისის პარლამენტი',
-        },
-      },
-    ];
+    if (this.filterMode === 'all') {
+      return this.List;
+    }
+    return this.List.filter((listItem) => listItem.category === this.filterMode);
   }
 }

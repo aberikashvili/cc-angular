@@ -1,5 +1,5 @@
 <section class="our__projects">
-  <div class="firstdiv flex justify-between">
+  <div class="iv flex justify-between">
     <div class="our__projects--container">
       <div class="our__projects--container--heading">ჩვენი პროექტები</div>
       <div class="our__projects--container--text">
@@ -12,128 +12,28 @@
       <app-button
         *ngFor="let filterButton of filterButtons"
         [dim]="filterButton.isDim"
-        (click)="filterChanged(filterButton.text)"
+        (click)="filterChanged(filterButton.categoryId)"
         [width]="filterButton.width"
         >{{ filterButton.text }}</app-button
       >
-      <!-- <app-button width="182px" type="primary">ყველა პროექტი</app-button>
-      <app-button width="144px" type="primary">მიმდინარე</app-button>
-      <app-button width="175px" type="primary">დასრულებული</app-button> -->
     </div>
   </div>
-  <div class="our__projects--main">
+  <div class="our__projects--main flex flex-row justify-between">
     <div
       class="our__projects--main--minicontainers flex flex-row gap-5"
-      *ngFor="let item of List"
+      *ngFor="let item of getList()"
     >
       <div class="our__projects--main--minicontainers--div flex flex-col">
         <img
           class="our__projects--main--minicontainers--div--img"
-          [src]="item.first.img"
+          [src]="item.img"
           alt=""
         />
         <div class="our__projects--main--minicontainers--div--stage">
-          {{ item.first.stage }}
+          {{ item.stage }}
         </div>
         <div class="our__projects--main--minicontainers--div--name">
-          {{ item.first.name }}
-        </div>
-      </div>
-      <div class="our__projects--main--minicontainers--div flex flex-col">
-        <img
-          class="our__projects--main--minicontainers--div--img"
-          [src]="item.first.img"
-          alt=""
-        />
-        <div class="our__projects--main--minicontainers--div--stage">
-          {{ item.first.stage }}
-        </div>
-        <div class="our__projects--main--minicontainers--div--name">
-          {{ item.first.name }}
-        </div>
-      </div>
-      <div class="our__projects--main--minicontainers--div flex flex-col">
-        <img
-          class="our__projects--main--minicontainers--div--img"
-          [src]="item.first.img"
-          alt=""
-        />
-        <div class="our__projects--main--minicontainers--div--stage">
-          {{ item.first.stage }}
-        </div>
-        <div class="our__projects--main--minicontainers--div--name">
-          {{ item.first.name }}
-        </div>
-      </div>
-      <div class="our__projects--main--minicontainers--div flex flex-col">
-        <img
-          class="our__projects--main--minicontainers--div--img"
-          [src]="item.first.img"
-          alt=""
-        />
-        <div class="our__projects--main--minicontainers--div--stage">
-          {{ item.first.stage }}
-        </div>
-        <div class="our__projects--main--minicontainers--div--name">
-          {{ item.first.name }}
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="our__projects--main--minicontainers mb-40 flex flex-row gap-5"
-      *ngFor="let item of List"
-    >
-      <div class="our__projects--main--minicontainers--div flex flex-col">
-        <img
-          class="our__projects--main--minicontainers--div--img"
-          [src]="item.first.img"
-          alt=""
-        />
-        <div class="our__projects--main--minicontainers--div--stage">
-          {{ item.first.stage }}
-        </div>
-        <div class="our__projects--main--minicontainers--div--name">
-          {{ item.first.name }}
-        </div>
-      </div>
-      <div class="our__projects--main--minicontainers--div flex flex-col">
-        <img
-          class="our__projects--main--minicontainers--div--img"
-          [src]="item.first.img"
-          alt=""
-        />
-        <div class="our__projects--main--minicontainers--div--stage">
-          {{ item.first.stage }}
-        </div>
-        <div class="our__projects--main--minicontainers--div--name">
-          {{ item.first.name }}
-        </div>
-      </div>
-      <div class="our__projects--main--minicontainers--div flex flex-col">
-        <img
-          class="our__projects--main--minicontainers--div--img"
-          [src]="item.first.img"
-          alt=""
-        />
-        <div class="our__projects--main--minicontainers--div--stage">
-          {{ item.first.stage }}
-        </div>
-        <div class="our__projects--main--minicontainers--div--name">
-          {{ item.first.name }}
-        </div>
-      </div>
-      <div class="our__projects--main--minicontainers--div flex flex-col">
-        <img
-          class="our__projects--main--minicontainers--div--img"
-          [src]="item.first.img"
-          alt=""
-        />
-        <div class="our__projects--main--minicontainers--div--stage">
-          {{ item.first.stage }}
-        </div>
-        <div class="our__projects--main--minicontainers--div--name">
-          {{ item.first.name }}
+          {{ item.name }}
         </div>
       </div>
     </div>
