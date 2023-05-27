@@ -10,8 +10,8 @@ export class OurProjectsComponent {
 
   filterButtons: { text: string; categoryId: string; width: string; isDim: boolean }[] = [
     { categoryId: 'all', text: 'ყველა პროექტი', width: '182px', isDim: false },
-    { categoryId: 'onGoing', text: 'მიმდინარე', width: '182px', isDim: true },
-    { categoryId: 'finished', text: 'დასრულებული', width: '140px', isDim: true },
+    { categoryId: 'onGoing', text: 'მიმდინარე', width: '144px', isDim: true },
+    { categoryId: 'finished', text: 'დასრულებული', width: '175px', isDim: true },
   ];
 
   filterChanged(buttonItem: string) {
