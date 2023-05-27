@@ -6,4 +6,10 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  constructor(private _router: Router) { }
+
+  navigateToFirst() {
+    this._router.navigate(['contact-us'])
+  }
+}

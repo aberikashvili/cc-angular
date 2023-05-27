@@ -11,7 +11,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ContactUsPageComponent,ContactUsSectionComponent],
+  declarations: [ContactUsPageComponent,],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
 export class ContactUsPageModule {}
