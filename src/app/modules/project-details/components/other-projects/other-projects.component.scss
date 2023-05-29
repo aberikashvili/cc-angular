@@ -1,5 +1,7 @@
 .our-team-section {
   margin-top: 200px;
+  padding-left: 160px;
+  padding-right: 160px;
 
   &__heading--arrow {
     justify-content: space-between;
@@ -62,16 +64,13 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 150%;
-  text-align: center;
   color: #141414;
 }
 .title {
-  font-family: 'AvenirNextGeorgian-Regular';
+  // font-family: 'AvenirNextGeorgian-Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
-  text-align: center;
   color: #f58634;
 }
-
