@@ -8,7 +8,7 @@ import { FilterMode } from './enums';
 })
 export class OurProjectsComponent {
   selectedFilter: FilterMode = FilterMode.All;
-  filterMode:FilterMode = 'all';
+  filterMode = 'all';
 
   filterButtons: { text: string; categoryId: string; width: string; isDim: boolean }[] = [
     { categoryId: 'all', text: 'ყველა პროექტი', width: '182px', isDim: false },
