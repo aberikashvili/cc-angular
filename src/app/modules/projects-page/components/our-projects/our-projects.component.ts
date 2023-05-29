@@ -52,10 +52,6 @@ export class OurProjectsComponent {
     },
   ];
 
-  ngOnInit() {
-    this.getList();
-  }
-
   getList() {
     if (this.filterMode === 'all') {
       return this.List;
