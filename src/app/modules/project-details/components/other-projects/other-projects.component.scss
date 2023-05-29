@@ -7,9 +7,9 @@
     justify-content: space-between;
 
     &__heading {
-      width: 480px;
+      width: 382px;
       height: 54px;
-      font-family: 'AvenirNextGeorgian-Bold';
+      // font-family: 'AvenirNextGeorgian-Bold';
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
@@ -55,7 +55,7 @@
 }
 .image--div img {
   width: 385px;
-  height: 385px;
+  height: 244px;
   max-width: max-content !important;
 }
 .name {
@@ -67,7 +67,6 @@
   color: #141414;
 }
 .title {
-  // font-family: 'AvenirNextGeorgian-Regular';
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
