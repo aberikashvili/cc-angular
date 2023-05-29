@@ -22,6 +22,9 @@ const routes: Routes = [
     loadChildren: () =>
       import('./modules/about-us-page/about-us-page.module').then((m) => m.AboutUsPageModule),
   },
+
+  
+
   {
     path: 'projects',
     loadChildren: () =>
