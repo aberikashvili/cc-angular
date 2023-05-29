@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FilterMode } from './enums';
 
 @Component({
   selector: 'app-our-projects',
@@ -6,7 +7,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./our-projects.component.scss'],
 })
 export class OurProjectsComponent {
-  filterMode = 'all';
+  selectedFilter: FilterMode = FilterMode.All;
+  filterMode:FilterMode = 'all';
 
   filterButtons: { text: string; categoryId: string; width: string; isDim: boolean }[] = [
     { categoryId: 'all', text: 'ყველა პროექტი', width: '182px', isDim: false },
