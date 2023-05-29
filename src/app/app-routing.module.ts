@@ -23,7 +23,7 @@ const routes: Routes = [
       import('./modules/about-us-page/about-us-page.module').then((m) => m.AboutUsPageModule),
   },
   {
-    path: 'projects-page',
+    path: 'projects',
     loadChildren: () =>
       import('./modules/projects-page/projects-page.module').then((m) => m.ProjectsPageModule),
   },
