@@ -12,7 +12,7 @@ import { OwlOptions,} from 'ngx-owl-carousel-o';
   styleUrls: ['./services.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ServicesComponent implements AfterViewInit {
+export class ServicesComponent{
   customOptions: OwlOptions = {
     loop: false,
     mouseDrag: true,
@@ -37,11 +37,8 @@ export class ServicesComponent implements AfterViewInit {
       },
     },
     
-  };
-
-services: any;
+  };  
   
-  ngAfterViewInit(): void {}
   cards = [ 
     {
       title: 'სუსტი დენები',
