@@ -1,4 +1,5 @@
 import { Component, ChangeDetectionStrategy, Input, Output, EventEmitter } from '@angular/core';
+
 export type ButtonType = 'primary' | 'secondary';
 
 @Component({
@@ -16,7 +17,6 @@ export class ButtonsComponent {
   get isDim(): boolean {
     return this.dim;
   }
-
 
   get customWidth(): string | undefined {
     return this.width;
