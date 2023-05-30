@@ -23,6 +23,11 @@ const routes: Routes = [
       import('./modules/about-us-page/about-us-page.module').then((m) => m.AboutUsPageModule),
   },
   {
+    path: 'projects',
+    loadChildren: () =>
+      import('./modules/projects-page/projects-page.module').then((m) => m.ProjectsPageModule),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '/home',

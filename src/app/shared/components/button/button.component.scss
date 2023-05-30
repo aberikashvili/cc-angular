@@ -1,26 +1,34 @@
 .button {
-    min-width: 195px;
-    height: 48px;
-    border: 1px solid;
-    border-radius: 100px;
-    color: white;
-    font-size: 18px;
-    line-height: 21px;
-    font-family: 'AvenirNextGeorgian-Regular';
-    text-transform: uppercase;
-    font-variant: all-petite-caps;
-    
-  
-    &--primary {
-      background-color: #F58634;
-    }
-  
-    &--secondary {
-      background-color: #245AA3;
-    }
+  height: 48px;
+  border: 1px solid;
+  border-radius: 100px;
+  color: white;
+  font-size: 18px;
+  line-height: 21px;
+  font-family: 'AvenirNextGeorgian-Regular';
+  text-transform: uppercase;
+  font-variant: all-petite-caps;
+  padding-left: 14px, 28px, 14px, 28px;
+
+  &--dim {
+    background: rgba(20, 20, 20, 0.3) !important;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
   }
 
+  &--primary {
+    background-color: #f58634;
+  }
 
+  &--secondary {
+    background-color: #245aa3;
+  }
 
-
-
+  &:disabled {
+    background: rgba(20, 20, 20, 0.3);
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+}

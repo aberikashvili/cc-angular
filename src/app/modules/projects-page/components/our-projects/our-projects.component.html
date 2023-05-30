@@ -1,0 +1,61 @@
+<section class="our__projects">
+  <div class="firstdiv flex justify-between">
+    <div class="our__projects--container">
+      <div class="our__projects--container--heading">ჩვენი პროექტები</div>
+      <div class="our__projects--container--text">
+        შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+        ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
+        წარუდგინონ შემფასებელს
+      </div>
+    </div>
+    <div class="our__projects--buttons flex gap-3">
+      <app-button
+        *ngFor="let filterButton of filterButtons"
+        [dim]="filterButton.isDim"
+        (click)="filterChanged(filterButton.categoryId)"
+        [width]="filterButton.width"
+        >{{ filterButton.text }}</app-button
+      >
+    </div>
+  </div>
+  <div class="our__projects--main flex flex-row gap-5">
+    <div
+      class="our__projects--main--minicontainers flex gap-5"
+      *ngFor="let item of getList()"
+    >
+      <div class="our__projects--main--minicontainers--div flex flex-col">
+        <img
+          class="our__projects--main--minicontainers--div--img"
+          [src]="item.img"
+          alt=""
+        />
+        <div class="our__projects--main--minicontainers--div--stage">
+          {{ item.stage }}
+        </div>
+        <div class="our__projects--main--minicontainers--div--name">
+          {{ item.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="our__projects--main flex flex-row gap-5">
+    <div
+      class="our__projects--main--minicontainers flex gap-5"
+      *ngFor="let item of getList()"
+    >
+      <div class="our__projects--main--minicontainers--div flex flex-col">
+        <img
+          class="our__projects--main--minicontainers--div--img"
+          [src]="item.img"
+          alt=""
+        />
+        <div class="our__projects--main--minicontainers--div--stage">
+          {{ item.stage }}
+        </div>
+        <div class="our__projects--main--minicontainers--div--name">
+          {{ item.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
