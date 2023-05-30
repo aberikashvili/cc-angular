@@ -28,6 +28,13 @@ const routes: Routes = [
       import('./modules/projects-page/projects-page.module').then((m) => m.ProjectsPageModule),
   },
   {
+    path: 'other-projects',
+    loadChildren: () =>
+      import('./modules/project-details/project-details.module').then(
+        (m) => m.ProjectDetailsModule
+      ),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '/home',
