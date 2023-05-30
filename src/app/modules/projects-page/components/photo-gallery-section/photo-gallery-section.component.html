@@ -2,16 +2,16 @@
     <div class="title">
         <h1 class="title__h1">ფოტო გალერეა</h1>
     </div>
-   <owl-carousel-o #carousel [options]="customOptions">
+    <owl-carousel-o #carousel [options]="customOptions">
     <ng-template carouselSlide [option]="OwlOptions" *ngFor="let item of card">
     <div class="container">
-                <div class="container__image"></div>
+                <div class="container__image">{{item.image}}</div>
                 <div class="boxes">
                     <div class="boxes__up"></div>
                     <div class="boxes__down"></div>
                 </div>
                 <div class="container__big"></div>
-                <div class="container__image2"></div>    
+                <div class="container__image2"></div> 
     </div>
     </ng-template>
     </owl-carousel-o>

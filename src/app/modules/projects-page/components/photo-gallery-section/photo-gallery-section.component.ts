@@ -13,36 +13,25 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class PhotoGallerySectionComponent implements AfterViewInit {
   customOptions: OwlOptions = {
-    loop: true,
+    loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
     dots: false,
     navSpeed: 700,
     navText: ['prev', 'next'],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 2,
-      },
-      740: {
-        items: 3,
-      },
-      940: {
-        items: 4,
-      },
-    },
+    items: 1,
     nav: true,
   };
 
   card = [
     {
-      image:'assets/images/header-logo.png',
-    }
-    
-  ]
+      image: 'assets/images/header-logo.png',
+    },
+    {
+      image: 'assets/images/header-logo.png',
+    },
+  ];
 
   ngAfterViewInit(): void {}
 }
