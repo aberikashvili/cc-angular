@@ -1,0 +1,26 @@
+.smart {
+  &__container {
+    &--heading {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #141414;
+      width: 1060px;
+    }
+    &--title {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #f58634;
+      width: 164px;
+    }
+  }
+}
