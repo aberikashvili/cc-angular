@@ -19,9 +19,10 @@ export class PhotoGallerySectionComponent implements AfterViewInit {
     pullDrag: false,
     dots: false,
     navSpeed: 700,
-    navText: ['prev', 'next'],
-    items: 1,
-    nav: true,
+    navText: ['', ''],
+    items:1,
+    nav: false,
+    
   };
 
   card = [
