@@ -20,9 +20,6 @@ h1{
     line-height: 150%;
     color: #141414;   
 }
-
-
-
 p{
     width: 925px;
     height: 72px;
@@ -34,6 +31,13 @@ p{
     color: #141414;
     margin-top: 16px;
 }
+}
+
+hr{
+    width: 1060px;
+    height: 1px;
+    margin-top:74px;
+    
 }
 
     .box-h1{
@@ -90,5 +94,6 @@ p{
     display: flex;
     flex-direction: row;
     gap: 110px;
+    margin-top: 50px;
 }
 
