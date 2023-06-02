@@ -29,7 +29,7 @@ export class OurProjectsComponent {
     }
     this.filterMode == buttonItem;
     if (clicked?.categoryId === 'finished') {
-      this.router.navigate(['/other-projects']);
+      this.router.navigate(['/project/:']);
     }
   }
 
