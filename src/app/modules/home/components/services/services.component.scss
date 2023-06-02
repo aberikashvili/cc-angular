@@ -11,13 +11,12 @@
 }
 
 .carousel-container {
-  
   margin-left: 160px;
 }
 
 section {
   padding-left: 160px;
-  font-family: "AvenirNextGeorgian";
+  font-family: 'AvenirNextGeorgian';
   position: relative;
 }
 
@@ -34,19 +33,18 @@ section {
   color: #141414;
 }
 
-.services{
-  &__paragraph{
+.services {
+  &__paragraph {
     width: 790px;
-  height: 42px;
-  margin-bottom: 15px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 150%;
-  color: rgba(20, 20, 20, 0.6);
+    height: 42px;
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(20, 20, 20, 0.6);
   }
 }
-
 
 .card {
   display: flex;
@@ -68,7 +66,7 @@ ul {
 h2 {
   font-size: 16px;
   margin-left: 19px;
-  font-family: "AvenirNextGeorgian-Bold";
+  font-family: 'AvenirNextGeorgian-Bold';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -78,7 +76,7 @@ h2 {
 
 li {
   font-size: 14px;
-  font-family: "AvenirNextGeorgian-Regular";
+  font-family: 'AvenirNextGeorgian-Regular';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -87,7 +85,7 @@ li {
 }
 
 li::before {
-  content: "\2022";
+  content: '\2022';
   color: #f58634;
   margin: 1rem;
 }
@@ -95,6 +93,7 @@ li::before {
 ul:hover li::before {
   color: white;
 }
+
 .card:hover {
   background-color: #f58634;
   color: white;
@@ -113,37 +112,19 @@ ul:hover li::before {
   margin-right: 155px;
 }
 
-.left-arrow{
+.left-arrow {
   margin-right: 20px;
 }
 
 ::ng-deep {
   .owl-stage {
     width: 2200px !important;
-    margin-left:20px !important; 
+    margin-left: 20px !important;
   }
 
-  .owl-item{
+  .owl-item {
     margin-right: 40px !important;
     width: auto !important;
   }
 }
-
-.bg-vector {
-  background: url('/assets/img/ourservicesVector.jpg');
-    width: 370px;
-    height: 649px;
-    position: absolute;
-    margin-left: -14.53%;
-    margin-right: 80.73%;
-    margin-top: 11.47%;
-    margin-bottom: 76.51%;
-}
-
-
-
-
-  
-
-  
 

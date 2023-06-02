@@ -1,10 +1,5 @@
-import {
-  AfterViewInit,
-  ChangeDetectionStrategy,
-  Component,
-  
-} from '@angular/core';
-import { OwlOptions,} from 'ngx-owl-carousel-o';
+import { AfterViewInit, ChangeDetectionStrategy, Component } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-services',
@@ -12,7 +7,7 @@ import { OwlOptions,} from 'ngx-owl-carousel-o';
   styleUrls: ['./services.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ServicesComponent{
+export class ServicesComponent {
   customOptions: OwlOptions = {
     loop: false,
     mouseDrag: true,
@@ -21,7 +16,7 @@ export class ServicesComponent{
     dots: false,
     nav: false,
     navSpeed: 700,
-    navText:['',''],
+    navText: ['', ''],
     responsive: {
       0: {
         items: 1,
@@ -36,10 +31,9 @@ export class ServicesComponent{
         items: 4,
       },
     },
-    
-  };  
-  
-  cards = [ 
+  };
+
+  cards = [
     {
       title: 'სუსტი დენები',
       services: [
@@ -90,8 +84,5 @@ export class ServicesComponent{
         'სისტემების კომპიუტერული მართვა (BMS)',
       ],
     },
-    ]
+  ];
 }
-
-
-
