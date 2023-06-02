@@ -4,11 +4,13 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 
 import { ButtonsComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
+import { WidgetComponent } from './components/widget/widget.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [ButtonsComponent, HeaderComponent, FooterComponent],
+  declarations: [ButtonsComponent, HeaderComponent, WidgetComponent,FooterComponent],
   imports: [CommonModule, CarouselModule],
-  exports: [CommonModule, CarouselModule, ButtonsComponent, HeaderComponent, FooterComponent],
+  exports: [CommonModule, ButtonsComponent, HeaderComponent, WidgetComponent,CarouselModule,FooterComponent],
 })
-export class SharedModule {}
+export class SharedModule {
+}
