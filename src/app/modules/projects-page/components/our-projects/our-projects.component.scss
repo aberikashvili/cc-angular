@@ -1,8 +1,6 @@
 .our__projects {
-  padding-top: 100px;
-  padding-left: 160px;
-  padding-bottom: 203px;
-  padding-right: 160px;
+  padding: 100px 160px 203px 160px;
+
   &--container {
     &--heading {
       font-family: 'AvenirNextGeorgian-Bold';
@@ -28,10 +26,12 @@
       margin-top: 20px;
     }
   }
+
   &--buttons {
     justify-content: center;
     align-items: center;
   }
+
   &--main {
     &--minicontainers {
       &--div {

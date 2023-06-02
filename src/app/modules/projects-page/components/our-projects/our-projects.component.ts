@@ -8,9 +8,10 @@ import { Router } from '@angular/router';
   styleUrls: ['./our-projects.component.scss'],
 })
 export class OurProjectsComponent {
-  constructor(public router: Router) {}
   selectedFilter: FilterMode = FilterMode.All;
   filterMode = 'all';
+
+  constructor(private router: Router) {}
 
   filterButtons: { text: string; categoryId: string; width: string; isDim: boolean }[] = [
     { categoryId: 'all', text: 'ყველა პროექტი', width: '182px', isDim: false },
