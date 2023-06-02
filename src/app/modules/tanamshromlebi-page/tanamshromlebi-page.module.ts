@@ -15,4 +15,4 @@ const routes: Routes = [
   declarations: [TanamshromlebiPageComponent, TanamshromlebiOurTeamComponent],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
-export class ProjectsPageModule {}
+export class TanamshromlebiPageModule {}
