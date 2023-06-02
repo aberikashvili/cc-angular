@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { FilterMode } from './enums';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-our-projects',
@@ -9,6 +10,8 @@ import { FilterMode } from './enums';
 export class OurProjectsComponent {
   selectedFilter: FilterMode = FilterMode.All;
   filterMode = 'all';
+
+  constructor(private router: Router) {}
 
   filterButtons: { text: string; categoryId: string; width: string; isDim: boolean }[] = [
     { categoryId: 'all', text: 'ყველა პროექტი', width: '182px', isDim: false },
@@ -25,6 +28,9 @@ export class OurProjectsComponent {
       clicked.isDim = false;
     }
     this.filterMode == buttonItem;
+    if (clicked?.categoryId === 'finished') {
+      this.router.navigate(['/project/:']);
+    }
   }
 
   List: any[] = [
