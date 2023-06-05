@@ -1,1 +1,19 @@
-<p>activity-section works!</p>
+<section class="activity">
+  <h1 class="activity__title">საქმიანობა</h1>
+  <p class="activity__paragraph">
+    ჩვენთან შეძენილი პროდუქცია მომხმარებელს სათანადო სერვისის მეშვეობით
+    ხანგრძლივი,<br />
+    მრავალწლიანი პერიოდის განმავლობაში შეუქმნის ჯანსაღ და კომფორტულ გარემოს.
+  </p>
+  <div class="cards-container">
+    <div class="card-box" *ngFor="let item of cards">
+      <div class="card">
+        <ul>
+          <h1></h1>
+          <h2>{{ item.title }}</h2>
+          <li *ngFor="let serviceItem of item.services">{{ serviceItem }}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>

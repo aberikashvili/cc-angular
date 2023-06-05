@@ -9,8 +9,7 @@ import { AboutUsSectionComponent } from './components/about-us-section/about-us-
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
 import { ServicesComponent } from './components/services/services.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
-import { ActivityPageComponent } from 'src/app/activity-page/activity-page.component';
-
+import { ActivitySectionComponent } from 'src/app/activity-page/components/activity-section/activity-section.component';
 const routes: Routes = [
   {
     path: '',
@@ -19,7 +18,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, AwardsDeedsSectionComponent, MyPartnersSectionComponent, AboutUsSectionComponent,  NeedOurHelpSectionComponent,ServicesComponent],
+  declarations: [HomeComponent, AwardsDeedsSectionComponent, MyPartnersSectionComponent, AboutUsSectionComponent,  NeedOurHelpSectionComponent,ServicesComponent,ActivitySectionComponent],
   imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule,CarouselModule],
 })
 export class HomeModule {}
