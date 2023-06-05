@@ -9,6 +9,7 @@ import { AboutUsSectionComponent } from './components/about-us-section/about-us-
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
 import { ServicesComponent } from './components/services/services.component';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { ActivityPageComponent } from 'src/app/activity-page/activity-page.component';
 
 const routes: Routes = [
   {
