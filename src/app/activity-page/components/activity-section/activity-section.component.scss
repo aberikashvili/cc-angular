@@ -1,3 +1,7 @@
+section{
+  height: 1015px;
+}
+
 .activity {
   margin-left: 160px;
   margin-top: 105px;
@@ -26,6 +30,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  margin-top: 40px;
 }
 
 .card {
