@@ -1,0 +1,111 @@
+.smart {
+  margin-bottom: 80px;
+
+  &__container {
+    padding-left: 160px;
+
+    &--heading {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #141414;
+      width: 1060px;
+    }
+
+    &--title {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #f58634;
+      width: 164px;
+    }
+  }
+  &__image--container {
+    &--photo {
+      background: url('/assets/img/smart.jpg') bottom center repeat-x;
+      height: 841px;
+      position: relative;
+    }
+
+    &--list {
+      width: 655px;
+      height: 290px;
+      background: #f58634;
+      padding-left: 32px;
+      position: absolute;
+      margin-top: 511px;
+      z-index: 999;
+      margin-left: 160px;
+
+      &--heading {
+        font-family: 'AvenirNextGeorgian-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 150%;
+        width: 655px;
+        display: flex;
+        align-items: center;
+        color: #ffffff;
+        padding-top: 40px;
+      }
+
+      &--firstlist {
+        font-family: 'AvenirNextGeorgian-Regular';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: #ffffff;
+        width: 233px;
+      }
+      &--secondlist {
+        margin-left: 20px;
+        width: 233px;
+        font-family: 'AvenirNextGeorgian-Regular';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 150%;
+        color: #ffffff;
+      }
+    }
+  }
+
+  &__text--container {
+    margin-top: 91px;
+
+    &--firsttext {
+      font-family: 'AvenirNextGeorgian-Medium';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: #141414;
+    }
+    &--secondtext {
+      font-family: 'AvenirNextGeorgian-Medium';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: #141414;
+    }
+  }
+}
+
+ul.circle {
+  list-style: circle;
+}
+
+.smartDiv {
+  padding-left: 15px;
+}

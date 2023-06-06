@@ -4,8 +4,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TanamshromlebiPageComponent } from './modules/tanamshromlebi-page/tanamshromlebi-page.component';
-import { TanamshromlebiOurTeamComponent } from './modules/tanamshromlebi-page/components/tanamshromlebi-our-team/tanamshromlebi-our-team.component';
 
 @NgModule({
   declarations: [AppComponent],
