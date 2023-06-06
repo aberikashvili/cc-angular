@@ -23,9 +23,7 @@ export class SliderComponent {
     this.slide(0);
   }
 
-  ngOnInit() {
-    this.getSliderData();
-  }
+  ngOnInit() {}
 
   get customHeight(): string | undefined {
     return this.height;
@@ -57,6 +55,7 @@ export class SliderComponent {
     } else {
       this.currentIndex--;
     }
+
     this.slide(this.currentIndex);
   }
 
@@ -66,6 +65,7 @@ export class SliderComponent {
     } else {
       this.currentIndex++;
     }
+
     this.slide(this.currentIndex);
   }
 }
