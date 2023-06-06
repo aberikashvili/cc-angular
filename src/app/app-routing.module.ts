@@ -35,6 +35,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'team',
+    loadChildren: () =>
+      import('./modules/tanamshromlebi-page/tanamshromlebi-page.module').then(
+        (m) => m.TanamshromlebiPageModule
+      ),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '/home',
