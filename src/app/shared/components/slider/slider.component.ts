@@ -68,6 +68,4 @@ export class SliderComponent {
     }
     this.slide(this.currentIndex);
   }
-
-  getSliderData() {}
 }
