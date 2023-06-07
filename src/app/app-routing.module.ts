@@ -35,7 +35,7 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'tanamshromlebi',
+    path: 'team',
     loadChildren: () =>
       import('./modules/tanamshromlebi-page/tanamshromlebi-page.module').then(
         (m) => m.TanamshromlebiPageModule
