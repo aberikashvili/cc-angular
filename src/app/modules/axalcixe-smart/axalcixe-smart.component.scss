@@ -1,7 +1,9 @@
 .smart {
   margin-bottom: 80px;
+
   &__container {
     padding-left: 160px;
+
     &--heading {
       font-family: 'AvenirNextGeorgian-Bold';
       font-style: normal;
@@ -13,6 +15,7 @@
       color: #141414;
       width: 1060px;
     }
+
     &--title {
       font-family: 'AvenirNextGeorgian-Bold';
       font-style: normal;
@@ -31,6 +34,7 @@
       height: 841px;
       position: relative;
     }
+
     &--list {
       width: 655px;
       height: 290px;
@@ -75,6 +79,7 @@
       }
     }
   }
+
   &__text--container {
     margin-top: 91px;
 
@@ -96,9 +101,11 @@
     }
   }
 }
+
 ul.circle {
   list-style: circle;
 }
+
 .smartDiv {
   padding-left: 15px;
 }
