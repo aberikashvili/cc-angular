@@ -13,10 +13,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [
-    
-
-  ],
+  declarations: [ProjectsPageComponent, PhotoGallerySectionComponent],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
 export class ProjectsPageModule {}
