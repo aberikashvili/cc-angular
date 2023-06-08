@@ -17,17 +17,13 @@ export class SliderComponent {
   sliderData: any[] = [];
   sliderBallsData: any[] = [];
 
-  private currentIndex = 0;
+  private _currentIndex = 0;
 
   ngAfterViewInit() {
     this.slide(0);
   }
 
   ngOnInit() {}
-
-  get customHeight(): string | undefined {
-    return this.height;
-  }
 
   get customHeight(): string | undefined {
     return this.height;
@@ -43,10 +39,10 @@ export class SliderComponent {
 
     sliderTrack.style.transform = `translateX(-${index * 100}%)`;
 
-    sliderBalls?.children[this.currentIndex].classList.remove('active');
+    sliderBalls?.children[this._currentIndex].classList.remove('active');
     sliderBalls?.children[index].classList.add('active');
 
-    this.currentIndex = index;
+    this._currentIndex = index;
   }
 
   onClickBall(index: any) {
@@ -54,22 +50,22 @@ export class SliderComponent {
   }
 
   prev() {
-    if (this.currentIndex === 0) {
-      this.currentIndex = this.sliderData.length - 1;
+    if (this._currentIndex === 0) {
+      this._currentIndex = this.sliderData.length - 1;
     } else {
-      this.currentIndex--;
+      this._currentIndex--;
     }
 
-    this.slide(this.currentIndex);
+    this.slide(this._currentIndex);
   }
 
   next() {
-    if (this.currentIndex === this.sliderData.length - 1) {
-      this.currentIndex = 0;
+    if (this._currentIndex === this.sliderData.length - 1) {
+      this._currentIndex = 0;
     } else {
-      this.currentIndex++;
+      this._currentIndex++;
     }
 
-    this.slide(this.currentIndex);
+    this.slide(this._currentIndex);
   }
 }

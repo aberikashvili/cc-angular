@@ -18,6 +18,7 @@
     }
   }
 }
+
 .slider {
   position: relative;
   overflow: hidden;
@@ -46,15 +47,18 @@
     justify-content: space-between;
   }
 }
+
 .cont__div {
   width: 385px;
   height: 465px;
   overflow: hidden;
 }
+
 .image--div img {
   width: 385px;
   max-width: max-content !important;
 }
+
 .name {
   font-family: 'AvenirNextGeorgian-Bold';
   font-style: normal;
@@ -64,6 +68,7 @@
   text-align: center;
   color: #141414;
 }
+
 .title {
   font-family: 'AvenirNextGeorgian-Regular';
   font-style: normal;
