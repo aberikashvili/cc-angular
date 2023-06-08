@@ -17,7 +17,6 @@ const routes: Routes = [
         (m) => m.MyPartnersPageModule
       ),
   },
-
   {
     path: 'about-us',
     loadChildren: () =>
@@ -35,7 +34,6 @@ const routes: Routes = [
         (m) => m.ProjectDetailsModule
       ),
   },
-  
   {
     path: 'team',
     loadChildren: () =>
