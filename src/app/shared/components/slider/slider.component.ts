@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-slider',
@@ -6,6 +6,11 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./slider.component.scss'],
 })
 export class SliderComponent {
+  @Input() data: any[] = [];
+  @Input() height?: string;
+  @Input() heading?: string;
+  @Input() textAlign?: string;
+
   @ViewChild('sliderTrack') sliderTrack!: ElementRef;
   @ViewChild('sliderBalls') sliderBalls!: ElementRef;
 
@@ -20,6 +25,10 @@ export class SliderComponent {
 
   ngOnInit() {
     this.getSliderData();
+  }
+
+  get customHeight(): string | undefined {
+    return this.height;
   }
 
   slide(index: number) {
@@ -60,96 +69,5 @@ export class SliderComponent {
     this.slide(this.currentIndex);
   }
 
-  getSliderData() {
-    this.sliderData = [
-      {
-        left: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        middle: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        right: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        last: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-      },
-      {
-        left: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        middle: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        right: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        last: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-      },
-      {
-        left: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        middle: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        right: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        last: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-      },
-      {
-        left: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        middle: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        right: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-        last: {
-          img: 'assets/img/chvenigundi.jpg',
-          NameSurname: 'გოჩა ვაშაკიძე',
-          title: 'საწყობის უფროსი',
-        },
-      },
-    ];
-  }
+  getSliderData() {}
 }
