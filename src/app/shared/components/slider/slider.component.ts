@@ -29,6 +29,10 @@ export class SliderComponent {
     return this.height;
   }
 
+  get customHeight(): string | undefined {
+    return this.height;
+  }
+
   slide(index: number) {
     const sliderTrack = this.sliderTrack?.nativeElement;
     const sliderBalls = this.sliderBalls?.nativeElement;
