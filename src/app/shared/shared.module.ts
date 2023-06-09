@@ -6,11 +6,25 @@ import { ButtonsComponent } from './components/button/button.component';
 import { HeaderComponent } from './components/header/header.component';
 import { WidgetComponent } from './components/widget/widget.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { SliderComponent } from './components/slider/slider.component';
 
 @NgModule({
-  declarations: [ButtonsComponent, HeaderComponent, WidgetComponent,FooterComponent],
+  declarations: [
+    ButtonsComponent,
+    HeaderComponent,
+    WidgetComponent,
+    FooterComponent,
+    SliderComponent,
+  ],
   imports: [CommonModule, CarouselModule],
-  exports: [CommonModule, ButtonsComponent, HeaderComponent, WidgetComponent,CarouselModule,FooterComponent],
+  exports: [
+    CommonModule,
+    ButtonsComponent,
+    HeaderComponent,
+    WidgetComponent,
+    CarouselModule,
+    FooterComponent,
+    SliderComponent,
+  ],
 })
-export class SharedModule {
-}
+export class SharedModule {}
