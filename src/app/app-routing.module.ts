@@ -35,11 +35,10 @@ const routes: Routes = [
       ),
   },
   {
-    path: 'team',
+    path: 'activity',
     loadChildren: () =>
-      import('./modules/tanamshromlebi-page/tanamshromlebi-page.module').then(
-        (m) => m.TanamshromlebiPageModule
-      ),
+      import('./modules/activity-page/activity-page.module').then(
+        (m) => m.ActivityPageModule ),
   },
   {
     path: '**',
