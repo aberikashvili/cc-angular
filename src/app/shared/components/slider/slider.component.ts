@@ -8,7 +8,7 @@ import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 export class SliderComponent {
   @Input() data: any[] = [];
   @Input() height?: string;
-  @Input() heading?: string;
+  @Input() heading!: string;
   @Input() textAlign?: string;
 
   @ViewChild('sliderTrack') sliderTrack!: ElementRef;
