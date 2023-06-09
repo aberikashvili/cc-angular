@@ -1,0 +1,68 @@
+.title {
+  margin-left: 160px;
+
+  &__h1 {
+    font-family: 'AvenirNextGeorgian-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+  }
+}
+
+.container {
+  height: 790;
+  display: flex;
+  margin-left: 160px;
+  margin-top: 24px;
+
+  &__image {
+    width: 385px;
+    height: 790px;
+    background: #d9d9d9;
+  }
+
+  .boxes {
+    margin-left: 20px;
+    &__up {
+      width: 385px;
+      height: 385px;
+      background: #d9d9d9;
+    }
+    &__down {
+      width: 385px;
+      height: 385px;
+      background: #d9d9d9;
+      margin-top: 20px;
+    }
+  }
+
+  &__big {
+    width: 655px;
+    height: 790px;
+    background: #d9d9d9;
+    margin-left: 20px;
+  }
+
+  &__image2 {
+    width: 385px;
+    height: 790px;
+    background: #d9d9d9;
+    margin-left: 20px;
+  }
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-slider-controls {
+  display: flex;
+  margin-right: 100px;
+}
+
+.left-arrow {
+  margin-right: 20px;
+}

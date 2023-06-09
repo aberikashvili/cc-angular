@@ -1,9 +1,10 @@
 import { RouterModule, Routes } from '@angular/router';
-import { ProjectsPageComponent } from './projects-page.component';
-import { NgModule } from '@angular/core';
 import { SharedModule } from 'src/app/shared/shared.module';
-import { OurProjectsComponent } from './components/our-projects/our-projects.component';
+import { NgModule } from '@angular/core';
+import { ProjectsPageComponent } from './projects-page.component';
 import { PhotoGallerySectionComponent } from './components/photo-gallery-section/photo-gallery-section.component';
+
+
 const routes: Routes = [
   {
     path: '',
@@ -12,7 +13,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ProjectsPageComponent, OurProjectsComponent,PhotoGallerySectionComponent],
+  declarations: [ProjectsPageComponent, PhotoGallerySectionComponent],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
 export class ProjectsPageModule {}

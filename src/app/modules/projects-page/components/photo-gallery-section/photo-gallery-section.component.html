@@ -1,0 +1,30 @@
+<section class="photo-gallery">
+  <div class="intro">
+    <div class="title">
+      <h1 class="title__h1">ფოტო გალერეა</h1>
+    </div>
+
+    <div class="card-slider-controls">
+      <button (click)="carousel.prev()" class="left-arrow">
+        <img src="assets/images/left-arrow.png" alt="" />
+      </button>
+      <button (click)="carousel.next()" class="right-arrow">
+        <img src="assets/images/right-arrow.png" alt="" />
+      </button>
+    </div>
+  </div>
+
+  <owl-carousel-o #carousel [options]="customOptions">
+    <ng-template carouselSlide [option]="OwlOptions" *ngFor="let item of card">
+      <div class="container">
+        <div class="container__image"></div>
+        <div class="boxes">
+          <div class="boxes__up"></div>
+          <div class="boxes__down"></div>
+        </div>
+        <div class="container__big"></div>
+        <div class="container__image2"></div>
+      </div>
+    </ng-template>
+  </owl-carousel-o>
+</section>
