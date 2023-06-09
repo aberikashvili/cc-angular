@@ -3,7 +3,7 @@ import { ProjectsPageComponent } from './projects-page.component';
 import { NgModule } from '@angular/core';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { OurProjectsComponent } from './components/our-projects/our-projects.component';
-
+import { PhotoGallerySectionComponent } from './components/photo-gallery-section/photo-gallery-section.component';
 const routes: Routes = [
   {
     path: '',
@@ -12,7 +12,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ProjectsPageComponent, OurProjectsComponent],
+  declarations: [ProjectsPageComponent, OurProjectsComponent,PhotoGallerySectionComponent],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
 export class ProjectsPageModule {}
