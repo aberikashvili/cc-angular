@@ -40,26 +40,28 @@ export class OurProjectsComponent {
       stage: 'დასრულებული',
       name: 'ქუთაისის პარლამენტი',
       category: 'onGoing',
-      id: '1'
+      id: '1',
     },
     {
       img: 'assets/img/parlament.jpg',
       stage: 'დასრულებული',
       name: 'ქუთაისის პარლამენტი',
       category: 'onGoing',
-      id: '2'
+      id: '2',
     },
     {
       img: 'assets/img/parlament.jpg',
       stage: 'დასრულებული',
       name: 'ქუთაისის პარლამენტი',
       category: 'onGoing',
+      id: '3',
     },
     {
       img: 'assets/img/parlament.jpg',
       stage: 'დასრულებული',
       name: 'ქუთაისის პარლამენტი',
       category: 'finished',
+      id: '4',
     },
   ];
 
