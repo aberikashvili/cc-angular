@@ -20,7 +20,16 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [HomeComponent, AwardsDeedsSectionComponent, MyPartnersSectionComponent, AboutUsSectionComponent,  NeedOurHelpSectionComponent,ServicesComponent,WarmHouseComponent,ProjectsComponent],
-  imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule,CarouselModule],
+  declarations: [
+    HomeComponent,
+    AwardsDeedsSectionComponent,
+    MyPartnersSectionComponent,
+    AboutUsSectionComponent,
+    NeedOurHelpSectionComponent,
+    ServicesComponent,
+    WarmHouseComponent,
+    ProjectsComponent,
+  ],
+  imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule, CarouselModule],
 })
 export class HomeModule {}
