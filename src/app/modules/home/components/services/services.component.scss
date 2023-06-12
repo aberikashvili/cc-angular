@@ -140,3 +140,12 @@ ul:hover li::before {
     align-items: center;
   }
 }
+.background {
+  background: url('/assets/img/vector.jpg');
+  position: absolute;
+  height: 649px;
+  width: 370px;
+  // left: -279px;
+  top: 619px;
+  border-radius: 0px;
+}

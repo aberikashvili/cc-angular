@@ -1,71 +1,69 @@
 section {
-    background: #F9F9F9;
-    padding-left: 160px;
-    padding-right: 160px;
-    margin-top: 100px;
+  background: #f9f9f9;
+  padding-left: 160px;
+  padding-right: 160px;
+  margin-top: 100px;
+  position: relative;
 }
 .left--div {
-    height: 532px;
+  height: 532px;
 }
 .heading {
-    width: 655px;
-    height: 54px;
-    font-family: 'AvenirNextGeorgian-Bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 150%;
-    display: flex;
-    align-items: center;
-    color: #141414;
+  width: 655px;
+  height: 54px;
+  font-family: 'AvenirNextGeorgian-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #141414;
 }
 .text {
-    width: 791px;
-    font-family: 'AvenirNextGeorgian-Regular';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: rgba(20, 20, 20, 0.6);
+  width: 791px;
+  font-family: 'AvenirNextGeorgian-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(20, 20, 20, 0.6);
 }
 .form--container {
-    width: 655px;
-    height: 412px;
-    background: #FFFFFF;
-    margin-left: 154px;
-    margin-top: 60px;
-    padding: 40px 32px 32px 32px;
+  width: 655px;
+  height: 412px;
+  background: #ffffff;
+  margin-left: 154px;
+  margin-top: 60px;
+  padding: 40px 32px 32px 32px;
 }
 
 .inputStyle:focus {
-    border-bottom: 1px solid orange;
+  border-bottom: 1px solid orange;
 }
 .inputStyle {
-    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+  border-bottom: 1px solid rgba(20, 20, 20, 0.1);
 }
 .label {
-    font-family: 'AvenirNextGeorgian-Regular';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: rgba(20, 20, 20, 0.6);
+  font-family: 'AvenirNextGeorgian-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(20, 20, 20, 0.6);
 }
 .email--inp {
-    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
-    width: 115%;
-
-
+  border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+  width: 115%;
 }
 .number--inp {
-    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
-    width: 100%;
-
+  border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+  width: 100%;
 }
 .txtarea {
-    border-bottom: 1px solid rgba(20, 20, 20, 0.1);
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    resize: none;
+  border-bottom: 1px solid rgba(20, 20, 20, 0.1);
+  height: auto;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  resize: none;
 }
