@@ -68,3 +68,9 @@ section {
 .map--container{
     margin-left: 120px;
 }
+
+@media screen and (max-width: 800px){
+    .logo--container{display: none;}
+    section{width: 375px; height: 812px; margin-top:99px;}
+    .casacalda--title{display:inline}
+}
