@@ -27,9 +27,10 @@ export class OurProjectsComponent {
       });
       clicked.isDim = false;
     }
+
     this.filterMode == buttonItem;
     if (clicked?.categoryId === 'finished') {
-      this.router.navigate(['/project/:']);
+      this.router.navigate(['/project/']);
     }
   }
 
@@ -39,12 +40,14 @@ export class OurProjectsComponent {
       stage: 'დასრულებული',
       name: 'ქუთაისის პარლამენტი',
       category: 'onGoing',
+      id: '1'
     },
     {
       img: 'assets/img/parlament.jpg',
       stage: 'დასრულებული',
       name: 'ქუთაისის პარლამენტი',
       category: 'onGoing',
+      id: '2'
     },
     {
       img: 'assets/img/parlament.jpg',
