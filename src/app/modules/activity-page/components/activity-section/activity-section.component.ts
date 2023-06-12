@@ -17,7 +17,6 @@ export class ActivitySectionComponent {
         'სისტემების კომპიუტერული მართვა (BMS)',
       ],
     },
-
     {
       title: 'სუსტი დენები',
       services: [

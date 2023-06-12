@@ -1,4 +1,4 @@
-section{
+section {
   height: 1015px;
 }
 
@@ -42,15 +42,18 @@ section{
   height: 315px;
   position: relative;
 }
+
 .card::after {
   content: url('/assets/images/cards-bg.png');
   position: absolute;
   height: 100%;
   display: none;
 }
+
 .card:hover::after {
   display: block;
 }
+
 .card:hover li::before {
   color: white;
 }
