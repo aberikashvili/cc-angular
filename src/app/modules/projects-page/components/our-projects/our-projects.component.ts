@@ -29,9 +29,9 @@ export class OurProjectsComponent {
     }
 
     this.filterMode == buttonItem;
-    if (clicked?.categoryId === 'finished') {
-      this.router.navigate(['/project/']);
-    }
+    // if (clicked?.categoryId === 'finished') {
+    //   this.router.navigate(['/project/']);
+    // }
   }
 
   List: any[] = [
@@ -70,5 +70,8 @@ export class OurProjectsComponent {
       return this.List;
     }
     return this.List.filter((listItem) => listItem.category === this.filterMode);
+  }
+  routerClick() {
+    this.router.navigate(['/project/1']);
   }
 }
