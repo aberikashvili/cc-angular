@@ -29,9 +29,6 @@ export class OurProjectsComponent {
     }
 
     this.filterMode == buttonItem;
-    // if (clicked?.categoryId === 'finished') {
-    //   this.router.navigate(['/project/']);
-    // }
   }
 
   List: any[] = [
