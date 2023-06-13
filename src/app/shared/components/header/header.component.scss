@@ -27,6 +27,10 @@ header {
   a {
     color: #141414;
   }
+  a:active {
+    color: yellow;
+    font-weight: 600;
+  }
 
   .router-link-active {
     color: #245aa3;
