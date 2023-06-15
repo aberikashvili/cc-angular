@@ -128,3 +128,39 @@ ul:hover li::before {
   }
 }
 
+@media screen and (max-width: 800px){
+  .service-title{
+    font-size: 18px;
+  }
+  .services__paragraph{
+    width: 343px;
+    height: 80px;
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+  }
+
+  .card-slider-controls{
+    position: absolute;
+    margin-bottom: 186px;
+    margin-left: 275px;
+  }
+  img{
+    max-width: 72%;
+    height: auto;
+  }
+  .left-arrow{
+    margin-right: 7px;
+  }
+
+
+  
+  
+
+
+  
+  
+}
+
