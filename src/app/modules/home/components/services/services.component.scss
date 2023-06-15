@@ -122,10 +122,7 @@ ul:hover li::before {
     margin-left: 20px !important;
   }
 
-  .owl-item {
-    margin-right: 40px !important;
-    width: auto !important;
-  }
+  
 }
 
 @media screen and (max-width: 800px){
@@ -155,12 +152,13 @@ ul:hover li::before {
     margin-right: 7px;
   }
 
+  .carousel-container{
+    width: 53%;
+  }
 
-  
-  
-
-
-  
-  
+  .gega{
+    width: 670px;
+  }
+   
 }
 

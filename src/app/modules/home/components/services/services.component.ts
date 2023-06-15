@@ -21,7 +21,7 @@ export class ServicesComponent {
       0: {
         items: 1,
       },
-      200: {
+      400: {
         items: 2,
       },
       740: {
