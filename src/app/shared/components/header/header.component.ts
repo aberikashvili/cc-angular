@@ -7,9 +7,5 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  constructor(private router: Router) {}
-
-  isActive(url: string): boolean {
-    return this.router.isActive(url, true);
-  }
+  constructor(private _router: Router) {}
 }
