@@ -27,8 +27,7 @@ export class OurProjectsComponent {
       });
       clicked.isDim = false;
     }
-
-    this.filterMode == buttonItem;
+    this.filterMode = buttonItem;
   }
 
   List: any[] = [
@@ -41,7 +40,7 @@ export class OurProjectsComponent {
     },
     {
       img: 'assets/img/parlament.jpg',
-      stage: 'დასრულებული',
+      stage: 'მიმდინარე',
       name: 'ქუთაისის პარლამენტი',
       category: 'onGoing',
       id: '2',
@@ -66,8 +65,10 @@ export class OurProjectsComponent {
     if (this.filterMode === 'all') {
       return this.List;
     }
+
     return this.List.filter((listItem) => listItem.category === this.filterMode);
   }
+
   routerClick() {
     this.router.navigate(['/project/1']);
   }

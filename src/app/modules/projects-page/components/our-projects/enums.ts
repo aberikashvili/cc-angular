@@ -1,10 +1,10 @@
 export enum ProjectCategory {
-  Ongoing = 'ongoing',
+  Ongoing = 'onGoing',
   Finished = 'finished',
 }
 
 export enum FilterMode {
   All = 'all',
-  Ongoing = 'ongoing',
+  Ongoing = 'onGoing',
   Finished = 'finished',
 }
