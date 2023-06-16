@@ -64,12 +64,17 @@ section {
   }
 
   .img-container {
-    width: 250px;
+    width: 167px;
+    height: 167px;
     box-sizing: border-box;
     border: 1px solid rgba(20, 20, 20, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .img-container img {
+    width: 107px;
+    height: 143px;
   }
 
   .photo--section {
