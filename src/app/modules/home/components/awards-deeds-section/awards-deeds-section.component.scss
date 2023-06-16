@@ -53,8 +53,6 @@ section {
 @media only screen and (max-width: 800px) {
   section {
     display: block;
-    padding: 0 16px;
-    margin-top: 0;
   }
 
   .desktop {
@@ -82,64 +80,67 @@ section {
   .img-container img {
     width: 107px;
     height: 143px;
+
+    .img-container {
+      width: auto;
+      height: auto;
+    }
+
+    .photo--section {
+      margin-left: 0;
+      // max-width: auto;
+      justify-content: space-between;
+    }
+
+    .mobile {
+      display: block;
+      margin-top: 20px;
+    }
+
+    .title--section h1 {
+      width: 218px;
+      height: 27px;
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #141414;
+    }
+
+    .paragraph p {
+      width: 343px;
+      height: 105px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: rgba(20, 20, 20, 0.6);
+    }
+
+    .awards div {
+      margin-left: 0;
+    }
   }
 
-  .photo--section {
-    margin-left: 0;
-    justify-content: space-between;
-  }
+  @media only screen and (min-width: 500px) and (max-width: 800px) {
+    .tablet {
+      display: flex;
+    }
 
-  .mobile {
-    display: block;
-    margin-top: 20px;
-  }
+    .photo--section {
+      margin-top: 20px;
+    }
 
-  .title--section h1 {
-    width: 218px;
-    font-family: 'AvenirNextGeorgian-Bold';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 150%;
-    display: flex;
-    align-items: center;
-    color: #141414;
-  }
-
-  .paragraph {
-    margin-top: 0px;
-  }
-
-  .paragraph p {
-    width: 343px;
-    height: 105px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: rgba(20, 20, 20, 0.6);
-  }
-
-  .awards div {
-    margin-left: 0;
-  }
-}
-
-@media only screen and (min-width: 500px) and (max-width: 800px) {
-  .tablet {
-    display: flex;
-  }
-
-  .photo--section {
-    margin-top: 20px;
-  }
-
-  .paragraph p {
-    width: 100%;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: rgba(20, 20, 20, 0.6);
+    .paragraph p {
+      width: 100%;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 150%;
+      color: rgba(20, 20, 20, 0.6);
+    }
   }
 }
