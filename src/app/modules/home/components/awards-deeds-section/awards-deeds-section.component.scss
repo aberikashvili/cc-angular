@@ -15,8 +15,8 @@ section {
   align-items: center;
   color: #141414;
 }
-
 .paragraph p {
+
   font-family: 'AvenirNextGeorgian-Regular';
   font-style: normal;
   font-weight: 500;
@@ -174,4 +174,24 @@ section {
   .awards div {
     margin-left: 0;
   }
+}
+}
+
+.img-container {
+  box-sizing: border-box;
+  width: 250px;
+  height: 250px;
+  border: 1px solid rgba(20, 20, 20, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.awardsbtn--div {
+  margin-top: 32px;
+}
+
+.photo--section {
+  margin-left: 155px;
+  max-width: 950px;
 }
