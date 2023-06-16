@@ -10,14 +10,19 @@
   text-align: center;
 }
 
-.carousel-container {
-  margin-left: 160px;
+// .carousel-container {
+//   margin-left: 160px;
+// }
+
+.container{
+  padding: 0 16px;
 }
 
 section {
-  padding-left: 160px;
+  // padding-left: 160px;
   font-family: 'AvenirNextGeorgian';
   position: relative;
+  
 }
 
 .service-title {
@@ -51,16 +56,17 @@ section {
   flex-direction: row;
   background-color: #f9f9f9;
   margin-top: 11px;
-  width: 385px;
+  margin-left:10px;
+  // width: 385px;
   height: 315px;
-  margin-left: -20px;
+  
 }
 
 ul {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  margin-left: 3px;
+  // margin-left: 3px;
 }
 
 h2 {
@@ -109,19 +115,19 @@ ul:hover li::before {
   display: flex;
   overflow-x: auto;
   margin-top: 40px;
-  margin-right: 155px;
+  // margin-right: 155px;
 }
 
 .left-arrow {
   margin-right: 20px;
 }
 
-::ng-deep {
-  .owl-stage {
-    width: 2200px !important;
-    margin-left: 20px !important;
-  }
-}
+// ::ng-deep {
+//   .owl-stage {
+//     width: 2200px !important;
+//     margin-left: 20px !important;
+//   }
+// }
 
 @media screen and (max-width: 800px){
   .service-title{
@@ -151,12 +157,8 @@ ul:hover li::before {
   }
 
   .carousel-container{
-    width: 53%;
-  }
-
-  .gega{
-    width: 670px;
-  }
-   
+    width:100%;
+  } 
 }
+
 
