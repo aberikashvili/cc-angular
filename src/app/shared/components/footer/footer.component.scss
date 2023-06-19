@@ -15,6 +15,14 @@ section {
   display: none;
 }
 
+.mobile {
+  display: flex;
+}
+
+.accordion {
+  display: none;
+}
+
 .paragraph {
   width: 384px;
   height: 126px;
@@ -86,6 +94,14 @@ section {
 }
 
 @media only screen and (max-width: 800px) {
+  .accordion {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
   .desktop {
     display: block;
   }
@@ -104,9 +120,8 @@ section {
   }
 
   .tbilisaxli--container {
-    margin-top: 40px;
+    margin-top: 0;
     margin-left: 0;
-    border-bottom: 1px solid #141414;
   }
 
   .services--container {
