@@ -1,5 +1,5 @@
 .button {
-  min-width: 186px;
+  min-width: 100%;
   height: 48px;
   border: 1px solid;
   border-radius: 100px;
@@ -9,6 +9,7 @@
   font-family: 'AvenirNextGeorgian-Regular';
   text-transform: uppercase;
   font-variant: all-petite-caps;
+  margin-top:24px;
 
   &--primary {
     background-color: #f58634;

@@ -1,5 +1,6 @@
+<div class="project-section">
 <div class="intro">
-  <h1 class="projects">პროექტები</h1>
+  <h1 class="projects">ჩვენი პროექტები</h1>
   <div class="button-container">
     <button class="left-arrow" (click)="carousel.prev()">
       <img src="assets/images/left.png" alt="" />
@@ -20,8 +21,8 @@
           <p>{{ item.paragraph }}</p>
           <h1>{{ item.title }}</h1>
           <h4 *ngFor="let item of item.description">{{ item }}</h4>
-          <h5>{{ item.paragraph1 }}</h5>
-          <div class="list-box">
+          <!-- <h5>{{ item.paragraph1 }}</h5> -->
+          <!-- <div class="list-box">
             <div class="box">
               <ul>
                 <li *ngFor="let item of item.leftServices">{{ item }}</li>
@@ -32,13 +33,13 @@
                 <li *ngFor="let item of item.rightServices">{{ item }}</li>
               </ul>
             </div>
-          </div>
-          <h6>{{ item.text }}</h6>
+          </div> -->
+          <!-- <h6>{{ item.text }}</h6> -->
           <app-button class="btn-primary" type="primary"
-            >სრული პაკეტი</app-button
-          >
+            >სრული პაკეტი</app-button>
         </div>
       </div>
     </ng-template>
   </owl-carousel-o>
+</div>
 </div>
