@@ -133,8 +133,13 @@ ul:hover li::before {
   .service-title{
     font-size: 18px;
   }
+  .intro{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
   .services__paragraph{
-    width: 343px;
+    // width: 343px;
     height: 80px;
     font-family: 'AvenirNextGeorgian-Regular';
     font-style: normal;
@@ -159,8 +164,5 @@ ul:hover li::before {
   .carousel-container{
     width:100%;
   } 
-
-  
+ 
 }
-
-

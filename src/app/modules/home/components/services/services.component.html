@@ -1,14 +1,12 @@
 <div class="container">
 <section class="our-services">
-  <h1 class="service-title">ჩვენი სერვისები</h1>
+    <h1 class="service-title">ჩვენი სერვისები</h1>
   <div class="intro">
-    <div class="services">
       <p class="services__paragraph">
         ჩვენთან შეძენილი პროდუქცია მომხმარებელს <br> სათანადო სერვისის მეშვეობით
         ხანგრძლივი,<br />
         მრავალწლიანი პერიოდის განმავლობაში <br> შეუქმნის ჯანსაღ და კომფორტულ გარემოს.
       </p>
-    </div>
     <div class="card-slider-controls">
       <button (click)="carousel.prev()" class="left-arrow">
         <img src="assets/images/left-arrow.png" alt="" />
@@ -16,8 +14,8 @@
       <button (click)="carousel.next()">
         <img src="assets/images/right-arrow.png" alt="" />
       </button>
+    </div> 
     </div>
-  </div>
 </section>
 <div class="carousel-container">
   <owl-carousel-o #carousel [options]="customOptions">
