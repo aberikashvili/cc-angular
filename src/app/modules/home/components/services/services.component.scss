@@ -10,23 +10,16 @@
   text-align: center;
 }
 
-// .carousel-container {
-//   margin-left: 160px;
-// }
-
-.container{
+.container {
   padding: 0 16px;
 }
 
 section {
-  // padding-left: 160px;
   font-family: 'AvenirNextGeorgian';
   position: relative;
-  
 }
 
 .service-title {
-  // width: 338px;
   height: 54px;
   left: 160px;
   font-style: normal;
@@ -41,7 +34,6 @@ section {
 .services {
   &__paragraph {
     width: 790px;
-    height: 42px;
     margin-bottom: 15px;
     font-style: normal;
     font-weight: 500;
@@ -56,17 +48,14 @@ section {
   flex-direction: row;
   background-color: #f9f9f9;
   margin-top: 11px;
-  // margin-left:10px;
   height: 315px;
   width: 343px;
-  
 }
 
 ul {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  // margin-left: 3px;
+  gap: 11px;
 }
 
 h2 {
@@ -105,69 +94,49 @@ ul:hover li::before {
   color: white;
 }
 
-.intro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .card-slider-controls {
   display: flex;
   overflow-x: auto;
   margin-top: 40px;
-  // margin-right: 155px;
 }
 
-// .left-arrow {
-//   margin-right: 20px;
-// }
-
-// ::ng-deep {
-//   .owl-stage {
-//     width: 2200px !important;
-//     margin-left: 20px !important;
-//   }
-// }
-
-@media screen and (max-width: 800px){
-  .service-title{
+@media screen and (max-width: 800px) {
+  .service-title {
     font-size: 18px;
   }
-  .intro{
+  .intro {
     display: flex;
     align-items: center;
     justify-content: flex-end;
   }
-  .services__paragraph{
-    // width: 343px;
-    height: 80px;
+  .services__paragraph {
     font-family: 'AvenirNextGeorgian-Regular';
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
     line-height: 150%;
+    margin-top: -8px;
   }
 
-  .card-slider-controls{
+  .card-slider-controls {
     position: absolute;
     margin-bottom: 186px;
-    // margin-left: 275px;
   }
-  img{
+  img {
     max-width: 72%;
     height: auto;
   }
-  .left-arrow{
+  .left-arrow {
     margin-right: 7px;
   }
 
-  .carousel-container{
-    width:100%;
-  } 
- 
-  .wrapper-container{
+  .carousel-container {
+    width: 100%;
+  }
+
+  .wrapper-container {
     display: flex;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
   }
 }
