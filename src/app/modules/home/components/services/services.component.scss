@@ -26,7 +26,7 @@ section {
 }
 
 .service-title {
-  width: 338px;
+  // width: 338px;
   height: 54px;
   left: 160px;
   font-style: normal;
@@ -118,9 +118,9 @@ ul:hover li::before {
   // margin-right: 155px;
 }
 
-.left-arrow {
-  margin-right: 20px;
-}
+// .left-arrow {
+//   margin-right: 20px;
+// }
 
 // ::ng-deep {
 //   .owl-stage {
@@ -165,4 +165,9 @@ ul:hover li::before {
     width:100%;
   } 
  
+  .wrapper-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+  }
 }
