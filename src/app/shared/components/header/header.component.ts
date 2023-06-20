@@ -6,6 +6,4 @@ import { Router } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss'],
 })
-export class HeaderComponent {
-  constructor(private _router: Router) {}
-}
+export class HeaderComponent {}
