@@ -1,6 +1,8 @@
-div{
-    display: flex;
-    border: 3px solid red;
-    width: 100%;
-    height: 654px;
+.contact{
+    &__section{
+        display: flex;
+        border: 3px solid red;
+        width: 100%;
+        height: 654px; 
+    }  
 }
