@@ -142,4 +142,16 @@ section {
   .logos {
     display: flex;
   }
+
+  .example-accordion-item-header {
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: rgba(20, 20, 20, 0.6);
+    opacity: 60%;
+  }
 }
