@@ -9,41 +9,27 @@ export class FooterComponent {
   imageUrl = './assets/images/dropdownUp.jpg';
   rotateState = false;
   rotateStyle = '';
+  expandedIndex = 0;
 
-  rotateImage() {
-    this.rotateState = !this.rotateState;
-    this.rotateStyle = this.rotateState ? 'rotate(-180deg)' : '';
+  rotateImage(index: number) {
+    this.expandedIndex = index;
+  }
+
+  isExpended(index: number) {
+    return index === this.expandedIndex;
   }
 
   items = ['თბილი სახლი', 'სერვისები', 'სწრაფი ლინკები'];
-  expandedIndex = 0;
 
   menu = [
-    {
-      menuItem1: 'ჩვენ შესახებ',
-      menuItem2: 'თანამშრომლები',
-      menuItem3: 'კონტაქტი',
-    },
-    {
-      menuItem1: 'სუსტი დენები',
-      menuItem2: 'მექანიკური სისტემები',
-      menuItem3: 'წყალგაყვანილობის სისტემები',
-      menuItem4: 'ამწე-სატრანსპორტო სისტემები',
-      menuItem5: 'ელექტროობა',
-    },
-    {
-      menuItem1: 'ჯილდოები',
-      menuItem2: 'პარტნიორები',
-      menuItem3: 'პროექტები',
-    },
+    ['ჩვენს შესახებ', 'თანამშრომლები', 'კონტაქტი'],
+    [
+      'სუსტი დენები',
+      'მექანიკური სისტემები',
+      'წყალგაყვანილობის სისტემები',
+      'ამწე-სატრანსპორტო სისტემები',
+      'ელექტროობა',
+    ],
+    ['ჯილდოები', 'პარტნიორები', 'პროექტები'],
   ];
-
-  photos: string[] = ['./assets/images/dropdownUp.jpg', './assets/images/dropdownDown.jpg'];
-  currentIndex = 0;
-  currentPhoto = this.photos[this.currentIndex];
-
-  swapPhotos() {
-    this.currentIndex = (this.currentIndex + 1) % this.photos.length;
-    this.currentPhoto = this.photos[this.currentIndex];
-  }
 }

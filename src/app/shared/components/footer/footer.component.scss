@@ -163,4 +163,12 @@ section {
     line-height: 150%;
     color: #141414;
   }
+
+  .expanded {
+    transform: rotate(-180deg);
+  }
+
+  .colapsed {
+    transform: rotate(180deg);
+  }
 }
