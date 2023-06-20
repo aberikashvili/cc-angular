@@ -37,8 +37,14 @@ const routes: Routes = [
   {
     path: 'activity',
     loadChildren: () =>
-      import('./modules/activity-page/activity-page.module').then(
-        (m) => m.ActivityPageModule ),
+      import('./modules/activity-page/activity-page.module').then((m) => m.ActivityPageModule),
+  },
+  {
+    path: 'team',
+    loadChildren: () =>
+      import('./modules/tanamshromlebi-page/tanamshromlebi-page.module').then(
+        (m) => m.TanamshromlebiPageModule
+      ),
   },
   {
     path: '**',
