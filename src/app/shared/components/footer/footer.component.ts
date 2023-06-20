@@ -6,6 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
+  imageUrl = './assets/images/dropdownUp.jpg';
+  rotateState = false;
+  rotateStyle = '';
+
+  rotateImage() {
+    this.rotateState = !this.rotateState;
+    this.rotateStyle = this.rotateState ? 'rotate(-180deg)' : '';
+  }
+
   items = ['თბილი სახლი', 'სერვისები', 'სწრაფი ლინკები'];
   expandedIndex = 0;
 
@@ -28,4 +37,13 @@ export class FooterComponent {
       menuItem3: 'პროექტები',
     },
   ];
+
+  photos: string[] = ['./assets/images/dropdownUp.jpg', './assets/images/dropdownDown.jpg'];
+  currentIndex = 0;
+  currentPhoto = this.photos[this.currentIndex];
+
+  swapPhotos() {
+    this.currentIndex = (this.currentIndex + 1) % this.photos.length;
+    this.currentPhoto = this.photos[this.currentIndex];
+  }
 }

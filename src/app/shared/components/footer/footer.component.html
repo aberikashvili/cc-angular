@@ -60,42 +60,6 @@
       </div>
     </div>
 
-    <!-- <div class="accordion">
-      <details>
-        <summary>თბილი სახლი</summary>
-        <div class="tbilisaxli--container">
-          <div class="flex flex-col">
-            <div class="title mt-4">ჩვენ შესახებ</div>
-            <div class="title mt-4">თანამშრომლები</div>
-            <div class="title mt-4">კონტაქტი</div>
-            <div class="title mt-4">წესები და პირობები</div>
-          </div>
-        </div>
-      </details>
-      <details>
-        <summary class="mt-4">სერვისები</summary>
-        <div class="services--container">
-          <div class="flex flex-col">
-            <div class="title mt-4">სუსტი დენები</div>
-            <div class="title mt-4">მექანიკური სისტემები</div>
-            <div class="title mt-4">წყალგაყვანილობის სისტემები</div>
-            <div class="title mt-4">ამწე-სატრანსპორტო სისტემები</div>
-            <div class="title mt-4">ელექტროობა</div>
-          </div>
-        </div>
-      </details>
-      <details>
-        <summary class="mt-4">სწრაფი ლინკები</summary>
-        <div class="links--container">
-          <div class="flex flex-col">
-            <div class="title mt-4">ჯილდოები</div>
-            <div class="title mt-4">პარტნიორები</div>
-            <div class="title mt-4">პროექტები</div>
-          </div>
-        </div>
-      </details>
-    </div> -->
-
     <div class="desktop">
       <cdk-accordion class="example-accordion">
         <cdk-accordion-item
@@ -113,10 +77,15 @@
             (click)="accordionItem.toggle()"
           >
             {{ item }}
-            <div class="dropdownUp">
-              <img src="./assets/images/dropdownUp.jpg" alt="" />
+            <div>
+              <img
+                [src]="imageUrl"
+                [style.transform]="rotateStyle"
+                (click)="rotateImage()"
+              />
             </div>
           </div>
+
           <div
             *ngFor="let item of menu; let index = index"
             class="example-accordion-item-body"
