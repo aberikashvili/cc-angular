@@ -1,22 +1,25 @@
+<div class="container">
 <section class="our-services">
-  <h1 class="service-title">ჩვენი სერვისები</h1>
-  <div class="intro">
-    <div class="services">
-      <p class="services__paragraph">
-        ჩვენთან შეძენილი პროდუქცია მომხმარებელს სათანადო სერვისის მეშვეობით
-        ხანგრძლივი,<br />
-        მრავალწლიანი პერიოდის განმავლობაში შეუქმნის ჯანსაღ და კომფორტულ გარემოს.
-      </p>
+  <div class="wrapper-container">
+    <div class="service-title-container">
+      <h1 class="service-title">ჩვენი სერვისები</h1>
     </div>
-    <div class="card-slider-controls">
+  <div class="buttons-container">
       <button (click)="carousel.prev()" class="left-arrow">
         <img src="assets/images/left-arrow.png" alt="" />
       </button>
       <button (click)="carousel.next()">
         <img src="assets/images/right-arrow.png" alt="" />
       </button>
-    </div>
   </div>
+    </div>
+  <div class="intro">
+      <p class="services__paragraph">
+        ჩვენთან შეძენილი პროდუქცია მომხმარებელს სათანადო სერვისის მეშვეობით
+        ხანგრძლივი,
+        მრავალწლიანი პერიოდის განმავლობაში შეუქმნის ჯანსაღ და კომფორტულ გარემოს.
+      </p>  
+    </div>
 </section>
 <div class="carousel-container">
   <owl-carousel-o #carousel [options]="customOptions">
@@ -32,3 +35,5 @@
     </ng-template>
   </owl-carousel-o>
 </div>
+</div>
+

@@ -10,18 +10,16 @@
   text-align: center;
 }
 
-.carousel-container {
-  margin-left: 160px;
+.container {
+  padding: 0 16px;
 }
 
 section {
-  padding-left: 160px;
   font-family: 'AvenirNextGeorgian';
   position: relative;
 }
 
 .service-title {
-  width: 338px;
   height: 54px;
   left: 160px;
   font-style: normal;
@@ -36,7 +34,6 @@ section {
 .services {
   &__paragraph {
     width: 790px;
-    height: 42px;
     margin-bottom: 15px;
     font-style: normal;
     font-weight: 500;
@@ -51,16 +48,14 @@ section {
   flex-direction: row;
   background-color: #f9f9f9;
   margin-top: 11px;
-  width: 385px;
   height: 315px;
-  margin-left: -20px;
+  width: 343px;
 }
 
 ul {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  margin-left: 3px;
+  gap: 11px;
 }
 
 h2 {
@@ -99,32 +94,49 @@ ul:hover li::before {
   color: white;
 }
 
-.intro {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 .card-slider-controls {
   display: flex;
   overflow-x: auto;
   margin-top: 40px;
-  margin-right: 155px;
 }
 
-.left-arrow {
-  margin-right: 20px;
-}
-
-::ng-deep {
-  .owl-stage {
-    width: 2200px !important;
-    margin-left: 20px !important;
+@media screen and (max-width: 800px) {
+  .service-title {
+    font-size: 18px;
+  }
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .services__paragraph {
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    margin-top: -8px;
   }
 
-  .owl-item {
-    margin-right: 40px !important;
-    width: auto !important;
+  .card-slider-controls {
+    position: absolute;
+    margin-bottom: 186px;
+  }
+  img {
+    max-width: 72%;
+    height: auto;
+  }
+  .left-arrow {
+    margin-right: 7px;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .wrapper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
-
