@@ -6,3 +6,12 @@
     height: 654px;
   }
 }
+.contactgreeting {
+  border: 1px solid blue;
+  &--title {
+    border: 1px solid yellow;
+  }
+  &--text {
+    border: 1px solid green;
+  }
+}
