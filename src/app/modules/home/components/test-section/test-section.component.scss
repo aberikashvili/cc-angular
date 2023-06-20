@@ -1,6 +1,7 @@
 .contact {
   &__section {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     border: 3px solid red;
     width: 100%;
