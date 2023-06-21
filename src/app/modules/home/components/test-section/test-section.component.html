@@ -2,13 +2,88 @@
   <div class="contact__greeting">
     <div class="contact__greeting--title"><h1>დაგვიკავშირდით</h1></div>
     <div class="contact__greeting--text">
-      <p>შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
-      ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
-      წარუდგინონ შემფასებელს</p>
+      <p>
+        შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+        ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
+        წარუდგინონ შემფასებელს
+      </p>
     </div>
   </div>
+
   <div class="contact__form--wrapper">
-    <h1>test</h1>
+    <div class="contact__box--left">
+      <div class="contact__service">
+        <h2>მისამართი</h2>
+        <h3>ქ. თბილისი, ლუბლიანას ქ #56</h3>
+        <h2>ელ.ფოსტა</h2>
+        <h3>Info@casacalda.ge</h3>
+        <h2>ტელეფონი</h2>
+        <h3>032 2 311 525</h3>
+        <h2>სერვისი</h2>
+        <h3>032 2 455 554</h3>
+      </div>
+      <div class="soc-media">
+        <img cla src="assets/images/media.png" alt="" />
+      </div>
+    </div>
+
+    <div class="contact__box--right">
+        <div class="form--container">
+        <form class="flex-col" [formGroup]="myForm">
+          <div>
+            <label class="label" for="name">
+              სახელი და გვარი
+              <input
+                class="inputStyle w-full name--inp"
+                id="Name"
+                type="text"
+                formControlName="name"
+              />
+            </label>
+          </div>
+          <div class="phone-number">
+            <label class="label">
+              ტელეფონის ნომერი
+              <input
+                class="inputStyle number--inp"
+                type="text"
+                formControlName="number"
+                id="number"
+              />
+            </label>
+          </div>
+
+          <div class="email">
+            <label class="label label-email">
+              ელ.ფოსტა
+              <input
+                class="inputStyle email--inp"
+                type="email"
+                formControlName="email"
+              />
+            </label>
+          </div>
+
+          <div class="message">
+            <label class="label"
+              >გასაგზავნი შეტყობინების ტექსტი
+              <textarea
+                class="inputStyle w-full txtarea"
+                formControlName="message"
+              ></textarea>
+            </label>
+          </div>
+          <div class="button">
+            <app-button
+              type="secondary"
+              width="151px"
+              height="60px"
+              (clicked)="onClick()"
+              >გაგზავნა</app-button
+            >
+          </div>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
-
