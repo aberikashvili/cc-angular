@@ -6,7 +6,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
 })
-export class ProjectsComponent  {
+export class ProjectsComponent {
   customOptions: OwlOptions = {
     loop: false,
     autoplay: false,
@@ -75,6 +75,4 @@ export class ProjectsComponent  {
       text: 'შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს',
     },
   ];
-
-  
 }

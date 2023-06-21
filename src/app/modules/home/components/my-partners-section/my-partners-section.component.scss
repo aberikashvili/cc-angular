@@ -1,3 +1,9 @@
+section {
+  padding-left: 160px;
+  padding-right: 160px;
+  margin-top: 111px;
+}
+
 section h1 {
   width: 403px;
   height: 54px;
@@ -16,6 +22,10 @@ section h1 {
   justify-content: space-between;
 }
 
+.mobile {
+  display: none;
+}
+
 .paragraph p {
   font-family: 'AvenirNextGeorgian-Regular';
   width: 790px;
@@ -25,10 +35,6 @@ section h1 {
   line-height: 150%;
   color: rgba(20, 20, 20, 0.6);
   position: absolute;
-}
-
-.mobile {
-  display: none;
 }
 
 .partners {

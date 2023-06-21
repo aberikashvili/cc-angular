@@ -94,4 +94,6 @@ hr {
   flex-direction: row;
   gap: 110px;
   margin-top: 50px;
+  position: relative;
+  z-index: 1;
 }
