@@ -97,6 +97,8 @@
           >
             <div *ngFor="let menuItem of menu[index]">{{ menuItem }}</div>
           </div>
+
+          <div *ngIf="index !== menu.length - 1" class="br"></div>
         </cdk-accordion-item>
       </cdk-accordion>
     </div>
