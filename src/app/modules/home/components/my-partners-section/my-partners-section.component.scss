@@ -1,56 +1,128 @@
-
 section h1 {
-    width: 403px;
-    height: 54px;
+  width: 403px;
+  height: 54px;
+  font-family: 'AvenirNextGeorgian-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  color: #141414;
+}
+
+.paragraph {
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.paragraph p {
+  font-family: 'AvenirNextGeorgian-Regular';
+  width: 790px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: rgba(20, 20, 20, 0.6);
+  position: absolute;
+}
+
+.mobile {
+  display: none;
+}
+
+.partners {
+  margin-top: 37px;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  width: 250px;
+  height: 140px;
+  background: #ffffff;
+  border: 1px solid rgba(20, 20, 20, 0.1);
+}
+
+.img-container img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #141414;
+  font-family: 'AvenirNextGeorgian-Regular';
+}
+
+@media only screen and (max-width: 800px) {
+  section {
+    padding: 0 16px;
+  }
+
+  section h1 {
     font-family: 'AvenirNextGeorgian-Bold';
     font-style: normal;
-    font-weight: 700;
-    font-size: 36px;
+    font-size: 18px;
     line-height: 150%;
+    font-weight: 700;
     display: flex;
     align-items: center;
     color: #141414;
-}
-.paragraph {
-    margin-top: 20px;
-    justify-content: space-between;
-}
-.paragraph p {
+    height: auto;
+    width: auto;
+  }
+
+  .paragraph {
+    margin-top: 8px;
+  }
+
+  .paragraph p {
     font-family: 'AvenirNextGeorgian-Regular';
-    width: 790px;
+    width: 100%;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 150%;
     color: rgba(20, 20, 20, 0.6);
     position: absolute;
+  }
+
+  .btn-div {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    margin-top: 20px;
+    height: 48px;
+  }
+
+  .partners {
+    margin-top: 130px;
+  }
+
+  .mobile-img-div {
+    justify-content: space-between;
+  }
 }
-.partners {
-    margin-top: 37px;
-}
-.img-container {
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .tablet {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    width: 250px;
-    height: 140px;
-    background: #FFFFFF;
-    border: 1px solid rgba(20, 20, 20, 0.1);
+  }
 }
-.img-container img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: #141414;
-    font-family: 'AvenirNextGeorgian-Regular';
-
-}
-
