@@ -162,6 +162,12 @@ section {
     font-size: 14px;
     line-height: 150%;
     color: #141414;
+    border-bottom: 1px solid #e7e4e4;
+    padding-bottom: 20px;
+  }
+
+  .ng-star-inserted {
+    margin-top: 16px;
   }
 
   .expanded {
@@ -170,5 +176,9 @@ section {
 
   .colapsed {
     transform: rotate(0deg);
+  }
+
+  .casacalda--title {
+    width: auto;
   }
 }
