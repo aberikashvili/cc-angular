@@ -3,6 +3,7 @@ section {
   padding-right: 160px;
   margin-top: 111px;
 }
+
 section h1 {
   width: 403px;
   height: 54px;
@@ -15,10 +16,16 @@ section h1 {
   align-items: center;
   color: #141414;
 }
+
 .paragraph {
   margin-top: 20px;
   justify-content: space-between;
 }
+
+.mobile {
+  display: none;
+}
+
 .paragraph p {
   font-family: 'AvenirNextGeorgian-Regular';
   width: 790px;
@@ -29,9 +36,11 @@ section h1 {
   color: rgba(20, 20, 20, 0.6);
   position: absolute;
 }
+
 .partners {
   margin-top: 37px;
 }
+
 .img-container {
   display: flex;
   justify-content: center;
@@ -42,6 +51,7 @@ section h1 {
   background: #ffffff;
   border: 1px solid rgba(20, 20, 20, 0.1);
 }
+
 .img-container img {
   display: flex;
   justify-content: center;
