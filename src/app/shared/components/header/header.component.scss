@@ -167,3 +167,20 @@ input.check-toggle-round-flat:checked + label:after {
   padding-left: 160px;
   padding-right: 180px;
 }
+
+@media only screen and (max-width: 800px) {
+  .navigation {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .btn-container {
+    display: none;
+  }
+
+  .header-logo {
+    width: auto;
+    height: auto;
+    position: none;
+  }
+}
