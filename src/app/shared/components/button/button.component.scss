@@ -1,5 +1,5 @@
 .button {
-  min-width: 100%;
+  min-width: 186px;
   height: 48px;
   border: 1px solid;
   border-radius: 100px;
@@ -9,7 +9,7 @@
   font-family: 'AvenirNextGeorgian-Regular';
   text-transform: uppercase;
   font-variant: all-petite-caps;
-  margin-top:24px;
+ 
 
   &--primary {
     background-color: #f58634;
@@ -17,5 +17,13 @@
 
   &--secondary {
     background-color: #245aa3;
+  }
+}
+
+
+@media screen and (max-width: 800px){
+  .button{
+    width: 100%;
+    margin-top: 25px;
   }
 }

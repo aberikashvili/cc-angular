@@ -1,51 +1,56 @@
-<div class="project-section">
+<div class="projects-container">
 <div class="intro">
-  <h1 class="projects">ჩვენი პროექტები</h1>
-  <div class="button-container">
-    <button class="left-arrow" (click)="carousel.prev()">
-      <img src="assets/images/left.png" alt="" />
-    </button>
-    <button (click)="carousel.next()">
-      <img src="assets/images/right.png" alt="" />
-    </button>
+  <div class="title-container">
+  <h1 class="projects">პროექტები</h1>
+    <h1 class="projects-mobile">ჩვენი პროექტები</h1>
+
   </div>
-</div>
-<div class="wrapper">
-  <owl-carousel-o #carousel [options]="customOptions">
-    <ng-template carouselSlide *ngFor="let item of cards">
-      <div class="slide">
-        <div class="box__right">
-          <img class="img-parliament" [src]="item.image" alt="" />
-        </div>
-        <div class="box__left">
-          <p>{{ item.paragraph }}</p>
-          <h1>{{ item.title }}</h1>
-          <h4 *ngFor="let item of item.description">{{ item }}</h4>
-          <h5>{{ item.paragraph1 }}</h5> 
-          <div class="list-box">
-            <div class="box">
-              <ul>
-                <li *ngFor="let item of item.leftServices">{{ item }}</li>
-              </ul>
-            </div>
-            <div class="box">
-              <ul>
-                <li *ngFor="let item of item.rightServices">{{ item }}</li>
-              </ul>
-            </div>
-          </div> 
-          <h6>{{ item.text }}</h6>
+  
+    <div class="button-container">
+      <button class="left-arrow" (click)="carousel.prev()">
+        <img src="assets/images/left.png" alt="" />
+      </button>
+      <button (click)="carousel.next()">
+        <img src="assets/images/right.png" alt="" />
+      </button>
+    </div>
+  </div>
+  <div class="wrapper">
+    <owl-carousel-o #carousel [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let item of cards">
+        <div class="slide">
+          <div class="box__right">
+            <img class="img-parliament" [src]="item.image" alt="" />
+          </div>
           
+          <div class="box__left">
+            <p>{{ item.paragraph }}</p>
+            <h1>{{ item.title }}</h1>
+            <h4 *ngFor="let item of item.description">{{ item }}</h4>
+            <h5>{{ item.paragraph1 }}</h5>
+            <div class="list-box">
+              <div class="box">
+                <ul>
+                  <li *ngFor="let item of item.leftServices">{{ item }}</li>
+                </ul>
+              </div>
+              <div class="box">
+                <ul>
+                  <li *ngFor="let item of item.rightServices">{{ item }}</li>
+                </ul>
+              </div>
+            </div>
+            <h6>{{ item.text }}</h6>
+            <app-button class="btn-primary" type="primary"
+              >სრული პაკეტი</app-button
+            >
+          </div>
         </div>
-      </div>
-      <app-button class="btn-primary" type="primary"
-            >სრული პაკეტი</app-button>
-    </ng-template>
-  </owl-carousel-o>
-</div>
-</div>
-
-
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+  </div>
+  
 
 
 
