@@ -8,6 +8,7 @@ import { WidgetComponent } from './components/widget/widget.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { RouterModule } from '@angular/router';
+import { HeaderDetailsComponent } from './components/header-details/header-details.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { RouterModule } from '@angular/router';
     WidgetComponent,
     FooterComponent,
     SliderComponent,
+    HeaderDetailsComponent,
   ],
   imports: [CommonModule, CarouselModule, RouterModule],
   exports: [
