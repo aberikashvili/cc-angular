@@ -10,6 +10,10 @@ section {
   height: 532px;
 }
 
+.mobile {
+  display: none;
+}
+
 .heading {
   width: 655px;
   height: 54px;
@@ -148,5 +152,13 @@ section {
 
   .txt-div {
     margin-top: 15px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
   }
 }
