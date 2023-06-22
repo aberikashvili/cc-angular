@@ -67,3 +67,9 @@ section {
   margin-bottom: 25px;
   resize: none;
 }
+
+@media only screen and (max-width: 800px) {
+  section {
+    padding: 0 16px;
+  }
+}
