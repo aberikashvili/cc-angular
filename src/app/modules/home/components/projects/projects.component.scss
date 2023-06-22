@@ -136,6 +136,8 @@
 @media screen and (max-width: 800px) {
   .projects-container{
     padding: 0 16px;
+    background-color:#F9F9F9;
+;
   }
   .intro{
     width: 100%;
@@ -159,6 +161,7 @@
     font-size: 18px;
     line-height: 150%;
     color: #141414;
+    padding-top: 6px;
   }
 
    .img-parliament
@@ -169,7 +172,12 @@
 }
 
 .box__left{
-  margin-left: 0px !important; 
+  padding-left: 0px !important; 
+  
+ p{
+  margin-top:10px !important;
+ }
+
   h1{
     margin-left: 0px !important;
     font-size: 16px !important;
