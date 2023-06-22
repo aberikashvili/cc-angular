@@ -1,43 +1,70 @@
 <section>
-    <div class="flex">
-        <div class="left--div flex justify-center flex-col">
-            <div class="heading">გსურთ ჩვენი დახმარება?</div>
-            <div class="text mt-8">შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, 
-            რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის შესრულებისას საჩვენებელია, 
-            თუ როგორი იქნება ტექსტის ბლოკი. სწორედ ასეთ დროს არის მოსახერხებელი ამ გენერატორით შექმნილი ტექსტის გამოყენება,</div>
-        </div>
-        <div class="form--container">
-              <form class="flex-col" [formGroup]="myForm">
-                <div>
-                  <label class="label" for="name"> სახელი
-                    <input  class="inputStyle w-full name--inp" id="Name"  type="text" formControlName="name">
-                  </label>
-                </div>
-
-                <div class="flex justify-between">
-                  <div class=" mt-8">
-                    <label class="label"> ელ.ფოსტა                  
-                      <input class="inputStyle email--inp"  type="email" formControlName="email">
-                    </label>
-                  </div>
-                
-                  <div class="mt-8 ml-5">
-                    <label class="label"> ტელეფონის ნომერი
-                      <input class="inputStyle number--inp"  type="text" formControlName="number" id="number"> 
-                    </label>
-                  </div>
-                </div>
-                
-                <div class="mt-8">
-                  <label class="label"> შეტყობინების ტექსტი
-                    <!-- <input class="w-full txtarea" type="text" formControlName="message"> -->
-                    <textarea class="inputStyle w-full txtarea"  formControlName="message"></textarea>
-                  </label> 
-                </div> 
-                <div class="button">
-                  <app-button  type="primary" width="127px" (clicked)="onClick()" >გაგზავნა</app-button>
-                </div>
-              </form>
-        </div>  
+  <div class="flex-cont flex">
+    <div class="left--div flex justify-center flex-col">
+      <div class="heading">გსურთ ჩვენი დახმარება?</div>
+      <div class="text mt-8">
+        შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული
+        ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი
+        წარუდგინონ შემფასებელს. ხშირადაა შემთხვევა, როდესაც დიზაინის
+        შესრულებისას საჩვენებელია, თუ როგორი იქნება ტექსტის ბლოკი. სწორედ ასეთ
+        დროს არის მოსახერხებელი ამ გენერატორით შექმნილი ტექსტის გამოყენება,
+      </div>
     </div>
+    <div class="form--container">
+      <form class="flex-col" [formGroup]="myForm">
+        <div>
+          <label class="label" for="name">
+            სახელი
+            <input
+              class="inputStyle w-full name--inp"
+              id="Name"
+              type="text"
+              formControlName="name"
+            />
+          </label>
+        </div>
+
+        <div class="inputs flex">
+          <div class="mt-8">
+            <label class="label">
+              ელ.ფოსტა
+              <input
+                class="inputStyle email--inp"
+                type="email"
+                formControlName="email"
+              />
+            </label>
+          </div>
+
+          <div class="number-div mt-8 ml-5">
+            <label class="label">
+              ტელეფონის ნომერი
+              <input
+                class="inputStyle number--inp"
+                type="text"
+                formControlName="number"
+                id="number"
+              />
+            </label>
+          </div>
+        </div>
+
+        <div class="mt-8">
+          <label class="label">
+            შეტყობინების ტექსტი
+            <!-- <input class="w-full txtarea" type="text" formControlName="message"> -->
+            <textarea
+              class="inputStyle w-full txtarea"
+              formControlName="message"
+            ></textarea>
+          </label>
+        </div>
+        <div class="button">
+          <app-button type="primary" width="100%" (clicked)="onClick()"
+            >გაგზავნა</app-button
+          >
+        </div>
+      </form>
+    </div>
+  </div>
 </section>

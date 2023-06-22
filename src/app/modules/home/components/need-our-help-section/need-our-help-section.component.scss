@@ -5,9 +5,11 @@ section {
   margin-top: 100px;
   position: relative;
 }
+
 .left--div {
   height: 532px;
 }
+
 .heading {
   width: 655px;
   height: 54px;
@@ -20,6 +22,7 @@ section {
   align-items: center;
   color: #141414;
 }
+
 .text {
   width: 791px;
   font-family: 'AvenirNextGeorgian-Regular';
@@ -29,6 +32,7 @@ section {
   line-height: 150%;
   color: rgba(20, 20, 20, 0.6);
 }
+
 .form--container {
   width: 655px;
   height: 412px;
@@ -41,9 +45,11 @@ section {
 .inputStyle:focus {
   border-bottom: 1px solid orange;
 }
+
 .inputStyle {
   border-bottom: 1px solid rgba(20, 20, 20, 0.1);
 }
+
 .label {
   font-family: 'AvenirNextGeorgian-Regular';
   font-style: normal;
@@ -52,14 +58,17 @@ section {
   line-height: 150%;
   color: rgba(20, 20, 20, 0.6);
 }
+
 .email--inp {
   border-bottom: 1px solid rgba(20, 20, 20, 0.1);
   width: 115%;
 }
+
 .number--inp {
   border-bottom: 1px solid rgba(20, 20, 20, 0.1);
   width: 100%;
 }
+
 .txtarea {
   border-bottom: 1px solid rgba(20, 20, 20, 0.1);
   height: auto;
@@ -71,5 +80,60 @@ section {
 @media only screen and (max-width: 800px) {
   section {
     padding: 0 16px;
+    margin-top: 0;
+  }
+
+  .flex-cont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading {
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27;
+    display: flex;
+    align-items: center;
+    color: #141414;
+  }
+
+  .text {
+    width: 343px;
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(20, 20, 20, 0.6);
+    margin-top: 0;
+  }
+
+  .left--div {
+    height: auto;
+  }
+  .form--container {
+    width: 100%;
+    // height: 372px;
+    background: #ffffff;
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+
+  .email--inp {
+    width: 100%;
+  }
+
+  .number-div {
+    margin-left: 0;
+  }
+
+  .txtarea {
+    margin-top: 0;
   }
 }
