@@ -10,7 +10,7 @@ export class TestSectionComponent implements OnInit {
   myForm!: FormGroup;
 
   constructor(private _formBuilder: FormBuilder) {}
-  
+
   ngOnInit() {
     this.myForm = this._formBuilder.group({
       nameSurname: ['', Validators.required],

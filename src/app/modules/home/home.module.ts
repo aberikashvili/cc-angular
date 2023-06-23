@@ -6,9 +6,8 @@ import { MyPartnersSectionComponent } from './components/my-partners-section/my-
 import { NeedOurHelpSectionComponent } from './components/need-our-help-section/need-our-help-section.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AboutUsSectionComponent } from './components/about-us-section/about-us-section.component';
-import { ContactUsSectionComponent } from '../contact-us-page/components/contact-us-section/contact-us-section.component';
 import { AwardsDeedsSectionComponent } from './components/awards-deeds-section/awards-deeds-section.component';
-import { TestSectionComponent } from './components/test-section/test-section.component';
+
 
 
 
@@ -26,8 +25,7 @@ const routes: Routes = [
     MyPartnersSectionComponent,
     AboutUsSectionComponent,
     NeedOurHelpSectionComponent,
-    ContactUsSectionComponent,
-    TestSectionComponent
+    
     
   ],
   imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule],
