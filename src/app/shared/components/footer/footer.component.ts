@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent {
-  imageUrl = './assets/images/dropdownUp.jpg';
+  imageUrl = '/assets/images/dropdownUp.jpg';
   rotateState = false;
   rotateStyle = '';
   expandedIndex = 0;
