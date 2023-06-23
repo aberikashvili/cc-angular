@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
-export class ProjectsComponent  {
+export class ProjectsComponent {
   customOptions: OwlOptions = {
     loop: false,
     autoplay: false,
@@ -75,6 +76,4 @@ export class ProjectsComponent  {
       text: 'შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს',
     },
   ];
-
-  
 }
