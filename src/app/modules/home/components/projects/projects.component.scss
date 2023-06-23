@@ -1,6 +1,7 @@
 .projects-container{
   background: #F9F9F9;
   padding-top: 20px;
+  height: 752px;
 }
 .projects {
   font-family: 'AvenirNextGeorgian-Bold';
@@ -35,7 +36,7 @@
       font-size: 16px;
       line-height: 150%;
       color: #f58634;
-      margin-top: 30px;
+      margin-top: 25px;
     }
 
     h1 {
@@ -45,8 +46,9 @@
       font-size: 36px;
       line-height: 150%;
       color: #141414;
-      margin-bottom: 16px;
+      // margin-bottom: 16px;
       margin-left: -134px;
+      margin-top: 15px;
     }
 
     h4 {
@@ -143,6 +145,7 @@
     padding: 0 16px;
     background-color:#F9F9F9;
     padding-top: 20px;
+    height: 610px;
   }
   .intro{
     width: 100%;
@@ -203,8 +206,8 @@ h6{
   display: none !important;
 }
 
-.left-arrow, .right-arrow {
-  width: 100%;
+.left-arrow, .right-arrow{
+  width: 37px;
 }
 }
 
