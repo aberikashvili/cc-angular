@@ -8,6 +8,7 @@ import { WidgetComponent } from './components/widget/widget.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { SliderComponent } from './components/slider/slider.component';
 import { RouterModule } from '@angular/router';
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,7 @@ import { RouterModule } from '@angular/router';
     FooterComponent,
     SliderComponent,
   ],
-  imports: [CommonModule, CarouselModule, RouterModule],
+  imports: [CommonModule, CarouselModule, CdkAccordionModule, RouterModule],
   exports: [
     CommonModule,
     ButtonsComponent,
