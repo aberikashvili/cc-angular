@@ -2,7 +2,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { NgModule } from '@angular/core';
 import { ContactUsPageComponent } from './contact-us-page.component';
-import { ContactUsSectionComponent } from './components/contact-us-section/contact-us-section.component';
+import { ContactUsSectionComponent } from '../contact-us-page/components/contact-us-section/contact-us-section.component';
 const routes: Routes = [
   {
     path: '',

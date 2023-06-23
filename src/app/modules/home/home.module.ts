@@ -27,8 +27,7 @@ const routes: Routes = [
     AboutUsSectionComponent,
     NeedOurHelpSectionComponent,
     ContactUsSectionComponent,
-    TestSectionComponent,
-    
+    TestSectionComponent
     
   ],
   imports: [RouterModule.forChild(routes), SharedModule, ReactiveFormsModule],
