@@ -1,3 +1,7 @@
+.projects-container{
+  background: #F9F9F9;
+  padding-top: 20px;
+}
 .projects {
   font-family: 'AvenirNextGeorgian-Bold';
   font-size: normal;
@@ -109,6 +113,7 @@
 .intro {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 
   .button-container {
     margin-right: 148px;
@@ -137,7 +142,7 @@
   .projects-container{
     padding: 0 16px;
     background-color:#F9F9F9;
-;
+    padding-top: 20px;
   }
   .intro{
     width: 100%;
@@ -175,7 +180,8 @@
   padding-left: 0px !important; 
   
  p{
-  margin-top:10px !important;
+  margin-top:15px !important;
+  font-size: 14px !important;
  }
 
   h1{
@@ -195,6 +201,10 @@ h6{
 }
 .list-box{
   display: none !important;
+}
+
+.left-arrow, .right-arrow {
+  width: 100%;
 }
 }
 
