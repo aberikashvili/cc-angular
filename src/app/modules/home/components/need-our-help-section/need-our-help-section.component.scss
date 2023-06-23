@@ -5,9 +5,15 @@ section {
   margin-top: 100px;
   position: relative;
 }
+
 .left--div {
   height: 532px;
 }
+
+.mobile {
+  display: none;
+}
+
 .heading {
   width: 655px;
   height: 54px;
@@ -20,6 +26,7 @@ section {
   align-items: center;
   color: #141414;
 }
+
 .text {
   width: 791px;
   font-family: 'AvenirNextGeorgian-Regular';
@@ -29,6 +36,7 @@ section {
   line-height: 150%;
   color: rgba(20, 20, 20, 0.6);
 }
+
 .form--container {
   width: 655px;
   height: 412px;
@@ -41,9 +49,11 @@ section {
 .inputStyle:focus {
   border-bottom: 1px solid orange;
 }
+
 .inputStyle {
   border-bottom: 1px solid rgba(20, 20, 20, 0.1);
 }
+
 .label {
   font-family: 'AvenirNextGeorgian-Regular';
   font-style: normal;
@@ -52,18 +62,101 @@ section {
   line-height: 150%;
   color: rgba(20, 20, 20, 0.6);
 }
+
 .email--inp {
   border-bottom: 1px solid rgba(20, 20, 20, 0.1);
   width: 115%;
 }
+
 .number--inp {
   border-bottom: 1px solid rgba(20, 20, 20, 0.1);
   width: 100%;
 }
+
 .txtarea {
   border-bottom: 1px solid rgba(20, 20, 20, 0.1);
   height: auto;
   margin-top: 50px;
   margin-bottom: 25px;
   resize: none;
+}
+
+@media only screen and (max-width: 800px) {
+  section {
+    margin-top: 0;
+    padding: 0 16px 40px 16px;
+  }
+
+  .flex-cont {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .heading {
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 27;
+    display: flex;
+    align-items: center;
+    color: #141414;
+    width: 100%;
+  }
+
+  .text {
+    width: 100%;
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(20, 20, 20, 0.6);
+    margin-top: 0;
+  }
+
+  .left--div {
+    height: auto;
+    padding-top: 30px;
+  }
+  .form--container {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 20px;
+    padding: 20px;
+  }
+
+  .inputs {
+    flex-direction: column;
+  }
+
+  .email-div {
+    margin-top: 10px;
+  }
+
+  .email--inp {
+    width: 100%;
+  }
+
+  .number-div {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .txtarea {
+    margin-top: 0;
+  }
+
+  .txt-div {
+    margin-top: 15px;
+  }
+
+  .button {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
 }
