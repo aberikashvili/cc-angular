@@ -1,11 +1,9 @@
 <div class="projects-container">
-<div class="intro">
-  <div class="title-container">
-  <h1 class="projects">პროექტები</h1>
-    <h1 class="projects-mobile">ჩვენი პროექტები</h1>
-
-  </div>
-  
+  <div class="intro">
+    <div class="title-container">
+      <h1 class="projects">პროექტები</h1>
+      <h1 class="projects-mobile">ჩვენი პროექტები</h1>
+    </div>
     <div class="button-container">
       <button class="left-arrow" (click)="carousel.prev()">
         <img src="assets/images/left.png" alt="" />
@@ -22,7 +20,7 @@
           <div class="box__right">
             <img class="img-parliament" [src]="item.image" alt="" />
           </div>
-          
+
           <div class="box__left">
             <p>{{ item.paragraph }}</p>
             <h1>{{ item.title }}</h1>
@@ -42,19 +40,10 @@
             </div>
             <h6>{{ item.text }}</h6>
             <app-button class="btn-primary" type="primary"
-              >სრული პროექტი</app-button
-            >
+              >სრული პროექტი</app-button>
           </div>
         </div>
       </ng-template>
     </owl-carousel-o>
   </div>
-  </div>
-  
-
-
-
-
-
-
-  
+</div>
