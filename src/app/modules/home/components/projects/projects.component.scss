@@ -27,7 +27,7 @@
   display: flex;
 
   .box__left {
-    padding-left: 30px;
+    padding-left: 27px;
 
     p {
       font-family: 'AvenirNextGeorgian-bold';
@@ -144,7 +144,7 @@
   .projects-container{
     padding: 0 16px;
     background-color:#F9F9F9;
-    padding-top: 20px;
+    padding-top: 15px;
     height: 610px;
   }
   .intro{
@@ -177,6 +177,7 @@
     margin: 0 !important;
     width: 100% !important;
     height: auto !important;
+    padding-top: 15px !important;
 }
 
 .box__left{
@@ -190,10 +191,11 @@
   h1{
     margin-left: 0px !important;
     font-size: 16px !important;
+    margin-top: 0px !important;
+    padding-bottom: 20px;
   }
   h4{
     width: 100% !important;
-    
   }
 }
 h5{
@@ -207,7 +209,7 @@ h6{
 }
 
 .left-arrow, .right-arrow{
-  width: 37px;
+  width: 33px;
 }
 }
 
