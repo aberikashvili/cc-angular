@@ -71,11 +71,15 @@ hr {
   display: flex;
 }
 .picture {
+  width: 100%;
+  height: auto;
   position: relative;
   height: 469px;
   margin-left: 30px;
   margin-top: 251px;
 }
+
+
 .circle {
   position: absolute;
   margin-top: 124px;
@@ -97,3 +101,24 @@ hr {
 }
 
 
+.mobile-picture{
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+.right-side{
+  display: none;
+}
+.mobile-picture{
+  display: block;
+  width: 100%;
+}
+.picture{
+  margin-top: 0px !important;
+  margin-left: 0px !important;
+}
+
+.warm-house{
+  margin-left: 0px !important;
+}
+}
