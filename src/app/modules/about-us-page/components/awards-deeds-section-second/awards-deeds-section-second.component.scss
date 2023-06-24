@@ -42,6 +42,10 @@
       display: block;
     }
 
+    &__title {
+      margin-bottom: 0;
+    }
+
     &__title h1 {
       font-family: 'AvenirNextGeorgian-Bold';
       font-style: normal;
@@ -51,6 +55,7 @@
       display: flex;
       align-items: center;
       color: #141414;
+      width: 100%;
     }
     &__img-container {
       width: 167px;
@@ -60,6 +65,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      margin-top: 8px;
     }
 
     &__img-container img {
@@ -68,7 +74,17 @@
     }
   }
 
+  .tablet {
+    display: none;
+  }
+
   .partners {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .tablet {
+    display: block;
   }
 }
