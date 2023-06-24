@@ -16,7 +16,7 @@
     color: #141414;
   }
 
-  .mobile {
+  &__desktop {
     display: none;
   }
 
@@ -28,5 +28,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .awards {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    padding: 0 16px;
+
+    &__desktop {
+      display: block;
+    }
+
+    &__title h1 {
+      // width: 436px;
+      // height: 54px;
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #141414;
+    }
+  }
+
+  .partners {
+    display: none;
   }
 }
