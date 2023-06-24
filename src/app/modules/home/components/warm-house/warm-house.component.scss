@@ -75,7 +75,7 @@ hr {
   height: auto;
   position: relative;
   height: 469px;
-  margin-left: 30px;
+  padding-left: 30px;
   margin-top: 251px;
 }
 
@@ -100,10 +100,13 @@ hr {
   margin-top: 50px;
 }
 
-
 .mobile-picture{
   display: none;
 }
+.paragraph-mobile{
+  display: none;
+}
+
 
 @media screen and (max-width: 800px){
 .right-side{
@@ -112,13 +115,42 @@ hr {
 .mobile-picture{
   display: block;
   width: 100%;
+  
 }
 .picture{
   margin-top: 0px !important;
-  margin-left: 0px !important;
+  padding-left: 0px !important;
+  width: 100% !important;
+  height: auto;
 }
 
 .warm-house{
   margin-left: 0px !important;
 }
+
+.title{
+  margin-top:0px;
+  h1{
+    font-family: "AvenirNextGeorgian-Bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #141414;
+    padding-top: 22px;
+  }
+}
+
+p{
+  display: none;
+}
+
+.paragraph-mobile{
+  display: block;
+  width: 100% !important;
+}
+hr{
+  display: none;
+}
+
 }
