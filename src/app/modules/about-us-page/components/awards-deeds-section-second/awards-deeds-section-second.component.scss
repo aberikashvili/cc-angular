@@ -40,10 +40,12 @@
 
     &__desktop {
       display: block;
+      margin-top: 10px;
     }
 
     &__title {
       margin-bottom: 0;
+      height: 27px;
     }
 
     &__title h1 {
