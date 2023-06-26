@@ -10,6 +10,19 @@
   text-align: center;
 }
 
+  ::ng-deep {
+    .owl-stage {
+      width: 2200px !important;
+      // margin-left: 20px !important;
+    }
+  
+    .owl-item {
+      margin-right: 10px !important; 
+    }
+  }
+
+  
+
 .container {
   padding: 0 16px;
 }
@@ -42,6 +55,20 @@ section {
     color: rgba(20, 20, 20, 0.6);
   }
 }
+
+
+.intro{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+.left-arrow{
+  margin-right: 20px;
+}
+
 
 .card {
   display: flex;
@@ -100,15 +127,66 @@ ul:hover li::before {
   margin-top: 40px;
 }
 
-.left-arrow {
-  margin-right: 20px;
+.buttons-container-mobile{
+  display: none;
 }
 
-.background {
-  background: url('/assets/img/vector.jpg');
-  position: absolute;
-  height: 649px;
-  width: 370px;
-  top: 600px;
-  border-radius: 0px;
+@media screen and (max-width: 800px) {
+  .service-title {
+    font-size: 18px;
+  }
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .services__paragraph {
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    margin-top: -8px;
+  }
+
+  .card-slider-controls {
+    position: absolute;
+    margin-bottom: 186px;
+  }
+  img {
+    max-width: 72%;
+    height: auto;
+  }
+  .left-arrow {
+    margin-right: 7px;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .wrapper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.card{
+  width: 100%;
+}
+
+::ng-deep{
+  .owl-item {
+      margin-right: 0px !important; 
+    }
+}
+
+.buttons-container{
+  display: none;
+}
+ 
+.buttons-container-mobile{
+  display: block;
+}
+
 }
