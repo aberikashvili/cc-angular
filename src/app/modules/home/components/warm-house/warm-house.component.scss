@@ -153,4 +153,13 @@ hr{
   display: none;
 }
 
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px !important;
+  justify-content: center;
+  margin-top: 100px;
+  width: 100%;
+}
+
 }
