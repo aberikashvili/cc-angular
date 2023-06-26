@@ -10,6 +10,19 @@
   text-align: center;
 }
 
+  ::ng-deep {
+    .owl-stage {
+      width: 2200px !important;
+      // margin-left: 20px !important;
+    }
+  
+    .owl-item {
+      margin-right: 10px !important; 
+    }
+  }
+
+  
+
 .container {
   padding: 0 16px;
 }
@@ -42,6 +55,20 @@ section {
     color: rgba(20, 20, 20, 0.6);
   }
 }
+
+
+.intro{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+.left-arrow{
+  margin-right: 20px;
+}
+
 
 .card {
   display: flex;
@@ -100,6 +127,10 @@ ul:hover li::before {
   margin-top: 40px;
 }
 
+.buttons-container-mobile{
+  display: none;
+}
+
 @media screen and (max-width: 800px) {
   .service-title {
     font-size: 18px;
@@ -139,4 +170,23 @@ ul:hover li::before {
     justify-content: space-between;
     align-items: center;
   }
+
+.card{
+  width: 100%;
+}
+
+::ng-deep{
+  .owl-item {
+      margin-right: 0px !important; 
+    }
+}
+
+.buttons-container{
+  display: none;
+}
+ 
+.buttons-container-mobile{
+  display: block;
+}
+
 }
