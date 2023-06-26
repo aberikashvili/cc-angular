@@ -90,7 +90,7 @@ hr {
   display: flex;
   margin-top: 52px;
   gap: 120px;
-  width: 50%;
+  // width: 50%;
 }
 
 .container {
@@ -124,6 +124,7 @@ hr {
 
   .warm-house {
     margin-left: 0px !important;
+    padding: 0 16px;
   }
 
   .title {
@@ -155,8 +156,14 @@ hr {
     display: flex;
     flex-wrap: wrap;
     gap: 0px !important;
-    // justify-content: center;
-    margin-top: 100px;
+    margin-top: 200px;
     width: 100%;
   }
+
+  .widget-container{
+    justify-content: center;
+    width: 50%;
+  }
+
+  
 }
