@@ -1,11 +1,10 @@
 <section class="warm-house">
-  
   <aside class="left-side">
     <div class="mobile-picture">
-    <img class="picture" src="assets/images/Rectangle.png" alt="" />
-  </div> 
+      <img class="picture" src="assets/images/Rectangle.png" alt="" />
+    </div>
     <div class="title">
-      <h1>თბილი სახლი</h1> 
+      <h1>თბილი სახლი</h1>
       <p>
         ევროპის, აზიისა და ამერიკის კონტინენტზე მოქმედი ცნობილი კომპანიების
         საიმედო პარტნიორია და <br />
@@ -15,25 +14,27 @@
         <span>უმოკლეს დროში.</span>
       </p>
       <p class="paragraph-mobile">
-         ევროპის, აზიისა და ამერიკის კონტინენტზე <br> მოქმედი ცნობილი კომპანიების
-        საიმედო <br> პარტნიორია და 
-        კლიენტებს სთავაზობს,<br> როგორც <span>ხარისხიანი</span> პროდუქციის <br>
-        ასორტიმენტის სტანდარტულ მოდელებს, ასევე  <br>
-        ინდივიდუალური, სპეციფიური დაკვეთით <br> დამზადებული პროდუქციის მოწოდებას <br>
+        ევროპის, აზიისა და ამერიკის კონტინენტზე <br />
+        მოქმედი ცნობილი კომპანიების საიმედო <br />
+        პარტნიორია და კლიენტებს სთავაზობს,<br />
+        როგორც <span>ხარისხიანი</span> პროდუქციის <br />
+        ასორტიმენტის სტანდარტულ მოდელებს, ასევე <br />
+        ინდივიდუალური, სპეციფიური დაკვეთით <br />
+        დამზადებული პროდუქციის მოწოდებას <br />
         <span>უმოკლეს დროში.</span>
-      </p> 
-    </div> 
+      </p>
+    </div>
     <hr />
-     <div class="container">
-      <div class="widget-contaier" *ngFor="let item of widgetValues">
+    <div class="container">
+      <div class="widget-container" *ngFor="let item of widgetValues">
         <app-widget class="widget" [label]="item.label">{{
           item.value
         }}</app-widget>
       </div>
-    </div> 
+    </div>
   </aside>
   <aside class="right-side">
     <img class="circle" src="assets/images/Group 14.png" alt="" />
     <img class="picture" src="assets/images/Rectangle.png" alt="" />
-  </aside>  
+  </aside>
 </section>

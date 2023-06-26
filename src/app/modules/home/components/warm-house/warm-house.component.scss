@@ -79,7 +79,6 @@ hr {
   margin-top: 251px;
 }
 
-
 .circle {
   position: absolute;
   margin-top: 124px;
@@ -91,6 +90,7 @@ hr {
   display: flex;
   margin-top: 52px;
   gap: 120px;
+  width: 50%;
 }
 
 .container {
@@ -100,66 +100,63 @@ hr {
   margin-top: 50px;
 }
 
-.mobile-picture{
+.mobile-picture {
   display: none;
 }
-.paragraph-mobile{
+.paragraph-mobile {
   display: none;
 }
 
-
-@media screen and (max-width: 800px){
-.right-side{
-  display: none;
-}
-.mobile-picture{
-  display: block;
-  width: 100%;
-  
-}
-.picture{
-  margin-top: 0px !important;
-  padding-left: 0px !important;
-  width: 100% !important;
-  height: auto;
-}
-
-.warm-house{
-  margin-left: 0px !important;
-}
-
-.title{
-  margin-top:0px;
-  h1{
-    font-family: "AvenirNextGeorgian-Bold";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 150%;
-    color: #141414;
-    padding-top: 22px;
+@media screen and (max-width: 800px) {
+  .right-side {
+    display: none;
   }
-}
+  .mobile-picture {
+    display: block;
+    width: 100%;
+  }
+  .picture {
+    margin-top: 0px !important;
+    padding-left: 0px !important;
+    width: 100% !important;
+    height: auto;
+  }
 
-p{
-  display: none;
-}
+  .warm-house {
+    margin-left: 0px !important;
+  }
 
-.paragraph-mobile{
-  display: block;
-  width: 100% !important;
-}
-hr{
-  display: none;
-}
+  .title {
+    margin-top: 0px;
+    h1 {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 150%;
+      color: #141414;
+      padding-top: 22px;
+    }
+  }
 
-.container{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0px !important;
-  justify-content: center;
-  margin-top: 100px;
-  width: 100%;
-}
+  p {
+    display: none;
+  }
 
+  .paragraph-mobile {
+    display: block;
+    width: 100% !important;
+  }
+  hr {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px !important;
+    // justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+  }
 }
