@@ -130,6 +130,8 @@
         flex-direction: column;
         padding: 0 16px;
         height: 100%;
+        background: #245aa3;
+        margin-top: 10px;
 
         &--grey {
           width: 100%;
@@ -149,6 +151,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
+          margin-top: 20px;
         }
       }
     }
