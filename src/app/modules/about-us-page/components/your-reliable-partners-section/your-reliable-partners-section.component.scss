@@ -18,6 +18,14 @@
       align-items: center;
       color: #141414;
       width: 1060px;
+
+      h1 {
+        font-family: 'AvenirNextGeorgian-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 150%;
+      }
     }
 
     &--secondheading {
@@ -30,6 +38,14 @@
       align-items: center;
       color: #245aa3;
       margin-top: 30px;
+
+      h1 {
+        font-family: 'AvenirNextGeorgian-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 150%;
+      }
     }
   }
 
@@ -123,7 +139,6 @@
       margin-top: 0;
 
       &--first {
-        // background: url('/assets/img/blue-bg.png') bottom center repeat-x;
         background: url('/assets/img/blue-bg.png') bottom center;
         display: flex;
         justify-content: center;
