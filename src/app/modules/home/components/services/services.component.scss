@@ -10,18 +10,16 @@
   text-align: center;
 }
 
-  ::ng-deep {
-    .owl-stage {
-      width: 2200px !important;
-      // margin-left: 20px !important;
-    }
-  
-    .owl-item {
-      margin-right: 10px !important; 
-    }
+::ng-deep {
+  .owl-stage {
+    width: 2200px !important;
+    // margin-left: 20px !important;
   }
 
-  
+  .owl-item {
+    margin-right: 10px !important;
+  }
+}
 
 .container {
   padding: 0 16px;
@@ -56,19 +54,15 @@ section {
   }
 }
 
-
-.intro{
+.intro {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-
-
-.left-arrow{
+.left-arrow {
   margin-right: 20px;
 }
-
 
 .card {
   display: flex;
@@ -93,7 +87,8 @@ h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  margin-top: 25px;
+  padding-top: 25px;
+  height: 35px;
 }
 
 li {
@@ -127,13 +122,14 @@ ul:hover li::before {
   margin-top: 40px;
 }
 
-.buttons-container-mobile{
+.buttons-container-mobile {
   display: none;
 }
 
 @media screen and (max-width: 800px) {
   .service-title {
     font-size: 18px;
+    padding-bottom: 20px;
   }
   .intro {
     display: flex;
@@ -146,7 +142,6 @@ ul:hover li::before {
     font-weight: 400;
     font-size: 13px;
     line-height: 150%;
-    margin-top: -8px;
   }
 
   .card-slider-controls {
@@ -168,25 +163,30 @@ ul:hover li::before {
   .wrapper-container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    height: 50px;
+    padding-top: 10px;
+    
   }
 
-.card{
-  width: 100%;
-}
+  .card {
+    width: 100%;
+  }
 
-::ng-deep{
-  .owl-item {
-      margin-right: 0px !important; 
+  ::ng-deep {
+    .owl-item {
+      margin-right: 0px !important;
     }
-}
+  }
 
-.buttons-container{
-  display: none;
-}
- 
-.buttons-container-mobile{
-  display: block;
-}
+  h2{
+    height: 35px !important;
+  }
+  .buttons-container {
+    display: none;
+  }
 
+  .buttons-container-mobile {
+    display: block;
+  }
 }
