@@ -90,7 +90,6 @@ hr {
   display: flex;
   margin-top: 52px;
   gap: 120px;
-  // width: 50%;
 }
 
 .container {
@@ -162,13 +161,12 @@ hr {
     width: 100%;
   }
 
-  .widget-container{
+  .widget-container {
     justify-content: center;
     width: 50%;
   }
 
-  .left-side{
+  .left-side {
     width: 100% !important;
   }
-  
 }
