@@ -1,4 +1,21 @@
-Demo Page
+<div class="full">
+  <div class="carousel-container">
+    <owl-carousel-o [options]="customOptions">
+      <ng-template carouselSlide *ngFor="let item of cards">
+        <div class="slider-card">
+          <ul>
+            <h2>{{ item.title }}</h2>
+            <li *ngFor="let serviceItem of item.services">
+              {{ serviceItem }}
+            </li>
+          </ul>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>
+
+<!-- Demo Page
 <owl-carousel-o [options]="customOptions">
   <ng-template carouselSlide>
     <img
@@ -48,4 +65,4 @@ Demo Page
       alt="AR-15"
     />
   </ng-template>
-</owl-carousel-o>
+</owl-carousel-o> -->

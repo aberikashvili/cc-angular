@@ -10,17 +10,19 @@
   text-align: center;
 }
 
-::ng-deep {
-  .owl-stage {
-    width: 2200px !important;
-  }
-
-  .owl-item {
-    margin-right: 10px !important;
-  }
+.card-box {
+  padding: 0 20px;
 }
 
+// ::ng-deep {
+//   .owl-stage {
+//     width: 2200px !important;
+//   }
 
+//   .owl-item {
+//     margin-right: 10px !important;
+//   }
+// }
 
 .container {
   padding: 0 16px;
@@ -167,7 +169,6 @@ ul:hover li::before {
     align-items: flex-start;
     height: 50px;
     padding-top: 10px;
-    
   }
 
   .card {
@@ -180,7 +181,7 @@ ul:hover li::before {
     }
   }
 
-  h2{
+  h2 {
     height: 35px !important;
   }
   .buttons-container {

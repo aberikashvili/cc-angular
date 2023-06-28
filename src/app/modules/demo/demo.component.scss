@@ -1,11 +1,35 @@
-#owl-demo .item {
-  background: #a1def8;
-  padding: 30px 0px;
-  display: block;
-  margin: 5px;
-  color: #fff;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  text-align: center;
+// #owl-demo .item {
+//   background: #a1def8;
+//   padding: 30px 0px;
+//   display: block;
+//   margin: 5px;
+//   color: #fff;
+//   -webkit-border-radius: 3px;
+//   -moz-border-radius: 3px;
+//   border-radius: 3px;
+//   text-align: center;
+// }
+
+.full {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-container {
+  height: 300px;
+  max-width: 1920px;
+  width: 100%;
+  // border: 1px solid red;
+}
+
+.slider-card {
+  // width: 385px;
+  height: 315px;
+  border: 1px solid #000;
+  margin: 0 10px;
+  background: #f9f9f9;
+  padding: 0 8px;
+  // width: 96%;
+  // margin: 0 auto;
 }
