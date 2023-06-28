@@ -71,11 +71,14 @@ hr {
   display: flex;
 }
 .picture {
+  width: 100%;
+  height: auto;
   position: relative;
   height: 469px;
-  margin-left: 30px;
+  padding-left: 30px;
   margin-top: 251px;
 }
+
 .circle {
   position: absolute;
   margin-top: 124px;
@@ -96,4 +99,76 @@ hr {
   margin-top: 50px;
   position: relative;
   z-index: 1;
+}
+
+.mobile-picture {
+  display: none;
+}
+.paragraph-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .right-side {
+    display: none;
+  }
+  .mobile-picture {
+    display: block;
+    width: 100% !important;
+  }
+  .picture {
+    margin-top: 0px !important;
+    padding-left: 0px !important;
+    width: 100% !important;
+    height: auto;
+  }
+
+  .warm-house {
+    margin-left: 0px !important;
+    padding: 0 16px;
+    padding-top: 16px;
+  }
+
+  .title {
+    margin-top: 0px;
+    h1 {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 150%;
+      color: #141414;
+      padding-top: 22px;
+    }
+  }
+
+  p {
+    display: none;
+  }
+
+  .paragraph-mobile {
+    display: block;
+    width: 100% !important;
+    font-size: 14px !important;
+  }
+  hr {
+    display: none;
+  }
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px !important;
+    margin-top: 100px;
+    width: 100%;
+  }
+
+  .widget-container {
+    justify-content: center;
+    width: 50%;
+  }
+
+  .left-side {
+    width: 100% !important;
+  }
 }

@@ -24,3 +24,15 @@
     color: rgba(20, 20, 20, 0.5);
   }
 }
+
+@media screen and (max-width: 800px){
+  .widget{
+    &__title{
+      font-size: 13px;
+      text-align: center;
+    }
+    &__number{
+      font-size: 32px;
+    }
+  }
+}
