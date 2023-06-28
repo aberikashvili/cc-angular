@@ -177,6 +177,7 @@ section h1 {
 
   .owl-container {
     padding: 0 16px;
+    width: 100%;
   }
 
   .heading {
@@ -196,4 +197,39 @@ section h1 {
     background-color: #14141408;
     padding: 20px;
   }
+
+  .text {
+    span {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    gap: 17px;
+
+    .bottom-left {
+      background: #d9d9d9;
+      border-radius: 60%;
+      margin-top: 24px;
+      width: 60px;
+      height: 60px;
+    }
+
+    .bottom-right {
+      display: flex;
+      flex-direction: column;
+      margin-top: 31px;
+    }
+  }
+
+  .company--name {
+    width: 100%;
+    height: 21px;
+  }
+
+  // .owl-stage {
+  //   width: 100%;
+  // }
 }
