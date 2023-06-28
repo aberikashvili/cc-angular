@@ -261,3 +261,9 @@ section h1 {
     }
   }
 }
+
+::ng-deep {
+  .owl-carousel .owl-stage {
+    // width: 100% !important;
+  }
+}

@@ -1,10 +1,11 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-about-us-section',
   templateUrl: './about-us-section.component.html',
   styleUrls: ['./about-us-section.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class AboutUsSectionComponent {
   @ViewChild('sliderTrack') sliderTrack!: ElementRef;
@@ -13,7 +14,7 @@ export class AboutUsSectionComponent {
   sliderData: any[] = [];
   sliderBallsData: any[] = [];
 
-  private currentIndex = 0;
+  public currentIndex = 0;
   private interval: any;
 
   ngOnInit() {
@@ -40,31 +41,6 @@ export class AboutUsSectionComponent {
   onClickBall(index: any) {
     this.slide(index);
   }
-
-  customOptions: OwlOptions = {
-    loop: false,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: false,
-    dots: false,
-    nav: false,
-    navSpeed: 700,
-    navText: ['', ''],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 1,
-      },
-      740: {
-        items: 1,
-      },
-      800: {
-        items: 4,
-      },
-    },
-  };
 
   cards = [
     {
@@ -98,6 +74,31 @@ export class AboutUsSectionComponent {
       companyName: 'კომპანიის დასახელება',
     },
   ];
+
+  customOptions: OwlOptions = {
+    loop: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: false,
+    nav: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 1,
+      },
+      500: {
+        items: 1,
+      },
+      800: {
+        items: 4,
+      },
+    },
+  };
 
   getSliderData() {
     this.sliderData = [
