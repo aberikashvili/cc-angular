@@ -262,18 +262,6 @@ section h1 {
   }
 }
 
-::ng-deep {
-  .owl-carousel .owl-item {
-    // width: 100% !important;
-  }
-}
-
-::ng-deep {
-  .owl-stage {
-    // width: 100% !important;
-  }
-
-  .owl-item {
-    // width: 100% !important;
-  }
+.vector {
+  display: none;
 }
