@@ -10,15 +10,17 @@
   text-align: center;
 }
 
-// ::ng-deep {
-//   .owl-stage {
-//     width: 2200px !important;
-//   }
+::ng-deep {
+  .owl-stage {
+    width: 2200px !important;
+  }
 
-//   .owl-item {
-//     margin-right: 10px !important;
-//   }
-// }
+  .owl-item {
+    margin-right: 10px !important;
+  }
+}
+
+
 
 .container {
   padding: 0 16px;
@@ -152,7 +154,7 @@ ul:hover li::before {
     height: auto;
   }
   .left-arrow {
-    margin-right: 5px;
+    margin-right: 7px;
   }
 
   .carousel-container {
