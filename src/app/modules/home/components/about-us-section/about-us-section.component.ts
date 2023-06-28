@@ -42,6 +42,31 @@ export class AboutUsSectionComponent {
     this.slide(index);
   }
 
+  customOptions: OwlOptions = {
+    loop: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: false,
+    nav: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 1,
+      },
+      500: {
+        items: 1,
+      },
+      801: {
+        items: 4,
+      },
+    },
+  };
+
   cards = [
     {
       text: 'შემთხვევითად გენერირებული ტექსტი ეხმარება დიზაინერებს და ტიპოგრაფიული ნაწარმის შემქმნელებს, რეალურთან მაქსიმალურად მიახლოებული შაბლონი წარუდგინონ შემფასებელს',
@@ -74,31 +99,6 @@ export class AboutUsSectionComponent {
       companyName: 'კომპანიის დასახელება',
     },
   ];
-
-  customOptions: OwlOptions = {
-    loop: false,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: false,
-    dots: false,
-    nav: false,
-    navSpeed: 700,
-    navText: ['', ''],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 1,
-      },
-      500: {
-        items: 1,
-      },
-      800: {
-        items: 4,
-      },
-    },
-  };
 
   getSliderData() {
     this.sliderData = [

@@ -263,7 +263,18 @@ section h1 {
 }
 
 ::ng-deep {
-  .owl-carousel .owl-stage {
+  .owl-carousel .owl-item {
     // width: 100% !important;
+  }
+}
+
+::ng-deep {
+  .owl-stage {
+    // width: 2200px !important;
+  }
+
+  .owl-item {
+    // margin-right: 10px !important;
+    width: 100%;
   }
 }
