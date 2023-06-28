@@ -47,7 +47,7 @@ export class AboutUsSectionComponent {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
-    dots: false,
+    dots: true,
     nav: false,
     navSpeed: 700,
     navText: ['', ''],
