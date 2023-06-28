@@ -92,14 +92,13 @@
         </div>
       </ng-template>
     </owl-carousel-o>
-
-    <div class="slider-balls" #sliderBalls>
-      <div
-        class="slider-ball"
-        [ngClass]="{ active: i === 0 }"
-        *ngFor="let item of cards; let i = index"
-        (click)="onClickBall(i)"
-      ></div>
-    </div>
+  </div>
+  <div class="slider-balls" #sliderBalls>
+    <div
+      class="slider-ball"
+      [ngClass]="{ active: i === 0 }"
+      *ngFor="let item of cards; let i = index"
+      (click)="onClickBall(i)"
+    ></div>
   </div>
 </div>
