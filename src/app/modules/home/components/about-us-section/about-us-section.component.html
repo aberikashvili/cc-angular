@@ -65,34 +65,41 @@
 </section>
 <div class="vector"></div>
 
-<div class="mobile carousel-container">
-  <owl-carousel-o #carousel [options]="customOptions">
-    <ng-template carouselSlide [option]="OwlOptions" *ngFor="let item of cards">
-      <div class="left">
-        <div class="text">
-          <span class="slider--text">
-            {{ item.text }}
-          </span>
-        </div>
-        <div class="bottom">
-          <div class="bottom-left">
-            <img [src]="item.img" />
+<div class="mobile owl-container">
+  <h1 class="heading">რას ამბობენ ჩვენზე?</h1>
+  <div class="carousel-container">
+    <owl-carousel-o #carousel [options]="customOptions">
+      <ng-template
+        carouselSlide
+        [option]="OwlOptions"
+        *ngFor="let item of cards"
+      >
+        <div class="left">
+          <div class="text">
+            <span class="slider--text">
+              {{ item.text }}
+            </span>
           </div>
-          <div class="bottom-right">
-            <span class="name--surname">{{ item.title }}</span>
-            <span class="company--name">{{ item.companyName }}</span>
+          <div class="bottom">
+            <div class="bottom-left">
+              <img [src]="item.img" />
+            </div>
+            <div class="bottom-right">
+              <span class="name--surname">{{ item.title }}</span>
+              <span class="company--name">{{ item.companyName }}</span>
+            </div>
           </div>
         </div>
-      </div>
-    </ng-template>
-  </owl-carousel-o>
+      </ng-template>
+    </owl-carousel-o>
 
-  <div class="slider-balls" #sliderBalls>
-    <div
-      class="slider-ball"
-      [ngClass]="{ active: i === 0 }"
-      *ngFor="let item of cards; let i = index"
-      (click)="onClickBall(i)"
-    ></div>
+    <div class="slider-balls" #sliderBalls>
+      <div
+        class="slider-ball"
+        [ngClass]="{ active: i === 0 }"
+        *ngFor="let item of cards; let i = index"
+        (click)="onClickBall(i)"
+      ></div>
+    </div>
   </div>
 </div>

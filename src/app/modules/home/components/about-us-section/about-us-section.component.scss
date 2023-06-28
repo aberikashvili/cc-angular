@@ -105,16 +105,20 @@ section h1 {
     }
   }
 }
+
 .left {
   border-right: 1px solid rgba(20, 20, 20, 0.1);
 }
+
 .middle {
   padding-left: 20px;
   border-right: 1px solid rgba(20, 20, 20, 0.1);
 }
+
 .right {
   padding-left: 20px;
 }
+
 .name--surname {
   font-style: normal;
   font-weight: 700;
@@ -127,6 +131,7 @@ section h1 {
   font-family: 'AvenirNextGeorgian-Bold';
   white-space: nowrap;
 }
+
 .company--name {
   font-family: 'AvenirNextGeorgian-Regular';
   font-style: normal;
@@ -136,6 +141,7 @@ section h1 {
   line-height: 150%;
   color: rgba(20, 20, 20, 0.6);
 }
+
 .slider--text {
   width: 480px;
   font-family: 'AvenirNextGeorgian-Regular';
@@ -145,6 +151,7 @@ section h1 {
   line-height: 150%;
   color: rgba(20, 20, 20, 0.6);
 }
+
 .vector {
   background: url('/assets/img/needourhelp-vector.jpg') no-repeat center right;
   position: absolute;
@@ -168,11 +175,11 @@ section h1 {
     display: block;
   }
 
-  section {
+  .owl-container {
     padding: 0 16px;
   }
 
-  section h1 {
+  .heading {
     width: 100%;
     height: 27px;
     font-family: 'AvenirNextGeorgian-Bold';
@@ -183,5 +190,10 @@ section h1 {
     display: flex;
     align-items: center;
     color: #141414;
+  }
+
+  .carousel-container {
+    background-color: #14141408;
+    padding: 20px;
   }
 }
