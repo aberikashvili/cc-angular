@@ -10,9 +10,9 @@
   text-align: center;
 }
 
-.card-box {
-  padding: 0 20px;
-}
+// .card-box {
+//   padding: 0 20px;
+// }
 
 // ::ng-deep {
 //   .owl-stage {
@@ -24,9 +24,19 @@
 //   }
 // }
 
-.container {
-  padding: 0 16px;
+::ng-deep{
+  .owl-carousel.owl-drag .owl-item{
+    width: 358px !important;
+  }
+
+.owl-stage{
+  width: 2120px !important;
 }
+}
+
+// .container {
+//   padding: 0 16px;
+// }
 
 section {
   font-family: 'AvenirNextGeorgian';
