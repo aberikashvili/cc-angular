@@ -234,6 +234,8 @@ section h1 {
 
   ::ng-deep .owl-theme .owl-dots .owl-dot span {
     background: #d6d6d6 !important;
+    width: 8px;
+    height: 8px;
   }
 
   ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
