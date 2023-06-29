@@ -270,83 +270,135 @@ section h1 {
   //   margin-top: 30px;
   //   margin-left: 30%;
   // }
+
+  // .owl-nav button {
+  //   position: absolute;
+  //   top: 50%;
+  //   background-color: #000;
+  //   color: #fff;
+  //   margin: 0;
+  //   transition: all 0.3s ease-in-out;
+  // }
+
+  // .owl-nav button.owl-prev {
+  //   left: 0;
+  // }
+
+  // .owl-nav button.owl-next {
+  //   right: 0;
+  // }
+
+  // .owl-dots {
+  //   text-align: center;
+  //   padding-top: 15px;
+  //   position: absolute;
+  // }
+
+  // .owl-dots button.owl-dot {
+  //   width: 15px;
+  //   height: 15px;
+  //   border-radius: 50%;
+  //   display: inline-block;
+  //   background: #e8ad24;
+  //   margin: 0 3px;
+  // }
+
+  // .owl-dots button.owl-dot.active {
+  //   background-color: #e8ad24;
+  //   background: 1px solid #e8ad24;
+  // }
+
+  // .owl-dots button.owl-dot:focus {
+  //   outline: none;
+  // }
+
+  // .owl-nav button {
+  //   position: absolute;
+  //   top: 50%;
+  //   transform: translateY(-50%);
+  //   background: rgba(255, 255, 255, 0.38) !important;
+  // }
+
+  // .owl-theme .owl-dots .owl-dot span {
+  //   width: 10px;
+  //   height: 10px;
+  //   margin: 5px 7px;
+  //   background: #141414;
+  //   display: block;
+  //   transition: opacity 200ms ease;
+  //   border-radius: 30px;
+  // }
+
+  // span {
+  //   font-size: 70px;
+  //   position: relative;
+  //   top: -5px;
+  // }
+
+  // .owl-nav button:focus {
+  //   outline: none;
+  // }
+
+  // .owl-theme .owl-dots .owl-dot.active span,
+  // .owl-theme .owl-dots .owl-dot:hover span {
+  //   background: red;
+  // }
+
+  // .owl-theme .owl-nav .owl-dots {
+  //   position: absolute;
+  //   margin-top: 30px;
+  //   margin-left: 30%;
+  // }
+
+  // .owl-dots {
+  //   text-align: center;
+  // }
+  // .owl-dots button.owl-dot.active span,
+  // .owl-dots button.owl-dot:hover span {
+  //   background-color: #feae00;
+  //   border-radius: 50%;
+  //   height: 12px;
+  //   width: 12px;
+  //   position: absolute;
+  //   top: 1px;
+  //   left: 1px;
+  // }
+  // .owl-dots button.owl-dot {
+  //   border: 1px solid gray;
+  //   background: white;
+  //   border-radius: 50%;
+  //   height: 16px;
+  //   width: 16px;
+  //   position: relative;
+  // }
+
+  // .owl-dots {
+  //   background-color: #245aa3;
+  // }
+
+  // .owl-carousel owl-theme .owl-dots .owl-dot {
+  //   background: red;
+  // }
+  // .owl-carousel {
+  //   background-color: red;
+  // }
+
+  // .owl-theme {
+  //   background: red;
+  // }
+  ::ng-deep .owl-theme .owl-dots .owl-dot span {
+    background: #d6d6d6 !important;
+  }
+
+  ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #feae00 !important;
+  }
+
+  ::ng-deep .owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    margin-top: 30px;
+    left: 25%;
+    right: 25%;
+  }
 }
-
-// .owl-nav button {
-//   position: absolute;
-//   top: 50%;
-//   background-color: #000;
-//   color: #fff;
-//   margin: 0;
-//   transition: all 0.3s ease-in-out;
-// }
-
-// .owl-nav button.owl-prev {
-//   left: 0;
-// }
-
-// .owl-nav button.owl-next {
-//   right: 0;
-// }
-
-// .owl-dots {
-//   text-align: center;
-//   padding-top: 15px;
-//   position: absolute;
-// }
-
-// .owl-dots button.owl-dot {
-//   width: 15px;
-//   height: 15px;
-//   border-radius: 50%;
-//   display: inline-block;
-//   background: #e8ad24;
-//   margin: 0 3px;
-// }
-
-// .owl-dots button.owl-dot.active {
-//   background-color: #e8ad24;
-//   background: 1px solid #e8ad24;
-// }
-
-// .owl-dots button.owl-dot:focus {
-//   outline: none;
-// }
-
-// .owl-nav button {
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   background: rgba(255, 255, 255, 0.38) !important;
-// }
-
-// .owl-theme .owl-dots .owl-dot span {
-//   width: 10px;
-//   height: 10px;
-//   margin: 5px 7px;
-//   background: #141414;
-//   display: block;
-//   transition: opacity 200ms ease;
-//   border-radius: 30px;
-// }
-
-// span {
-//   font-size: 70px;
-//   position: relative;
-//   top: -5px;
-// }
-
-// .owl-nav button:focus {
-//   outline: none;
-// }
-
-// .owl-theme .owl-dots .owl-dot.active span,
-// .owl-theme .owl-dots .owl-dot:hover span {
-//   background: red;
-// }
-
-// .owl-theme .owl-nav .owl-dots {
-//   position: absolute;
-//   margin-top: 30px;
-//   margin-left: 30%;
-// }
