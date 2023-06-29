@@ -24,7 +24,7 @@
 //   }
 // }
 .container{
-  max-width: 1580px;
+  max-width: 1760px;
   padding-left: 160px;
 }
 
@@ -34,7 +34,7 @@
   }
 
 .owl-stage{
-  width: 2120px !important;
+  width: 2000px !important;
 }
 }
 
@@ -138,7 +138,9 @@ ul:hover li::before {
   overflow-x: auto;
   margin-top: 40px;
 }
-
+.buttons-container{
+  padding-right: 187px;
+}
 
 .buttons-container-mobile {
   display: none;
