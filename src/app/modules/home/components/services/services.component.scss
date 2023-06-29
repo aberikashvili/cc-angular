@@ -24,17 +24,17 @@
 //   }
 // }
 .container{
-  max-width: 1760px;
+  max-width: 2000px;
   padding-left: 160px;
 }
 
 ::ng-deep{
   .owl-carousel.owl-drag .owl-item{
-    width: 358px !important;
+    width: 414px !important;
   }
 
 .owl-stage{
-  width: 2000px !important;
+  width: 2200px !important;
 }
 }
 
@@ -87,7 +87,7 @@ section {
   background-color: #f9f9f9;
   margin-top: 11px;
   height: 315px;
-  width: 343px;
+  width: 400px;
 }
 
 ul {
@@ -139,7 +139,7 @@ ul:hover li::before {
   margin-top: 40px;
 }
 .buttons-container{
-  padding-right: 187px;
+  padding-right:120px;
 }
 
 .buttons-container-mobile {
