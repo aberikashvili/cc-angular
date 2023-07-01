@@ -1,4 +1,4 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 
@@ -6,6 +6,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   selector: 'app-our-team-section',
   templateUrl: './our-team-section.component.html',
   styleUrls: ['./our-team-section.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OurTeamSectionComponent {
   sliderData = [
