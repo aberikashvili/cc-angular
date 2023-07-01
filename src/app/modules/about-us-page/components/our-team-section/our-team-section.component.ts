@@ -15,7 +15,7 @@ export class OurTeamSectionComponent {
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
-    dots: true,
+    dots: false,
     nav: false,
     navSpeed: 700,
     navText: ['', ''],
@@ -24,10 +24,10 @@ export class OurTeamSectionComponent {
         items: 1,
       },
       400: {
-        items: 1,
+        items: 2,
       },
       500: {
-        items: 1,
+        items: 3,
       },
       801: {
         items: 4,

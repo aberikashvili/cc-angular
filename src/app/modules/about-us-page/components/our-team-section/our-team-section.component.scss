@@ -5,9 +5,57 @@
 @media only screen and (max-width: 800px) {
   .mobile {
     display: block;
+    padding: 0 0 0 16px;
+    // padding: 0 16px;
   }
 
   .desktop {
     display: none;
+  }
+
+  .carousel-container {
+    // height: 500px;
+  }
+
+  .heading {
+    width: 124px;
+    height: 27px;
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #141414;
+  }
+
+  .cont__div {
+    // width: 211px;
+    // height: 270px;
+    // overflow: hidden;
+  }
+
+  .image--div img {
+  }
+
+  .name {
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    color: #141414;
+  }
+
+  .title {
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+    text-align: center;
+    color: #f58634;
   }
 }

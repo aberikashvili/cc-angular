@@ -15,41 +15,8 @@
         *ngFor="let item of cards"
       >
         <div class="cont__div left flex flex-col">
-          <div [ngStyle]="{ 'min-height': item.height }" class="image--div">
+          <div class="image--div">
             <img [src]="item.img" />
-          </div>
-          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
-            {{ item.NameSurname }}
-          </div>
-          <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
-            {{ item.title }}
-          </div>
-        </div>
-        <div class="cont__div middle flex flex-col">
-          <div class="image--div">
-            <img src="{{ item.img }}" />
-          </div>
-          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
-            {{ item.NameSurname }}
-          </div>
-          <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
-            {{ item.title }}
-          </div>
-        </div>
-        <div class="cont__div right flex flex-col">
-          <div class="image--div">
-            <img src="{{ item.img }}" />
-          </div>
-          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
-            {{ item.NameSurname }}
-          </div>
-          <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
-            {{ item.title }}
-          </div>
-        </div>
-        <div class="cont__div last flex flex-col">
-          <div class="image--div">
-            <img src="{{ item.img }}" />
           </div>
           <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
             {{ item.NameSurname }}
