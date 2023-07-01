@@ -3,8 +3,9 @@
   [data]="sliderData"
   [heading]="'ჩვენი გუნდი'"
 ></app-slider>
+
 <div class="mobile owl-container">
-  <h1 class="heading">რას ამბობენ ჩვენზე?</h1>
+  <h1 class="heading">ჩვენი გუნდი</h1>
   <div class="carousel-container">
     <owl-carousel-o #carousel [options]="customOptions">
       <ng-template
@@ -12,20 +13,48 @@
         [option]="OwlOptions"
         *ngFor="let item of cards"
       >
-        <div class="left--text">
-          <div class="text">
-            <span class="slider--text">
-              {{ item.text }}
-            </span>
+        <div class="cont__div left flex flex-col">
+          <div [ngStyle]="{ 'min-height': item.height }" class="image--div">
+            <img [src]="item.img" />
           </div>
-          <div class="bottom">
-            <div class="bottom-left">
-              <img [src]="item.img" />
-            </div>
-            <div class="bottom-right">
-              <span class="name--surname">{{ item.title }}</span>
-              <span class="company--name">{{ item.companyName }}</span>
-            </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
+            {{ item.NameSurname }}
+          </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
+            {{ item.title }}
+          </div>
+        </div>
+        <div class="cont__div middle flex flex-col">
+          <div class="image--div">
+            <img src="{{ item.img }}" />
+          </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
+            {{ item.NameSurname }}
+          </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
+            {{ item.title }}
+          </div>
+        </div>
+        <div class="cont__div right flex flex-col">
+          <div class="image--div">
+            <img src="{{ item.img }}" />
+          </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
+            {{ item.NameSurname }}
+          </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
+            {{ item.title }}
+          </div>
+        </div>
+        <div class="cont__div last flex flex-col">
+          <div class="image--div">
+            <img src="{{ item.img }}" />
+          </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
+            {{ item.NameSurname }}
+          </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
+            {{ item.title }}
           </div>
         </div>
       </ng-template>

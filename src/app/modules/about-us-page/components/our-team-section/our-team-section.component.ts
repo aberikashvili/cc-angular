@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -8,6 +8,8 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OurTeamSectionComponent {
+  @Input() textAlign?: string;
+
   customOptions: OwlOptions = {
     loop: false,
     mouseDrag: true,
@@ -32,6 +34,108 @@ export class OurTeamSectionComponent {
       },
     },
   };
+
+  cards = [
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+  ];
 
   sliderData = [
     {
