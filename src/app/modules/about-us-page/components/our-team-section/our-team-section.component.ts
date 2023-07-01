@@ -1,7 +1,6 @@
 import { ChangeDetectionStrategy, Component, ElementRef, ViewChild } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
-
 @Component({
   selector: 'app-our-team-section',
   templateUrl: './our-team-section.component.html',
@@ -9,6 +8,31 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OurTeamSectionComponent {
+  customOptions: OwlOptions = {
+    loop: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: true,
+    nav: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 1,
+      },
+      500: {
+        items: 1,
+      },
+      801: {
+        items: 4,
+      },
+    },
+  };
+
   sliderData = [
     {
       left: {
