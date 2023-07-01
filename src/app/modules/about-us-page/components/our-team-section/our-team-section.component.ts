@@ -27,10 +27,10 @@ export class OurTeamSectionComponent {
         items: 2,
       },
       500: {
-        items: 3,
+        items: 2,
       },
-      801: {
-        items: 4,
+      800: {
+        items: 1,
       },
     },
   };
