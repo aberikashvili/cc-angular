@@ -11,7 +11,7 @@
         <button (click)="carousel.next()">
           <img src="assets/images/right-arrow.png" alt="" />
         </button>
-      </div> 
+      </div>
     </div>
     <div class="intro">
       <p class="services__paragraph">
@@ -32,7 +32,7 @@
   <div class="carousel-container">
     <owl-carousel-o #carousel [options]="customOptions">
       <ng-template carouselSlide *ngFor="let item of cards">
-        <div class="card-box">
+        <div class="card-box" style="">
           <div class="card">
             <ul>
               <h2>{{ item.title }}</h2>
@@ -44,6 +44,5 @@
         </div>
       </ng-template>
     </owl-carousel-o>
-  </div> 
+  </div>
 </div>
-
