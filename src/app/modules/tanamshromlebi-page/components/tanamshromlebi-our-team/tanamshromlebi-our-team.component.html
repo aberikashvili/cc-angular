@@ -3,3 +3,28 @@
   [data]="sliderData"
   [heading]="'ჩვენი გუნდი'"
 ></app-slider>
+
+<div class="mobile owl-container">
+  <h1 class="heading">ჩვენი გუნდი</h1>
+  <div class="carousel-container">
+    <owl-carousel-o #carousel [options]="customOptions">
+      <ng-template
+        carouselSlide
+        [option]="OwlOptions"
+        *ngFor="let item of cards"
+      >
+        <div class="cont__div left flex flex-col">
+          <div class="image--div">
+            <img [src]="item.img" />
+          </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
+            {{ item.NameSurname }}
+          </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
+            {{ item.title }}
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>
