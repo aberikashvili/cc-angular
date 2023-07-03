@@ -118,74 +118,7 @@ ul:hover li::before {
   display: none;
 }
 
-// @media screen and (max-width: 800px) {
-//   .container{
-//     padding-left: 0px;
-//     padding: 0 16px;
-//   }
 
-//   .service-title {
-//     font-size: 18px;
-//     padding-bottom: 20px;
-//   }
-//   .intro {
-//     display: flex;
-//     align-items: center;
-//     justify-content: flex-end;
-//   }
-//   .services__paragraph {
-//     font-family: 'AvenirNextGeorgian-Regular';
-//     font-style: normal;
-//     font-weight: 400;
-//     font-size: 13px;
-//     line-height: 150%;
-//   }
-
-//   .card-slider-controls {
-//     position: absolute;
-//     margin-bottom: 186px;
-//   }
-//   img {
-//     max-width: 72%;
-//     height: auto;
-//   }
-//   .left-arrow {
-//     margin-right: 7px;
-//   }
-
-//   .carousel-container {
-//     width: 100%;
-//   }
-
-//   .wrapper-container {
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: flex-start;
-//     height: 50px;
-//     padding-top: 10px;
-//   }
-
-//   .card {
-//     width: 100%;
-//   }
-
-//   ::ng-deep{
-//   .owl-carousel.owl-drag .owl-item{
-//     width: 343px !important;
-//   }
-// }
-
-//   h2 {
-//     height: 35px !important;
-//   }
-//   .buttons-container {
-//     display: none;
-//   }
-
-//   .buttons-container-mobile {
-//     display: block;
-//   }
-// }
 
 @media screen and (max-width: 800px) {
   .container {
