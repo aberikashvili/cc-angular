@@ -6,6 +6,32 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./tanamshromlebi-our-team.component.scss'],
 })
 export class TanamshromlebiOurTeamComponent {
+  @Input() textAlign?: string;
+
+  customOptions: OwlOptions = {
+    loop: false,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: false,
+    nav: false,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 2,
+      },
+      500: {
+        items: 2,
+      },
+      800: {
+        items: 1,
+      },
+    },
+  };
   sliderData = [
     {
       left: {
