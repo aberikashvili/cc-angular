@@ -12,6 +12,7 @@
 
 .container {
   max-width: 2000px;
+  padding-left: 160px;
 }
 
 section {
@@ -188,7 +189,7 @@ ul:hover li::before {
 
 @media screen and (max-width: 800px) {
   .container {
-    padding-left: 0px;
+    
     padding: 0 16px;
   }
 
