@@ -1,9 +1,11 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ElementRef, Input, ViewChild } from '@angular/core';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-tanamshromlebi-our-team',
   templateUrl: './tanamshromlebi-our-team.component.html',
   styleUrls: ['./tanamshromlebi-our-team.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TanamshromlebiOurTeamComponent {
   @Input() textAlign?: string;
@@ -32,6 +34,34 @@ export class TanamshromlebiOurTeamComponent {
       },
     },
   };
+
+  cards = [
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+    {
+      img: 'assets/img/box.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '385px',
+    },
+  ];
+
   sliderData = [
     {
       left: {
