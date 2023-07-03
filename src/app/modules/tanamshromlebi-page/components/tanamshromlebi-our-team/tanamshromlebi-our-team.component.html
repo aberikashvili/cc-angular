@@ -1,30 +1,47 @@
 <app-slider
+  class="desktop"
   [textAlign]="'center'"
   [data]="sliderData"
   [heading]="'ჩვენი გუნდი'"
 ></app-slider>
 
 <div class="mobile owl-container">
-  <h1 class="heading">ჩვენი გუნდი</h1>
-  <div class="carousel-container">
-    <owl-carousel-o #carousel [options]="customOptions">
-      <ng-template
-        carouselSlide
-        [option]="OwlOptions"
-        *ngFor="let item of cards"
-      >
-        <div class="cont__div left flex flex-col">
-          <div class="image--div">
-            <img [src]="item.img" />
-          </div>
-          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
-            {{ item.NameSurname }}
-          </div>
-          <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
-            {{ item.title }}
+  <h1 class="heading">თანამშრომლები</h1>
+  <p class="paragraph">
+    ჩვენთან შეძენილი პროდუქცია მომხმარებელს სათანადო სერვისის მეშვეობით
+    ხანგრძლივი, მრავალწლიანი პერიოდის განმავლობაში შეუქმნის ჯანსაღ და კომფორტულ
+    გარემოს.
+  </p>
+  <div class="employees-container">
+    <div class="employees-item" *ngFor="let item of cards">
+      <div class="separately-container mt-4 flex gap-2.5">
+        <div class="separately-div">
+          <div class="cont__div left flex flex-col">
+            <div class="image--div">
+              <img [src]="item.img" />
+            </div>
+            <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
+              {{ item.NameSurname }}
+            </div>
+            <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
+              {{ item.title }}
+            </div>
           </div>
         </div>
-      </ng-template>
-    </owl-carousel-o>
+        <div class="separately-div">
+          <div class="cont__div left flex flex-col">
+            <div class="image--div">
+              <img [src]="item.img" />
+            </div>
+            <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
+              {{ item.NameSurname }}
+            </div>
+            <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
+              {{ item.title }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
