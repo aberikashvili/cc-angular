@@ -1,5 +1,47 @@
 <app-slider
+  class="desktop"
   [textAlign]="'center'"
   [data]="sliderData"
   [heading]="'ჩვენი გუნდი'"
 ></app-slider>
+
+<div class="mobile owl-container">
+  <h1 class="heading">თანამშრომლები</h1>
+  <p class="paragraph">
+    ჩვენთან შეძენილი პროდუქცია მომხმარებელს სათანადო სერვისის მეშვეობით
+    ხანგრძლივი, მრავალწლიანი პერიოდის განმავლობაში შეუქმნის ჯანსაღ და კომფორტულ
+    გარემოს.
+  </p>
+  <div class="employees-container">
+    <div class="employees-item" *ngFor="let item of cards">
+      <div class="separately-container mt-5 flex gap-2">
+        <div class="separately-div">
+          <div class="cont__div left flex flex-col">
+            <div class="image--div">
+              <img [src]="item.img" />
+            </div>
+            <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-2">
+              {{ item.NameSurname }}
+            </div>
+            <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-1">
+              {{ item.title }}
+            </div>
+          </div>
+        </div>
+        <div class="separately-div">
+          <div class="cont__div left flex flex-col">
+            <div class="image--div">
+              <img [src]="item.img" />
+            </div>
+            <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-2">
+              {{ item.NameSurname }}
+            </div>
+            <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-1">
+              {{ item.title }}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
