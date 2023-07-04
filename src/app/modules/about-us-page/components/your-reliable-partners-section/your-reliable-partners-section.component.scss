@@ -1,3 +1,7 @@
+.mobile {
+  display: none;
+}
+
 .partners {
   margin-top: 110px;
 
@@ -14,6 +18,14 @@
       align-items: center;
       color: #141414;
       width: 1060px;
+
+      h1 {
+        font-family: 'AvenirNextGeorgian-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 150%;
+      }
     }
 
     &--secondheading {
@@ -26,6 +38,14 @@
       align-items: center;
       color: #245aa3;
       margin-top: 30px;
+
+      h1 {
+        font-family: 'AvenirNextGeorgian-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 150%;
+      }
     }
   }
 
@@ -60,5 +80,105 @@
         margin-top: 40px;
       }
     }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .partners {
+    padding: 0 16px;
+    margin-top: 20px;
+
+    &__container {
+      padding-left: 0;
+
+      &--firstheading {
+        font-family: 'AvenirNextGeorgian-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        color: #141414;
+        width: 100%;
+        height: 72px;
+
+        h1 {
+          font-family: 'AvenirNextGeorgian-Bold';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 150%;
+          color: #141414;
+        }
+      }
+
+      &--secondheading {
+        font-family: 'AvenirNextGeorgian-Bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        display: flex;
+        align-items: center;
+        color: #245aa3;
+        width: 100%;
+        margin-top: 0;
+
+        h1 {
+          font-family: 'AvenirNextGeorgian-Bold';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 18px;
+          line-height: 150%;
+        }
+      }
+    }
+
+    &__img--container {
+      margin-top: 0;
+
+      &--first {
+        background: url('/assets/img/blue-bg.png') bottom center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 16px;
+        height: 100%;
+        margin-top: 10px;
+
+        &--grey {
+          width: 100%;
+          height: 357px;
+          margin-top: -150px;
+        }
+
+        & p {
+          font-family: 'AvenirNextGeorgian-Regular';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 170%;
+          color: #ffffff;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 20px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+    margin-top: 150px;
   }
 }
