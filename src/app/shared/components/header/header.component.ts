@@ -10,6 +10,6 @@ export class HeaderComponent {
   constructor(private _router: Router) { }
 
   navigateToFirst() {
-    this._router.navigate(['contact-us-page'])
+    this._router.navigate(['contact-us'])
   }
 }
