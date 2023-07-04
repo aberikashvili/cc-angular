@@ -179,6 +179,8 @@ input.check-toggle-round-flat:checked + label:after {
   ul{
     margin: 0 !important;
     gap: 8px;
+    display: flex;
+    align-items: center;
   }
   .btn-primary {
   margin: 0 !important;
