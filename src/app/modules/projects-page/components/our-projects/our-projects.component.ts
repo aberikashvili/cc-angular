@@ -1,42 +1,15 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Component } from '@angular/core';
 import { FilterMode } from './enums';
 import { Router } from '@angular/router';
-import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-our-projects',
   templateUrl: './our-projects.component.html',
   styleUrls: ['./our-projects.component.scss'],
-  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OurProjectsComponent {
   selectedFilter: FilterMode = FilterMode.All;
   filterMode = 'all';
-
-  customOptions: OwlOptions = {
-    loop: false,
-    mouseDrag: true,
-    touchDrag: true,
-    pullDrag: false,
-    dots: false,
-    nav: false,
-    navSpeed: 700,
-    navText: ['', ''],
-    responsive: {
-      0: {
-        items: 1,
-      },
-      400: {
-        items: 2,
-      },
-      500: {
-        items: 2,
-      },
-      800: {
-        items: 1,
-      },
-    },
-  };
 
   constructor(private router: Router) {}
 
