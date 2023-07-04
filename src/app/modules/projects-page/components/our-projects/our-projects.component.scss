@@ -71,7 +71,7 @@
 
 @media only screen and (max-width: 800px) {
   .our__projects {
-    padding: 0 16px;
+    padding: 19px 16px 90px 16px;
   }
 
   .firstdiv {
@@ -113,6 +113,10 @@
     flex-direction: column;
   }
 
+  .our__projects--main--minicontainers {
+    display: block;
+  }
+
   .our__projects--main--minicontainers--div {
     margin-top: 20px;
   }
@@ -126,5 +130,9 @@
     display: flex;
     align-items: center;
     color: #141414;
+  }
+
+  .our__projects--main--minicontainers--div--img {
+    width: 100%;
   }
 }
