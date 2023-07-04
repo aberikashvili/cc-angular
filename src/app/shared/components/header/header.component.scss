@@ -1,17 +1,14 @@
 header {
   margin-top: 10px;
-
   .header-logo {
     position: absolute;
     margin-left: 0px;
     width: 180px;
     height: 60px;
   }
-
   .nav-ul {
     margin-left: 210px;
   }
-
   ul {
     font-size: 14px;
     font-family: 'AvenirNextGeorgian-Regular';
@@ -19,39 +16,31 @@ header {
     font-size: 14px;
     line-height: 150%;
   }
-
   li {
     font-weight: 400;
   }
-
   a {
     color: #141414;
   }
-
   .router-link-active {
     color: #245aa3;
     font-weight: 600;
   }
-
   .btn-container {
     margin-right: 70px;
   }
-
   button {
     font-family: Avenir Next Georgian;
   }
 }
-
 .language-switcher {
   position: absolute;
   margin-left: 205px;
   margin-top: 10px;
 }
-
 .btn-primary {
   margin-right: 50px;
 }
-
 .switch {
   position: relative;
   display: inline-block;
@@ -59,7 +48,6 @@ header {
   border: 1px solid rgba(20, 20, 20, 0.1);
   border-radius: 100px;
 }
-
 .switch > span {
   position: absolute;
   top: 14px;
@@ -72,15 +60,12 @@ header {
   width: 50%;
   text-align: center;
 }
-
 input.check-toggle-round-flat:checked ~ .off {
   color: white;
 }
-
 input.check-toggle-round-flat:checked ~ .on {
   color: black;
 }
-
 .switch > span.on {
   left: 1px;
   padding-left: 18px;
@@ -92,7 +77,6 @@ input.check-toggle-round-flat:checked ~ .on {
   width: 32px;
   height: 21px;
 }
-
 .switch > span.off {
   right: 0;
   padding-right: 4px;
@@ -102,13 +86,11 @@ input.check-toggle-round-flat:checked ~ .on {
   font-size: 14px;
   line-height: 21px;
 }
-
 .check-toggle {
   position: absolute;
   margin-left: -9999px;
   visibility: hidden;
 }
-
 .check-toggle + label {
   display: block;
   position: relative;
@@ -119,7 +101,6 @@ input.check-toggle-round-flat:checked ~ .on {
   -ms-user-select: none;
   user-select: none;
 }
-
 input.check-toggle-round-flat + label {
   padding: 2px;
   width: 97px;
@@ -133,14 +114,12 @@ input.check-toggle-round-flat + label {
   width: 133px;
   height: 48px;
 }
-
 input.check-toggle-round-flat + label:before,
 input.check-toggle-round-flat + label:after {
   display: block;
   position: absolute;
   content: '';
 }
-
 input.check-toggle-round-flat + label:after {
   top: 4px;
   left: 4px;
@@ -158,29 +137,58 @@ input.check-toggle-round-flat + label:after {
   -o-transition: margin 0.2s;
   transition: margin 0.2s;
 }
-
 input.check-toggle-round-flat:checked + label:after {
   margin-left: 60px;
 }
-
 .navigation {
   padding-left: 160px;
   padding-right: 180px;
 }
-
-@media only screen and (max-width: 800px) {
-  .navigation {
-    padding-left: 0;
-    padding-right: 0;
+.mobile-lists{
+  display: none;
+}
+@media screen and (max-width:820px){
+  nav{
+    padding: 0 16px !important;
   }
-
-  .btn-container {
+  .mobile-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+.mobile-lists{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 127px 0px;
+}
+   .header-logo{
+    position: static !important;
+    width: 120px !important;
+    height: 40px !important;
+   }
+  .btn-container,.navbar-lists{
     display: none;
   }
-
-  .header-logo {
-    width: auto;
-    height: auto;
-    position: none;
+  a{
+    text-decoration: none;
+    border: none;
   }
+  ul{
+    margin: 0 !important;
+    gap: 8px;
+  }
+  .btn-primary {
+  margin: 0 !important;
+}
+.contact-btn{
+      position: relative;
+      bottom: 10px;
+      z-index: 999;
+}
+.btn-area{
+  width: 100%;
+}
 }
