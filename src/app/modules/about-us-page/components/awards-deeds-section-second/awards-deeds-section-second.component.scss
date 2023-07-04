@@ -16,6 +16,10 @@
     color: #141414;
   }
 
+  &__desktop {
+    display: none;
+  }
+
   &__img-container {
     box-sizing: border-box;
     width: 250px;
@@ -24,5 +28,67 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .awards {
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 0;
+    padding: 0 16px;
+
+    &__desktop {
+      display: block;
+      margin-top: 16px;
+    }
+
+    &__title {
+      margin-bottom: 0;
+      height: 27px;
+    }
+
+    &__title h1 {
+      font-family: 'AvenirNextGeorgian-Bold';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      color: #141414;
+      width: 100%;
+      height: 27px;
+    }
+
+    &__img-container {
+      width: 167px;
+      height: 167px;
+      box-sizing: border-box;
+      border: 1px solid rgba(20, 20, 20, 0.1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 8px;
+    }
+
+    &__img-container img {
+      width: 107px;
+      height: 143px;
+    }
+  }
+
+  .tablet {
+    display: none;
+  }
+
+  .partners {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 800px) {
+  .tablet {
+    display: block;
   }
 }
