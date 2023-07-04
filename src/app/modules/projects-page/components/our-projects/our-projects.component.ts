@@ -14,28 +14,28 @@ export class OurProjectsComponent {
   filterMode = 'all';
 
   customOptions: OwlOptions = {
-    loop: true,
+    loop: false,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
     dots: false,
+    nav: false,
     navSpeed: 700,
     navText: ['', ''],
     responsive: {
       0: {
-        items: 0,
+        items: 1,
       },
       400: {
-        items: 0,
+        items: 2,
       },
-      740: {
-        items: 0,
+      500: {
+        items: 2,
       },
-      940: {
-        items: 0,
+      800: {
+        items: 1,
       },
     },
-    nav: true,
   };
 
   constructor(private router: Router) {}
