@@ -105,16 +105,20 @@ section h1 {
     }
   }
 }
+
 .left {
   border-right: 1px solid rgba(20, 20, 20, 0.1);
 }
+
 .middle {
   padding-left: 20px;
   border-right: 1px solid rgba(20, 20, 20, 0.1);
 }
+
 .right {
   padding-left: 20px;
 }
+
 .name--surname {
   font-style: normal;
   font-weight: 700;
@@ -127,6 +131,7 @@ section h1 {
   font-family: 'AvenirNextGeorgian-Bold';
   white-space: nowrap;
 }
+
 .company--name {
   font-family: 'AvenirNextGeorgian-Regular';
   font-style: normal;
@@ -136,6 +141,7 @@ section h1 {
   line-height: 150%;
   color: rgba(20, 20, 20, 0.6);
 }
+
 .slider--text {
   width: 480px;
   font-family: 'AvenirNextGeorgian-Regular';
@@ -145,6 +151,7 @@ section h1 {
   line-height: 150%;
   color: rgba(20, 20, 20, 0.6);
 }
+
 .vector {
   background: url('/assets/img/needourhelp-vector.jpg') no-repeat center right;
   position: absolute;
@@ -153,4 +160,93 @@ section h1 {
   left: 1336px;
   top: 4100px;
   border-radius: 0px;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .vector {
+    display: none;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .owl-container {
+    padding: 0 16px;
+    width: 100%;
+  }
+
+  .heading {
+    width: 100%;
+    height: 20px;
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #141414;
+  }
+
+  .carousel-container {
+    background-color: #14141408;
+    padding: 20px;
+  }
+
+  .text {
+    span {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .bottom {
+    display: flex;
+    gap: 17px;
+
+    .bottom-left {
+      background: #d9d9d9;
+      border-radius: 60%;
+      margin-top: 24px;
+      width: 60px;
+      height: 60px;
+    }
+
+    .bottom-right {
+      display: flex;
+      flex-direction: column;
+      margin-top: 31px;
+    }
+  }
+
+  .company--name {
+    width: 100%;
+  }
+
+  ::ng-deep .owl-theme .owl-dots .owl-dot span {
+    background: #d6d6d6 !important;
+    width: 8px;
+    height: 8px;
+  }
+
+  ::ng-deep .owl-theme .owl-dots .owl-dot.active span,
+  .owl-theme .owl-dots .owl-dot:hover span {
+    background: #f58634 !important;
+  }
+
+  ::ng-deep .owl-theme .owl-nav.disabled + .owl-dots {
+    position: absolute;
+    margin-top: 40px;
+    left: 25%;
+    right: 25%;
+  }
 }

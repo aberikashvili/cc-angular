@@ -1,4 +1,4 @@
-<section>
+<section class="desktop">
   <h1 class="heading">რას ამბობენ ჩვენზე?</h1>
   <div class="slider mt-16">
     <div class="slider-track" #sliderTrack>
@@ -64,3 +64,33 @@
   </div>
 </section>
 <div class="vector"></div>
+
+<div class="mobile owl-container">
+  <h1 class="heading">რას ამბობენ ჩვენზე?</h1>
+  <div class="carousel-container">
+    <owl-carousel-o #carousel [options]="customOptions">
+      <ng-template
+        carouselSlide
+        [option]="OwlOptions"
+        *ngFor="let item of cards"
+      >
+        <div class="left--text">
+          <div class="text">
+            <span class="slider--text">
+              {{ item.text }}
+            </span>
+          </div>
+          <div class="bottom">
+            <div class="bottom-left">
+              <img [src]="item.img" />
+            </div>
+            <div class="bottom-right">
+              <span class="name--surname">{{ item.title }}</span>
+              <span class="company--name">{{ item.companyName }}</span>
+            </div>
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>
