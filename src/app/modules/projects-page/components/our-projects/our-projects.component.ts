@@ -1,11 +1,13 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FilterMode } from './enums';
 import { Router } from '@angular/router';
+import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
   selector: 'app-our-projects',
   templateUrl: './our-projects.component.html',
   styleUrls: ['./our-projects.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OurProjectsComponent {
   selectedFilter: FilterMode = FilterMode.All;
@@ -13,10 +15,43 @@ export class OurProjectsComponent {
 
   constructor(private router: Router) {}
 
-  filterButtons: { text: string; categoryId: string; width: string; isDim: boolean }[] = [
-    { categoryId: 'all', text: 'ყველა პროექტი', width: '182px', isDim: false },
-    { categoryId: 'onGoing', text: 'მიმდინარე', width: '144px', isDim: true },
-    { categoryId: 'finished', text: 'დასრულებული', width: '175px', isDim: true },
+  customOptions: OwlOptions = {
+    loop: true,
+    mouseDrag: true,
+    touchDrag: true,
+    pullDrag: false,
+    dots: false,
+    autoWidth: true,
+    margin: 30,
+    navSpeed: 700,
+    navText: ['', ''],
+    responsive: {
+      0: {
+        items: 0,
+      },
+      400: {
+        items: 0,
+      },
+      740: {
+        items: 0,
+      },
+      940: {
+        items: 0,
+      },
+    },
+    nav: true,
+  };
+
+  filterButtons: {
+    text: string;
+    categoryId: string;
+    width: string;
+    isDim: boolean;
+    height: string;
+  }[] = [
+    { categoryId: 'all', text: 'ყველა პროექტი', width: '182px', isDim: false, height: '40px' },
+    { categoryId: 'onGoing', text: 'მიმდინარე', width: '144px', isDim: true, height: '40px' },
+    { categoryId: 'finished', text: 'დასრულებული', width: '175px', isDim: true, height: '40px' },
   ];
 
   filterChanged(buttonItem: string) {

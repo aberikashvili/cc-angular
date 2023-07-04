@@ -8,15 +8,36 @@
         წარუდგინონ შემფასებელს
       </div>
     </div>
-
-    <div class="our__projects--buttons flex gap-3">
-      <app-button
+    <!-- 
+    <owl-carousel-o #carousel [options]="customOptions">
+      <div
+        class=""
+        style="width: 250px"
         *ngFor="let filterButton of filterButtons"
-        [dim]="filterButton.isDim"
-        (click)="filterChanged(filterButton.categoryId)"
-        [width]="filterButton.width"
-        >{{ filterButton.text }}</app-button
+        carouselSlide
       >
+        <div class="our__projects--buttons flex gap-3">
+          <app-button
+            [dim]="filterButton.isDim"
+            (click)="filterChanged(filterButton.categoryId)"
+            [width]="filterButton.width"
+            >{{ filterButton.text }}</app-button
+          >
+        </div>
+      </div>
+    </owl-carousel-o> -->
+
+    <div class="overflow overflow-y-hidden">
+      <div class="our__projects--buttons flex gap-3">
+        <app-button
+          *ngFor="let filterButton of filterButtons"
+          [dim]="filterButton.isDim"
+          (click)="filterChanged(filterButton.categoryId)"
+          [width]="filterButton.width"
+          [height]="filterButton.height"
+          >{{ filterButton.text }}</app-button
+        >
+      </div>
     </div>
   </div>
   <div class="our__projects--main flex flex-row gap-5">
