@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FilterMode } from './enums';
 import { Router } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
@@ -7,6 +7,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   selector: 'app-our-projects',
   templateUrl: './our-projects.component.html',
   styleUrls: ['./our-projects.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OurProjectsComponent {
   selectedFilter: FilterMode = FilterMode.All;
