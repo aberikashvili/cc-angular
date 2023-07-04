@@ -243,18 +243,6 @@ section h1 {
     background: #f58634 !important;
   }
 
-  // ::ng-deep .owl-theme .owl-dots .owl-dot.active span {
-  //   content: '';
-  //   width: 5px;
-  //   height: 5px;
-  //   display: block;
-  //   border-radius: 50%;
-  //   position: absolute;
-  //   top: 20%;
-  //   left: 25%;
-  //   transform: translate(-56%, -50%);
-  // }
-
   ::ng-deep .owl-theme .owl-nav.disabled + .owl-dots {
     position: absolute;
     margin-top: 40px;
