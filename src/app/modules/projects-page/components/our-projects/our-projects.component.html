@@ -8,24 +8,6 @@
         წარუდგინონ შემფასებელს
       </div>
     </div>
-    <!-- 
-    <owl-carousel-o #carousel [options]="customOptions">
-      <div
-        class=""
-        style="width: 250px"
-        *ngFor="let filterButton of filterButtons"
-        carouselSlide
-      >
-        <div class="our__projects--buttons flex gap-3">
-          <app-button
-            [dim]="filterButton.isDim"
-            (click)="filterChanged(filterButton.categoryId)"
-            [width]="filterButton.width"
-            >{{ filterButton.text }}</app-button
-          >
-        </div>
-      </div>
-    </owl-carousel-o> -->
 
     <div class="overflow overflow-y-hidden">
       <div class="our__projects--buttons flex gap-3">
@@ -40,7 +22,7 @@
       </div>
     </div>
   </div>
-  <div class="our__projects--main flex flex-row gap-5">
+  <div class="mobile our__projects--main flex flex-row gap-5">
     <div
       class="our__projects--main--minicontainers flex gap-5"
       *ngFor="let item of getList()"
@@ -64,7 +46,7 @@
       </div>
     </div>
   </div>
-  <div class="our__projects--main flex flex-row gap-5">
+  <div class="mobile our__projects--main flex flex-row gap-5">
     <div
       class="our__projects--main--minicontainers flex gap-5"
       *ngFor="let item of getList()"
@@ -84,6 +66,57 @@
           class="our__projects--main--minicontainers--div--name"
         >
           {{ item.name }}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="tablet gap-5 flex">
+    <div class="our__projects--main flex gap-5">
+      <div
+        class="our__projects--main--minicontainers flex flex-row gap-5"
+        *ngFor="let item of getList()"
+      >
+        <div class="our__projects--main--minicontainers--div flex flex-col">
+          <img
+            (click)="routerClick()"
+            class="our__projects--main--minicontainers--div--img"
+            [src]="item.img"
+            alt=""
+          />
+          <div class="our__projects--main--minicontainers--div--stage">
+            {{ item.stage }}
+          </div>
+          <div
+            (click)="routerClick()"
+            class="our__projects--main--minicontainers--div--name"
+          >
+            {{ item.name }}
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="our__projects--main flex gap-5">
+      <div
+        class="our__projects--main--minicontainers flex flex-row gap-5"
+        *ngFor="let item of getList()"
+      >
+        <div class="our__projects--main--minicontainers--div flex flex-col">
+          <img
+            (click)="routerClick()"
+            class="our__projects--main--minicontainers--div--img"
+            [src]="item.img"
+            alt=""
+          />
+          <div class="our__projects--main--minicontainers--div--stage">
+            {{ item.stage }}
+          </div>
+          <div
+            (click)="routerClick()"
+            class="our__projects--main--minicontainers--div--name"
+          >
+            {{ item.name }}
+          </div>
         </div>
       </div>
     </div>
