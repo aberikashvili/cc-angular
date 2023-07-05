@@ -47,6 +47,11 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'contacts',
+    loadChildren: () =>
+      import('./modules/contacts-page/contacts-page.module').then((m) => m.ContactsPageModule),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '/home',
