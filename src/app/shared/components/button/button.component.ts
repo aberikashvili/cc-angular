@@ -11,11 +11,16 @@ export type ButtonType = 'primary' | 'secondary';
 export class ButtonsComponent {
   @Input() dim: boolean = false;
   @Input() width?: string;
+  @Input() height?: string;
   @Input() type: ButtonType = 'primary';
   @Output() clicked = new EventEmitter();
 
   get isDim(): boolean {
     return this.dim;
+  }
+
+  get customHeight(): string | undefined {
+    return this.height;
   }
 
   get customWidth(): string | undefined {
