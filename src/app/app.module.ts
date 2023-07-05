@@ -6,11 +6,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactsPageComponent } from './modules/contacts-page/contacts-page.component';
 import { ContactsSectionComponent } from './modules/contacts-page/components/contacts-section/contacts-section.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { SharedModule } from "./shared/shared.module";
 
 @NgModule({
-  declarations: [AppComponent, ContactsPageComponent,ContactsSectionComponent ],
-  imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule],
-  providers: [],
-  bootstrap: [AppComponent],
+    declarations: [AppComponent, ContactsPageComponent, ContactsSectionComponent],
+    providers: [],
+    bootstrap: [AppComponent],
+    imports: [BrowserModule, BrowserAnimationsModule, AppRoutingModule, ReactiveFormsModule, SharedModule]
 })
 export class AppModule {}

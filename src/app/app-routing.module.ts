@@ -49,9 +49,7 @@ const routes: Routes = [
   {
     path: 'contacts',
     loadChildren: () =>
-      import('./modules/contacts-page/contacts-page.module').then(
-        (m) => m.ContactsPageModule
-      ),
+      import('./modules/contacts-page/contacts-page.module').then((m) => m.ContactsPageModule),
   },
   {
     path: '**',

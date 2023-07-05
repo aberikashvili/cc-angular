@@ -12,7 +12,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [ContactsPageComponent,],
+  declarations: [],
   imports: [RouterModule.forChild(routes), SharedModule],
 })
 export class ContactsPageModule {}
