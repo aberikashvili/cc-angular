@@ -11,7 +11,8 @@
 }
 
 .container {
-  padding: 0 16px;
+  max-width: 2000px;
+  padding-left: 160px;
 }
 
 section {
@@ -43,13 +44,22 @@ section {
   }
 }
 
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left-arrow {
+  margin-right: 20px;
+}
+
 .card {
   display: flex;
   flex-direction: row;
   background-color: #f9f9f9;
   margin-top: 11px;
   height: 315px;
-  width: 343px;
 }
 
 ul {
@@ -66,7 +76,8 @@ h2 {
   font-weight: 700;
   font-size: 16px;
   line-height: 150%;
-  margin-top: 25px;
+  padding-top: 25px;
+  height: 35px;
 }
 
 li {
@@ -99,16 +110,71 @@ ul:hover li::before {
   overflow-x: auto;
   margin-top: 40px;
 }
-
-.left-arrow {
-  margin-right: 20px;
+.buttons-container {
+  padding-right: 120px;
 }
 
-.background {
-  background: url('/assets/img/vector.jpg');
-  position: absolute;
-  height: 649px;
-  width: 370px;
-  top: 600px;
-  border-radius: 0px;
+.buttons-container-mobile {
+  display: none;
+}
+
+
+
+@media screen and (max-width: 800px) {
+  .container {
+    
+    padding: 0 16px;
+  }
+
+  .service-title {
+    font-size: 18px;
+  }
+  .intro {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .services__paragraph {
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    margin-top: -8px;
+  }
+
+  .card-slider-controls {
+    position: absolute;
+    margin-bottom: 186px;
+  }
+  img {
+    max-width: 72%;
+    height: auto;
+  }
+  .left-arrow {
+    margin-right: 7px;
+  }
+
+  .carousel-container {
+    width: 100%;
+  }
+
+  .wrapper-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .buttons-container {
+    display: none;
+  }
+
+  .buttons-container-mobile {
+    display: block;
+    padding-bottom: 12px;
+  }
 }

@@ -17,18 +17,26 @@ export class ServicesComponent {
     nav: false,
     navSpeed: 700,
     navText: ['', ''],
+    margin: 10,
+    autoWidth: true,
     responsive: {
       0: {
         items: 1,
       },
-      400: {
-        items: 2,
+      600: {
+        items: 1,
       },
       740: {
         items: 2,
       },
-      940: {
+      1100: {
+        items: 3,
+      },
+      1500: {
         items: 4,
+      },
+      1920: {
+        items: 5,
       },
     },
   };
