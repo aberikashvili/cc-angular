@@ -30,7 +30,7 @@ header {
     margin-right: 70px;
   }
   button {
-    font-family: Avenir Next Georgian;
+    font-family: 'AvenirNextGeorgian';
   }
 }
 .language-switcher {
@@ -202,6 +202,9 @@ input.check-toggle-round-flat:checked + label:after {
   ul{
     margin: 0 !important;
     gap: 8px;
+  }
+  li{
+    text-align: center;
   }
   .btn-primary {
   margin: 0 !important;
