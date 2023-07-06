@@ -2,16 +2,16 @@
   <nav class="navigation bg-white border-gray-200 px-4 py-2.5 dark:">
     <div class="flex flex-wrap justify-between items-center mx-auto">
       <img
+        *ngIf="!isShow"
         src="assets/images/header-logo.png"
         class="mr-3 h-6 sm:h-9 header-logo"
         alt="Flowbite Logo"
       />
-
       <div class="flex items-center lg:order-2 btn-container">
-        <app-button width="195px" class="btn-primary" type="primary"
-          >დაგვიკავშირდით</app-button
-        >
-        <div class="language-switcher">
+        <div class="btn-box">
+          <app-button width="195px" class="btn-primary" type="primary">დაგვიკავშირდით</app-button>
+        </div>
+        <div *ngIf="isShow" class="language-switcher">
           <div class="switch">
             <input
               id="language-toggle"
@@ -24,13 +24,12 @@
           </div>
         </div>
       </div>
-
       <div class="burger-box">
          <div class="burger-icon">
-           <img (click)="onBurgerShow()" src="/assets/images/burger.svg" alt="">
+           <img *ngIf="!isShow; else elseBlock" (click)="onBurgerShow()" src="/assets/images/burger.svg" alt="">
+           <ng-template  #elseBlock> <img class="close-img" src="/assets/images/close.svg" (click)="onBurgerShow()" alt=""> </ng-template>
          </div>
       </div>
-
       <div
         class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 navbar-lists"
         id="mobile-menu-2"
@@ -88,11 +87,7 @@
           </li>
         </ul>
       </div>
-
-
- 
       <div class="mobile-menu" *ngIf="isShow" >
-
             <div  class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 mobile-lists"
               id="mobile-menu-2">
               <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 nav-ul">
@@ -127,7 +122,6 @@
          <div class="btn-area">
 <app-button *ngIf="isShow" width="100%" class="btn-primary contact-btn" type="primary">დაგვიკავშირდით</app-button>
          </div>
-      
       </div>
     </div>
   </nav>

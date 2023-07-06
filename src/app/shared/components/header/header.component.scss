@@ -18,13 +18,12 @@ header {
   }
   li {
     font-weight: 400;
-    
   }
   a {
     color: #141414;
   }
   .router-link-active {
-    color: #245aa3;
+    color: #245AA3;
     font-weight: 600;
   }
   .btn-container {
@@ -36,8 +35,13 @@ header {
 }
 .language-switcher {
   position: absolute;
-  margin-left: 205px;
+  top: 10px;
+  z-index: 999;
+}
+.close-img{
   margin-top: 10px;
+  z-index: 999 !important;
+  position: relative;
 }
 .btn-primary {
   margin-right: 50px;
@@ -127,7 +131,7 @@ input.check-toggle-round-flat + label:after {
   bottom: 4px;
   width: 62px;
   border-radius: 100px;
-  background-color: #245aa3;
+  background-color: #245AA3;
   -webkit-border-radius: 52px;
   -moz-border-radius: 52px;
   -ms-border-radius: 52px;
@@ -148,7 +152,14 @@ input.check-toggle-round-flat:checked + label:after {
 .mobile-lists{
   display: none;
 }
-@media screen and (max-width:800px){
+.mobile-menu{
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 0;
+  transition: 0.8s;
+}
+@media screen and (max-width:820px){
   nav{
     padding: 0 16px !important;
   }
@@ -158,6 +169,14 @@ input.check-toggle-round-flat:checked + label:after {
     align-items: center;
     width: 100%;
     flex-direction: column;
+    right: 0;
+    transition: 0.7s;
+    animation-name: test;
+    animation-duration: 1s;
+  }
+  @keyframes test {
+    from {width:  0;}
+    to {width: 100%;}
   }
 .mobile-lists{
   display: flex;
@@ -170,8 +189,11 @@ input.check-toggle-round-flat:checked + label:after {
     width: 120px !important;
     height: 40px !important;
    }
-  .btn-container,.navbar-lists{
+  .btn-box,.navbar-lists{
     display: none;
+  }
+  .btn-box{
+    z-index: 999;
   }
   a{
     text-decoration: none;
@@ -180,11 +202,6 @@ input.check-toggle-round-flat:checked + label:after {
   ul{
     margin: 0 !important;
     gap: 8px;
-    display: flex;
-    align-items: center;
-  }
-  li{
-    font-size: 14px !important;
   }
   .btn-primary {
   margin: 0 !important;
@@ -192,7 +209,6 @@ input.check-toggle-round-flat:checked + label:after {
 .contact-btn{
       position: relative;
       bottom: 10px;
-      z-index: 999;
 }
 .btn-area{
   width: 100%;
