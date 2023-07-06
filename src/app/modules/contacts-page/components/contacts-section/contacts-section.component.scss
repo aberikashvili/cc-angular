@@ -187,7 +187,7 @@ input {
     font-style: normal;
     font-size: 14px;
     font-weight: 400;
-    
+    color:#14141499
   }
   
   .contact__greeting--text{
@@ -242,9 +242,19 @@ textarea{
   width: 100% !important;
 }
 .button{
-  margin-top: 50px;
+  margin-top: 40px;
   text-align: end;
   margin-left: unset;
+}
+
+.phone-number{
+  margin-top: 42px;
+}
+.email{
+  padding-top: 24px;
+}
+.message{
+  padding-top: 42px;
 }
 }
 
@@ -256,5 +266,8 @@ textarea{
   .soc-media{
     width: 100%;
     position: absolute;
+  }
+  .contact__form--wrapper{
+    padding: 0 60px;
   }
 }
