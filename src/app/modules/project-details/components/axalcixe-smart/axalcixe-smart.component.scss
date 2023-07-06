@@ -109,3 +109,41 @@ ul.circle {
 .smartDiv {
   padding-left: 15px;
 }
+
+@media only screen and (max-width: 800px) {
+  .smart__container {
+    padding-left: 16px;
+  }
+
+  .smart__container--heading {
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #141414;
+    width: 100%;
+  }
+
+  .smart__container--title {
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #f58634;
+    width: 100%;
+  }
+
+  .smart__image--container--photo {
+    height: 322px;
+  }
+
+  .smart__text--container {
+    padding: 0 16px;
+  }
+}
