@@ -116,11 +116,16 @@ ul.circle {
 
 @media only screen and (max-width: 800px) {
   .mobile {
-    display: none;
+    display: block;
+    padding: 0 16px;
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    margin-top: -50px;
   }
 
   .desktop {
-    display: block;
+    display: none;
   }
 
   .smart__container {
@@ -149,20 +154,23 @@ ul.circle {
     align-items: center;
     color: #f58634;
     width: 100%;
+    margin-top: 8px;
   }
 
   .smart__image--container--photo {
     height: 322px;
     width: 100%;
+    background: url('/assets/img/smart-mobile.jpg') bottom center repeat-x;
   }
 
   .smart__text--container {
     padding: 0 16px;
+    margin-top: 370px;
   }
 
   .smart__image--container--list {
     width: 100%;
-    height: 322px;
+    height: 378px;
     background: #f58634;
     // padding-left: 32px;
     position: absolute;
@@ -176,5 +184,31 @@ ul.circle {
 
   .smart__image--container--list--heading {
     width: 100%;
+    padding: 20px 26px 0 32px;
+  }
+
+  .smartDiv {
+    padding: 16px 61px 20px 47px;
+  }
+
+  .orange--heading {
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 100%;
+  }
+
+  .orange--container {
+    background-color: #f58634;
+    padding: 20px 26px 20px 32px;
+  }
+
+  .smart__image--container--list--firstlist {
+    padding-left: 16px;
   }
 }
