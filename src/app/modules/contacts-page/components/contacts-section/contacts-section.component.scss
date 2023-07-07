@@ -207,15 +207,16 @@ input {
 
   .contact__box--left{
     width: 343px;
-    height: 400px;
+    height: 352px;
     display: block;
     width: 100%;
+    margin-top: 40px;
   }
 
 
  .contact {
   &__section {
-    background: linear-gradient(180deg, rgba(36, 90, 163, 0.2), 512px, #fafafa 0);
+    background: linear-gradient(180deg, rgba(36, 90, 163, 0.2), 500px, #fafafa 0);
   }
 }
 .form--container{
@@ -255,6 +256,9 @@ textarea{
 }
 .message{
   padding-top: 42px;
+}
+h2{
+  margin-bottom: 5px;
 }
 }
 
