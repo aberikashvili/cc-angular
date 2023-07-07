@@ -18,6 +18,12 @@ export class PhotoGallerySectionComponent {
     navText: ['', ''],
     items: 1,
     nav: false,
+    responsive: {
+      400: {
+        items: 2,
+      },
+    },
+    margin:10
   };
 
   card = [
@@ -29,3 +35,6 @@ export class PhotoGallerySectionComponent {
     },
   ];
 }
+
+
+
