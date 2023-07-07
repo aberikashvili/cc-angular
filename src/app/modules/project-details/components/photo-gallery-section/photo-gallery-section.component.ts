@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -19,14 +19,22 @@ export class PhotoGallerySectionComponent {
     items: 1,
     nav: false,
     responsive: {
+      0: {
+        items: 1,
+      },
       400: {
         items: 2,
       },
+      500: {
+        items: 3,
+      },
+      800: {
+        items: 4,
+      },
     },
-    margin:10
   };
 
-  card = [
+  cards = [
     {
       image: 'assets/images/header-logo.png',
     },
@@ -34,7 +42,7 @@ export class PhotoGallerySectionComponent {
       image: 'assets/images/header-logo.png',
     },
   ];
-}
+};
 
 
 
