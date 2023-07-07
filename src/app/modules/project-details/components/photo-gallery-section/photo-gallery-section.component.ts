@@ -7,9 +7,9 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./photo-gallery-section.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PhotoGallerySectionComponent{
+export class PhotoGallerySectionComponent {
   customOptions: OwlOptions = {
-    loop: false,
+    loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,

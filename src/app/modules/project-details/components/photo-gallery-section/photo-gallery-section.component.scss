@@ -66,3 +66,59 @@
 .left-arrow {
   margin-right: 20px;
 }
+
+.container-mobile{
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+
+  .photo-gallery{
+    padding: 0 16px;
+  }
+  .container{
+    display: none;
+  }
+
+  .card-slider-controls{
+    display: none;
+  }
+
+  .container-mobile{
+    display: flex;
+  }
+
+  .title{
+    margin-left: 0px;
+    padding-top: 16px;
+  }
+
+  h1{
+    font-size: 18px !important;
+    width: 157px;
+  }
+
+  .box{
+    width: 211px;
+    height: 211px;
+    background: #D9D9D9;
+  }
+
+  .container-mobile{
+    display: flex;
+    gap: 9px;
+    width: 1371px;
+    padding-top: 12px;
+  }
+
+  
+
+}
+
+@media screen and (min-width:768px)and (max-width:800px){
+  .box{
+    width: 374px;
+    height: 211px;
+  }
+  
+}
