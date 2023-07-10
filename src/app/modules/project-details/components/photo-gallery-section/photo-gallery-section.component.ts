@@ -18,6 +18,7 @@ export class PhotoGallerySectionComponent {
     navText: ['', ''],
     items: 1,
     nav: false,
+    
   };
 
   cards = [
