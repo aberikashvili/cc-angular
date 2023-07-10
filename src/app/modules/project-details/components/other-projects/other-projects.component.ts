@@ -34,6 +34,33 @@ export class OtherProjectsComponent {
     },
   };
 
+  cards = [
+    {
+      img: 'assets/img/parlament.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '244px',
+    },
+    {
+      img: 'assets/img/iusticia.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '244px',
+    },
+    {
+      img: 'assets/img/karfuri.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '244px',
+    },
+    {
+      img: 'assets/img/parlament.jpg',
+      NameSurname: 'გოჩა ვაშაკიძე',
+      title: 'საწყობის უფროსი',
+      height: '244px',
+    },
+  ];
+
   sliderData = [
     {
       left: {
