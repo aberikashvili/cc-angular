@@ -102,7 +102,7 @@ ul:hover li::before {
 }
 
 .activity__paragraph--mobile{
-  display: none;
+  display: block;
 }
 
 @media screen and (max-width: 800px){
@@ -134,7 +134,7 @@ ul:hover li::before {
 
   .card{
     width: 100%;
-    height: 100%;
+    // height: 100%;
   }
 
   li{
@@ -148,6 +148,10 @@ ul:hover li::before {
 
   .activity__title{
     padding-top: 16px !important;
+  }
+
+  ul{
+    gap: 22px;
   }
 }
 
