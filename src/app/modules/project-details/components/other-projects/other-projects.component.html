@@ -6,7 +6,7 @@
 ></app-slider>
 
 <div class="mobile owl-container">
-  <h1 class="heading">ჩვენი გუნდი</h1>
+  <h1 class="heading">სხვა პროექტები</h1>
   <div class="carousel-container">
     <owl-carousel-o #carousel [options]="customOptions">
       <ng-template
@@ -18,10 +18,10 @@
           <div class="image--div">
             <img [src]="item.img" />
           </div>
-          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-5">
+          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-3">
             {{ item.NameSurname }}
           </div>
-          <div [ngStyle]="{ 'text-align': textAlign }" class="title mt-2">
+          <div [ngStyle]="{ 'text-align': textAlign }" class="title">
             {{ item.title }}
           </div>
         </div>

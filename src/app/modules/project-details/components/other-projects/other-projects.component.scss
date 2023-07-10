@@ -6,6 +6,7 @@
   .mobile {
     display: block;
     padding: 0 16px;
+    padding-bottom: 90px;
   }
 
   .desktop {
@@ -15,7 +16,6 @@
   .heading {
     width: 100%;
     height: 27px;
-    font-family: 'AvenirNextGeorgian-Bold';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -42,17 +42,19 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
-    text-align: center;
-    color: #141414;
+    color: #f58634;
   }
 
   .title {
-    font-family: 'AvenirNextGeorgian-Regular';
+    font-family: 'AvenirNextGeorgian-Bold';
     font-style: normal;
     font-weight: 600;
     font-size: 12px;
     line-height: 150%;
-    text-align: center;
-    color: #f58634;
+    color: #141414;
+  }
+
+  .carousel-container {
+    margin-top: -10px;
   }
 }
