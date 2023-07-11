@@ -11,8 +11,9 @@
 }
 
 .container {
-  max-width: 2000px;
-  padding-left: 160px;
+  max-width: 1760px;
+  // padding-left: 160px;
+  margin-top: 160px;
 }
 
 section {
@@ -118,11 +119,8 @@ ul:hover li::before {
   display: none;
 }
 
-
-
 @media screen and (max-width: 800px) {
   .container {
-    
     padding: 0 16px;
   }
 
