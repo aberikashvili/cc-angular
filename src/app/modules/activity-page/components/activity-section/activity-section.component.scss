@@ -102,7 +102,7 @@ ul:hover li::before {
 }
 
 .activity__paragraph--mobile{
-  display: block;
+  display: none;
 }
 
 @media screen and (max-width: 800px){
@@ -121,6 +121,7 @@ ul:hover li::before {
   }
 
   .activity__paragraph--mobile{
+    display: block;
     font-family: 'AvenirNextGeorgian-Regular';
     font-style: normal;
     margin-top: -10px;
@@ -142,7 +143,7 @@ ul:hover li::before {
   }
 
   .cards-container{
-    gap: 16px;
+    gap: 5px;
     margin-top: 10px;
   }
 
@@ -158,5 +159,12 @@ ul:hover li::before {
 @media screen and (max-width: 375px){
   .activity__paragraph--mobile{
     width: 371px !important;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 800px)  {
+  .activity__paragraph--mobile{
+    height: unset;
   }
 }
