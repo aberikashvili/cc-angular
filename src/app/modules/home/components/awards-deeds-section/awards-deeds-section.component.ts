@@ -10,6 +10,6 @@ export class AwardsDeedsSectionComponent {
   constructor(private router: Router) {}
 
   redirectToAwards() {
-    this.router.navigate(['/my-partners']);
+    this.router.navigate(['/awards']);
   }
 }
