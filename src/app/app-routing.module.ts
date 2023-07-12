@@ -54,7 +54,9 @@ const routes: Routes = [
   {
     path: 'awards',
     loadChildren: () =>
-      import('./modules/home/contacts-page.module').then((m) => m.ContactsPageModule),
+      import(
+        './modules/about-us-page/components/awards-deeds-section-second/awards-deeds-section-second.module'
+      ).then((m) => m.AwardsDeedsSectionSecondComponentModule),
   },
   {
     path: '**',
