@@ -52,9 +52,9 @@ const routes: Routes = [
       import('./modules/contacts-page/contacts-page.module').then((m) => m.ContactsPageModule),
   },
   {
-    path: 'contacts',
+    path: 'awards',
     loadChildren: () =>
-      import('./modules/contacts-page/contacts-page.module').then((m) => m.ContactsPageModule),
+      import('./modules/home/contacts-page.module').then((m) => m.ContactsPageModule),
   },
   {
     path: '**',
