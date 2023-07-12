@@ -2,9 +2,96 @@
   <div class="layout">
     <div class="inner-layout layout--center">
       <header class="header">
-        <div class="logo-wrapper">Logo</div>
-        <div class="menu-wrapper">2</div>
-        <div class="buttons-wrapper">3</div>
+        <div class="logo-wrapper">
+          <img
+              src="assets/images/header-logo.png"
+              class="mr-3 h-6 sm:h-9 header-logo"
+              alt="Flowbite Logo"
+            />
+            
+        </div>
+        <div class="menu-wrapper">
+          <div
+              class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1"
+              id="mobile-menu-2"
+            >
+              <ul
+                class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 nav-ul"
+              >
+                <li>
+                  <a
+                    [routerLink]="['/home']"
+                    routerLinkActive="router-link-active"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >მთავარი გვერდი</a
+                  >
+                </li>
+                <li>
+                  <a
+                    [routerLink]="['/about-us']"
+                    routerLinkActive="router-link-active"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >ჩვენ შესახებ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    [routerLink]="['/my-partners']"
+                    routerLinkActive="router-link-active"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >პარტნიორები</a
+                  >
+                </li>
+                <li>
+                  <a
+                    [routerLink]="['/projects']"
+                    routerLinkActive="router-link-active"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >პროექტები</a
+                  >
+                </li>
+                <li>
+                  <a
+                    [routerLink]="['/activity']"
+                    routerLinkActive="router-link-active"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >საქმიანობა</a
+                  >
+                </li>
+                <li>
+                  <a
+                    [routerLink]="['/team']"
+                    routerLinkActive="router-link-active"
+                    class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-700"
+                    >თანამშრომლები</a
+                  >
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="buttons-wrapper">
+          <div class="flex items-center lg:order-2 btn-container">
+              <app-button
+                width="195px"
+                class="btn-primary"
+                type="primary"
+                (click)="navigateToFirst()"
+                >დაგვიკავშირდით</app-button
+              >
+              </div>
+              <div class="language-switcher">
+                <div class="switch">
+                  <input
+                    id="language-toggle"
+                    class="check-toggle check-toggle-round-flat"
+                    type="checkbox"
+                  />
+                  <label for="language-toggle"></label>
+                  <span class="on">GEO</span>
+                  <span class="off">ENG</span>
+                </div>
+              </div>
+        </div>
       </header>
       <!-- <header>
         <nav
@@ -98,7 +185,7 @@
             </div>
           </div>
         </nav>
-      </header> -->
+      </header>   -->
     </div>
   </div>
 </div>
