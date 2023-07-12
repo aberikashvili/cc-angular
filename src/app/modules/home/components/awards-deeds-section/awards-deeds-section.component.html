@@ -11,7 +11,12 @@
         წარუდგინონ შემფასებელს
       </p>
       <div class="desktop awardsbtn--div">
-        <app-button type="secondary" width="163px">ნახე სრულად</app-button>
+        <app-button
+          (clicked)="redirectToAwards()"
+          type="secondary"
+          width="163px"
+          >ნახე სრულად</app-button
+        >
       </div>
     </div>
   </div>
@@ -58,6 +63,8 @@
     </div>
   </div>
   <div class="mobile">
-    <app-button type="secondary" width="100%">ნახე სრულად</app-button>
+    <app-button (clicked)="redirectToAwards()" type="secondary" width="100%"
+      >ნახე სრულად</app-button
+    >
   </div>
 </section>
