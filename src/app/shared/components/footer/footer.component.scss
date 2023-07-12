@@ -64,11 +64,6 @@ section {
   width: 266px;
 }
 
-.tbilisaxli--container {
-  margin-top: 86px;
-  margin-left: 156px;
-}
-
 .tbilisaxli--title {
   font-style: normal;
   font-weight: 700;
@@ -79,13 +74,18 @@ section {
   color: rgba(20, 20, 20, 0.6);
 }
 
+.tbilisaxli--container {
+  margin-top: 86px;
+  // margin-left: 156px;
+}
+
 .services--container {
   margin-top: 86px;
-  margin-left: 120px;
+  // margin-left: 120px;
 }
 
 .links--container {
-  margin-left: 41px;
+  // margin-left: 41px;
   margin-top: 86px;
 }
 
@@ -99,104 +99,111 @@ section {
   height: 382px;
 }
 
-@media only screen and (max-width: 800px) {
-  .accordion {
-    display: block;
-  }
-
-  .mobile {
-    display: none;
-  }
-
-  .desktop {
-    display: block;
-  }
-
-  section {
-    padding: 0 16px;
-  }
-
-  .main-container {
-    flex-direction: column;
-  }
-
-  .logo--container {
-    margin-top: 0;
-    display: none;
-  }
-
-  .tbilisaxli--container {
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .services--container {
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .links--container {
-    margin-top: 0;
-    margin-left: 0;
-  }
-
-  .map--container {
-    margin-left: 0;
-    margin-top: 38px;
-    display: none;
-  }
-
-  .logos {
-    display: flex;
-  }
-
-  .example-accordion-item-header {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 150%;
-    display: flex;
-    align-items: center;
-    color: rgba(20, 20, 20, 0.6);
-    margin-top: 20px;
-  }
-
-  .example-accordion-item-body {
-    font-family: 'AvenirNextGeorgian-Regular';
-    margin-top: 16px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 150%;
-    color: #141414;
-  }
-
-  .ng-star-inserted {
-    margin-top: 16px;
-  }
-
-  .expanded {
-    transform: rotate(180deg);
-  }
-
-  .colapsed {
-    transform: rotate(0deg);
-  }
-
-  .casacalda--title {
-    width: auto;
-  }
-
-  .map {
-    margin-top: 38px;
-  }
-
-  .map img {
-    width: 100%;
-  }
-
-  .br {
-    border: 1px solid #e7e4e4;
-    margin-top: 20px;
-  }
+.main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  width: 100%;
 }
+
+// @media only screen and (max-width: 800px) {
+//   .accordion {
+//     display: block;
+//   }
+
+//   .mobile {
+//     display: none;
+//   }
+
+//   .desktop {
+//     display: block;
+//   }
+
+//   section {
+//     padding: 0 16px;
+//   }
+
+//   .main-container {
+//     flex-direction: column;
+//   }
+
+//   .logo--container {
+//     margin-top: 0;
+//     display: none;
+//   }
+
+//   .tbilisaxli--container {
+//     margin-top: 0;
+//     margin-left: 0;
+//   }
+
+//   .services--container {
+//     margin-top: 0;
+//     margin-left: 0;
+//   }
+
+//   .links--container {
+//     margin-top: 0;
+//     margin-left: 0;
+//   }
+
+//   .map--container {
+//     margin-left: 0;
+//     margin-top: 38px;
+//     display: none;
+//   }
+
+//   .logos {
+//     display: flex;
+//   }
+
+//   .example-accordion-item-header {
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 14px;
+//     line-height: 150%;
+//     display: flex;
+//     align-items: center;
+//     color: rgba(20, 20, 20, 0.6);
+//     margin-top: 20px;
+//   }
+
+//   .example-accordion-item-body {
+//     font-family: 'AvenirNextGeorgian-Regular';
+//     margin-top: 16px;
+//     font-style: normal;
+//     font-weight: 500;
+//     font-size: 14px;
+//     line-height: 150%;
+//     color: #141414;
+//   }
+
+//   .ng-star-inserted {
+//     margin-top: 16px;
+//   }
+
+//   .expanded {
+//     transform: rotate(180deg);
+//   }
+
+//   .colapsed {
+//     transform: rotate(0deg);
+//   }
+
+//   .casacalda--title {
+//     width: auto;
+//   }
+
+//   .map {
+//     margin-top: 38px;
+//   }
+
+//   .map img {
+//     width: 100%;
+//   }
+
+//   .br {
+//     border: 1px solid #e7e4e4;
+//     margin-top: 20px;
+//   }
+// }
