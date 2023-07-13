@@ -8,6 +8,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class OurTeamSectionComponent {
+  @Input() heading!: string;
   @Input() textAlign?: string;
 
   customOptions: OwlOptions = {
