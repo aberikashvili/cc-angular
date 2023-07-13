@@ -100,3 +100,71 @@ ul:hover li::before {
 .card:hover {
   color: white;
 }
+
+.activity__paragraph--mobile{
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  .activity{
+    margin-left: unset;
+    margin-top: unset;
+    padding: 0 16px;
+  }
+
+  h1{
+    font-size: 24px !important;
+  }
+
+  .activity__paragraph{
+    display: none;
+  }
+
+  .activity__paragraph--mobile{
+    display: block;
+    font-family: 'AvenirNextGeorgian-Regular';
+    font-style: normal;
+    margin-top: -10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: rgba(20, 20, 20, 0.6);
+    width: 100%;
+    height: 84px;
+  }
+
+  .card{
+    width: 100%;
+    // height: 100%;
+  }
+
+  li{
+    margin-top: unset;
+  }
+
+  .cards-container{
+    gap: 5px;
+    margin-top: 10px;
+  }
+
+  .activity__title{
+    padding-top: 16px !important;
+  }
+
+  ul{
+    gap: 22px;
+  }
+}
+
+@media screen and (max-width: 375px){
+  .activity__paragraph--mobile{
+    width: 371px !important;
+  }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 800px)  {
+  .activity__paragraph--mobile{
+    height: unset;
+  }
+}
