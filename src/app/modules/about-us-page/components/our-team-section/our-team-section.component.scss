@@ -66,6 +66,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  .full-layout {
+    display: none;
+  }
+
   .mobile {
     display: block;
     padding: 0 16px;
