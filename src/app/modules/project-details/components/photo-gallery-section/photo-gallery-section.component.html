@@ -15,7 +15,7 @@
   </div>
 
   <owl-carousel-o #carousel [options]="customOptions">
-    <ng-template carouselSlide [option]="OwlOptions" *ngFor="let item of card">
+    <ng-template carouselSlide [option]="OwlOptions" *ngFor="let item of cards">
       <div class="container">
         <div class="container__image"></div>
         <div class="boxes">
@@ -27,4 +27,23 @@
       </div>
     </ng-template>
   </owl-carousel-o>
+
+  <div class="wrapper">
+    <div class="owl-wrapper">
+      <div class="owl-full">
+        <owl-carousel-o #carousel [options]="customOptions">
+          <ng-template
+            carouselSlide
+            [option]="OwlOptions"
+            *ngFor="let item of cards"
+          >
+            <div class="container-mobile">
+              <div class="box"></div>
+              <div class="box"></div>
+            </div>
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </div>
 </section>

@@ -1,4 +1,4 @@
-import { AfterViewInit, ChangeDetectionStrategy, Component } from '@angular/core';
+import { AfterViewInit, ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -7,9 +7,9 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./photo-gallery-section.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class PhotoGallerySectionComponent{
+export class PhotoGallerySectionComponent {
   customOptions: OwlOptions = {
-    loop: false,
+    loop: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: false,
@@ -18,9 +18,10 @@ export class PhotoGallerySectionComponent{
     navText: ['', ''],
     items: 1,
     nav: false,
+    
   };
 
-  card = [
+  cards = [
     {
       image: 'assets/images/header-logo.png',
     },
@@ -28,4 +29,7 @@ export class PhotoGallerySectionComponent{
       image: 'assets/images/header-logo.png',
     },
   ];
-}
+};
+
+
+

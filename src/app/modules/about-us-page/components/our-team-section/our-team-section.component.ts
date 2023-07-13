@@ -35,7 +35,7 @@ export class OurTeamSectionComponent {
     },
   };
 
-  cards = [
+  card = [
     {
       img: 'assets/img/box.jpg',
       NameSurname: 'გოჩა ვაშაკიძე',
