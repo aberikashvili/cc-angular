@@ -1,5 +1,31 @@
 <app-slider
+  class="desktop"
   [textAlign]="'left'"
   [data]="sliderData"
   [heading]="'სხვა პროექტები'"
 ></app-slider>
+
+<div class="mobile owl-container">
+  <h1 class="heading">სხვა პროექტები</h1>
+  <div class="carousel-container">
+    <owl-carousel-o #carousel [options]="customOptions">
+      <ng-template
+        carouselSlide
+        [option]="OwlOptions"
+        *ngFor="let item of cards"
+      >
+        <div class="cont__div left flex flex-col">
+          <div class="image--div">
+            <img [src]="item.img" />
+          </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="name mt-3">
+            {{ item.NameSurname }}
+          </div>
+          <div [ngStyle]="{ 'text-align': textAlign }" class="title">
+            {{ item.title }}
+          </div>
+        </div>
+      </ng-template>
+    </owl-carousel-o>
+  </div>
+</div>
