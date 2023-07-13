@@ -1,5 +1,11 @@
+.full{
+  display: flex;
+  justify-content: center;
+}
 .intro {
   margin-top: 130px;
+  max-width: 1920px;
+  width: 100%;
 }
 .projects {
   font-family: 'AvenirNextGeorgian-Bold';
@@ -7,7 +13,7 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 150%;
-  margin-left: 160px;
+  // margin-left: 160px;
   color: #141414;
 }
 
@@ -15,7 +21,7 @@
   .owl-carousel .owl-item .img-parliament {
     width: 925px;
     height: 586px;
-    margin-left: 160px;
+    // margin-left: 160px;
     margin-top: 27px;
     background: linear-gradient(rgba(20, 20, 20, 0.1));
   }
@@ -25,7 +31,7 @@
   display: flex;
 
   .box__left {
-    margin-left: 174px;
+    margin-left: 15px;
 
     p {
       font-family: 'AvenirNextGeorgian-bold';
@@ -138,3 +144,5 @@
   margin-top: -337px;
   border-radius: 0px;
 }
+
+
