@@ -28,6 +28,7 @@
       width: 164px;
     }
   }
+
   &__image--container {
     &--photo {
       background: url('/assets/img/smart.jpg') bottom center repeat-x;
@@ -98,6 +99,7 @@
       font-size: 14px;
       line-height: 150%;
       color: #141414;
+      padding-right: 20px;
     }
   }
 }
@@ -108,4 +110,93 @@ ul.circle {
 
 .smartDiv {
   padding-left: 15px;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile-photo {
+  display: none;
+}
+
+@media only screen and (max-width: 800px) {
+  .mobile {
+    display: block;
+    padding: 0 16px;
+    width: 100%;
+    z-index: 999;
+    position: absolute;
+    margin-top: -50px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile-photo {
+    height: 322px;
+    width: 100%;
+    display: block;
+  }
+
+  .mobile-photo img {
+    width: 100%;
+    height: 322px;
+  }
+
+  .smart__container {
+    padding-left: 16px;
+  }
+
+  .smart__container--heading {
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #141414;
+    width: 100%;
+  }
+
+  .smart__container--title {
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #f58634;
+    width: 100%;
+    margin-top: 8px;
+  }
+
+  .smart__text--container {
+    padding: 0 16px;
+    margin-top: 370px;
+  }
+
+  .orange--heading {
+    font-family: 'AvenirNextGeorgian-Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    width: 100%;
+  }
+
+  .orange--container {
+    background-color: #f58634;
+    padding: 20px 26px 20px 32px;
+  }
+
+  .smart__image--container--list--firstlist {
+    padding-left: 16px;
+  }
 }
