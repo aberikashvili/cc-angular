@@ -165,3 +165,123 @@ input {
   bottom: 20px;
   gap: 16px;
 }
+
+.p-mobile{
+  display: none;
+}
+
+@media screen and (max-width: 800px){
+  h1{
+    margin-top: 24px;
+    font-size: 24px;
+  }
+  p{
+    display: none;
+    margin-top: 0px;
+  }
+  
+  .p-mobile{
+    display: flex;
+    height: 84px;
+    font-family: "AvenirNextGeorgian-regular";
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 400;
+    color:#14141499
+  }
+  
+  .contact__greeting--text{
+    width: 100%;
+  }
+
+  .contact__form--wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+    min-width: 0px;
+    width: 100%;
+    padding: 0 16px;
+    height: unset;
+  }
+
+  .contact__box--left{
+    width: 343px;
+    height: 352px;
+    display: block;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+
+ .contact {
+  &__section {
+    background: linear-gradient(180deg, rgba(36, 90, 163, 0.2), 500px, #fafafa 0);
+  }
+}
+.form--container{
+    padding-left: 16px;
+    display: unset;
+}
+.contact__box--right{
+  padding-top:40px;
+}
+input{
+  width: 100% !important;
+}
+form{
+  padding: 0 16px;
+}
+.contact__service{
+  padding: 0 24px;
+}
+.soc-media{
+  justify-content: center;
+  padding-left: 24%;
+}
+textarea{
+  width: 100% !important;
+}
+.button{
+  margin-top: 40px;
+  text-align: end;
+  margin-left: unset;
+}
+
+.phone-number{
+  margin-top: 42px;
+}
+.email{
+  padding-top: 24px;
+}
+.message{
+  padding-top: 42px;
+}
+h2{
+  margin-bottom: 5px;
+}
+}
+
+@media screen and (max-width: 800px) and (min-width:768px) {
+  .contact__service{
+    display: flex;
+    justify-content: space-between;
+  }
+  .soc-media{
+    width: 100%;
+    position: absolute;
+    padding-left: unset;
+  }
+  .contact__form--wrapper{
+    padding: 0 60px;
+  }
+
+  .contact__greeting{
+    padding-top: 30px;
+  }
+
+  .contact__box--left{
+    margin-top: 10px;
+  }
+  
+}
