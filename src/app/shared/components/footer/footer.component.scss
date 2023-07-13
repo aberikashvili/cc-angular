@@ -76,16 +76,13 @@ section {
 
 .tbilisaxli--container {
   margin-top: 86px;
-  // margin-left: 156px;
 }
 
 .services--container {
   margin-top: 86px;
-  // margin-left: 120px;
 }
 
 .links--container {
-  // margin-left: 41px;
   margin-top: 86px;
 }
 
@@ -106,104 +103,112 @@ section {
   width: 100%;
 }
 
-// @media only screen and (max-width: 800px) {
-//   .accordion {
-//     display: block;
-//   }
+@media only screen and (max-width: 800px) {
+  .responsive {
+    padding: 0 16px;
+  }
 
-//   .mobile {
-//     display: none;
-//   }
+  .full-layout {
+    display: none;
+  }
 
-//   .desktop {
-//     display: block;
-//   }
+  .accordion {
+    display: block;
+  }
 
-//   section {
-//     padding: 0 16px;
-//   }
+  .mobile {
+    display: none;
+  }
 
-//   .main-container {
-//     flex-direction: column;
-//   }
+  .desktop {
+    display: block;
+  }
 
-//   .logo--container {
-//     margin-top: 0;
-//     display: none;
-//   }
+  section {
+    padding: 0 16px;
+  }
 
-//   .tbilisaxli--container {
-//     margin-top: 0;
-//     margin-left: 0;
-//   }
+  .main-container {
+    flex-direction: column;
+  }
 
-//   .services--container {
-//     margin-top: 0;
-//     margin-left: 0;
-//   }
+  .logo--container {
+    margin-top: 0;
+    display: none;
+  }
 
-//   .links--container {
-//     margin-top: 0;
-//     margin-left: 0;
-//   }
+  .tbilisaxli--container {
+    margin-top: 0;
+    margin-left: 0;
+  }
 
-//   .map--container {
-//     margin-left: 0;
-//     margin-top: 38px;
-//     display: none;
-//   }
+  .services--container {
+    margin-top: 0;
+    margin-left: 0;
+  }
 
-//   .logos {
-//     display: flex;
-//   }
+  .links--container {
+    margin-top: 0;
+    margin-left: 0;
+  }
 
-//   .example-accordion-item-header {
-//     font-style: normal;
-//     font-weight: 700;
-//     font-size: 14px;
-//     line-height: 150%;
-//     display: flex;
-//     align-items: center;
-//     color: rgba(20, 20, 20, 0.6);
-//     margin-top: 20px;
-//   }
+  .map--container {
+    margin-left: 0;
+    margin-top: 38px;
+    display: none;
+  }
 
-//   .example-accordion-item-body {
-//     font-family: 'AvenirNextGeorgian-Regular';
-//     margin-top: 16px;
-//     font-style: normal;
-//     font-weight: 500;
-//     font-size: 14px;
-//     line-height: 150%;
-//     color: #141414;
-//   }
+  .logos {
+    display: flex;
+  }
 
-//   .ng-star-inserted {
-//     margin-top: 16px;
-//   }
+  .example-accordion-item-header {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    color: rgba(20, 20, 20, 0.6);
+    margin-top: 20px;
+  }
 
-//   .expanded {
-//     transform: rotate(180deg);
-//   }
+  .example-accordion-item-body {
+    font-family: 'AvenirNextGeorgian-Regular';
+    margin-top: 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #141414;
+  }
 
-//   .colapsed {
-//     transform: rotate(0deg);
-//   }
+  .ng-star-inserted {
+    margin-top: 16px;
+  }
 
-//   .casacalda--title {
-//     width: auto;
-//   }
+  .expanded {
+    transform: rotate(180deg);
+  }
 
-//   .map {
-//     margin-top: 38px;
-//   }
+  .colapsed {
+    transform: rotate(0deg);
+  }
 
-//   .map img {
-//     width: 100%;
-//   }
+  .casacalda--title {
+    width: auto;
+  }
 
-//   .br {
-//     border: 1px solid #e7e4e4;
-//     margin-top: 20px;
-//   }
-// }
+  .map {
+    margin-top: 38px;
+  }
+
+  .map img {
+    width: 100%;
+  }
+
+  .br {
+    border: 1px solid #e7e4e4;
+    margin-top: 20px;
+  }
+}

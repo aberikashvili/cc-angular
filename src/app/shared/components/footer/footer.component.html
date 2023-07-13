@@ -197,3 +197,66 @@
     </div>
   </div>
 </div>
+
+<div class="desktop responsive">
+  <cdk-accordion class="example-accordion">
+    <cdk-accordion-item
+      *ngFor="let item of items; let index = index"
+      #accordionItem="cdkAccordionItem"
+      class="example-accordion-item"
+      role="button"
+      tabindex="0"
+      [attr.id]="'accordion-header-' + index"
+      [attr.aria-expanded]="accordionItem.expanded"
+      [attr.aria-controls]="'accordion-body-' + index"
+    >
+      <div
+        class="example-accordion-item-header flex justify-between"
+        (click)="accordionItem.toggle()"
+      >
+        {{ item }}
+        <div>
+          <img
+            [src]="imageUrl"
+            [style.transform]="rotateStyle"
+            (click)="rotateImage(index)"
+            [class.expanded]="accordionItem.expanded"
+            [class.colapsed]="!accordionItem.expanded"
+          />
+        </div>
+      </div>
+
+      <div
+        class="example-accordion-item-body"
+        role="region"
+        [style.display]="accordionItem.expanded ? '' : 'none'"
+        [attr.id]="'accordion-body-' + index"
+        [attr.aria-labelledby]="'accordion-header-' + index"
+      >
+        <div *ngFor="let menuItem of menu[index]">{{ menuItem }}</div>
+      </div>
+
+      <div *ngIf="index !== menu.length - 1" class="br"></div>
+    </cdk-accordion-item>
+  </cdk-accordion>
+
+  <div class="logos desktop flex flex-row mt-10">
+    <div class="logoDiv">
+      <img src="assets/img/facebook.jpg" alt="" />
+    </div>
+    <div class="logoDiv">
+      <img src="assets/img/twitter.jpg" alt="" />
+    </div>
+    <div class="logoDiv">
+      <img src="assets/img/instagram.jpg" alt="" />
+    </div>
+  </div>
+
+  <div class="desktop casacalda--title mt-6">
+    <p>Casa Calda © 2023. ყველა უფლება დაცულია</p>
+  </div>
+</div>
+
+<div class="desktop map">
+  <img src="assets/img/map.jpg" alt="" />
+</div>
