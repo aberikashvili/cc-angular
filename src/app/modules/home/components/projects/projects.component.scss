@@ -2,6 +2,7 @@
   background: #f9f9f9;
   padding-top: 20px;
   height: 752px;
+  margin-left: 160px;
 }
 .projects {
   font-family: 'AvenirNextGeorgian-Bold';
@@ -9,8 +10,8 @@
   font-weight: 700;
   font-size: 36px;
   line-height: 150%;
-  margin-left: 160px;
   color: #141414;
+  padding-bottom: 32px;
 }
 
 ::ng-deep {
@@ -107,7 +108,7 @@
     line-height: 150%;
     margin-top: 32px;
     color: rgba(20, 20, 20, 0.6);
-    margin-bottom: 50px;
+    margin-bottom: 27px;
   }
 }
 
