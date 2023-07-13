@@ -52,6 +52,13 @@ const routes: Routes = [
       import('./modules/contacts-page/contacts-page.module').then((m) => m.ContactsPageModule),
   },
   {
+    path: 'awards',
+    loadChildren: () =>
+      import(
+        './modules/about-us-page/components/awards-deeds-section-second/awards-deeds-section-second.module'
+      ).then((m) => m.AwardsDeedsSectionSecondComponentModule),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '/home',

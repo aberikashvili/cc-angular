@@ -64,11 +64,6 @@ section {
   width: 266px;
 }
 
-.tbilisaxli--container {
-  margin-top: 86px;
-  margin-left: 156px;
-}
-
 .tbilisaxli--title {
   font-style: normal;
   font-weight: 700;
@@ -79,21 +74,45 @@ section {
   color: rgba(20, 20, 20, 0.6);
 }
 
+.tbilisaxli--container {
+  margin-top: 86px;
+}
+
 .services--container {
   margin-top: 86px;
-  margin-left: 120px;
 }
 
 .links--container {
-  margin-left: 41px;
   margin-top: 86px;
 }
 
 .map--container {
-  margin-left: 120px;
+  display: flex;
+}
+
+.map--container img {
+  max-width: 410px;
+  width: 100%;
+  height: 382px;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1600px;
+  width: 100%;
+  padding: 0 0 0 10px;
 }
 
 @media only screen and (max-width: 800px) {
+  .responsive {
+    padding: 0 16px;
+  }
+
+  .full-layout {
+    display: none;
+  }
+
   .accordion {
     display: block;
   }
