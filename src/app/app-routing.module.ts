@@ -52,6 +52,11 @@ const routes: Routes = [
       import('./modules/contacts-page/contacts-page.module').then((m) => m.ContactsPageModule),
   },
   {
+    path: 'projects-page',
+    loadChildren: () =>
+      import('./modules/projects-page/projects-page.module').then((m) => m.ProjectsPageModule),
+  },
+  {
     path: '**',
     pathMatch: 'full',
     redirectTo: '/home',

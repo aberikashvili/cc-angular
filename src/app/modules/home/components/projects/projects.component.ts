@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -16,6 +17,11 @@ export class ProjectsComponent {
     nav: false,
     items: 1,
   };
+
+  constructor(private router: Router) {}
+  navigateToFirst() {
+    this.router.navigate(['projects-page']);
+  }
 
   cards = [
     {
